@@ -150,6 +150,11 @@ Partial Class Form1
         Me.PictureBox15 = New System.Windows.Forms.PictureBox()
         Me.TabControl1 = New System.Windows.Forms.TabControl()
         Me.TabPage1 = New System.Windows.Forms.TabPage()
+        Me.Label17 = New System.Windows.Forms.Label()
+        Me.Label16 = New System.Windows.Forms.Label()
+        Me.NumericUpDown48 = New System.Windows.Forms.NumericUpDown()
+        Me.NumericUpDown47 = New System.Windows.Forms.NumericUpDown()
+        Me.NumericUpDown46 = New System.Windows.Forms.NumericUpDown()
         Me.TabPage2 = New System.Windows.Forms.TabPage()
         Me.PictureBox16 = New System.Windows.Forms.PictureBox()
         Me.PictureBox18 = New System.Windows.Forms.PictureBox()
@@ -231,6 +236,10 @@ Partial Class Form1
         CType(Me.PictureBox14, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox15, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabControl1.SuspendLayout()
+        Me.TabPage1.SuspendLayout()
+        CType(Me.NumericUpDown48, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.NumericUpDown47, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.NumericUpDown46, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabPage2.SuspendLayout()
         CType(Me.PictureBox16, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox18, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -1538,12 +1547,59 @@ Partial Class Form1
         '
         Me.TabPage1.BackColor = System.Drawing.Color.LightCyan
         Me.TabPage1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.TabPage1.Controls.Add(Me.Label17)
+        Me.TabPage1.Controls.Add(Me.Label16)
+        Me.TabPage1.Controls.Add(Me.NumericUpDown48)
+        Me.TabPage1.Controls.Add(Me.NumericUpDown47)
+        Me.TabPage1.Controls.Add(Me.NumericUpDown46)
         Me.TabPage1.Location = New System.Drawing.Point(4, 22)
         Me.TabPage1.Name = "TabPage1"
         Me.TabPage1.Padding = New System.Windows.Forms.Padding(3)
         Me.TabPage1.Size = New System.Drawing.Size(415, 327)
         Me.TabPage1.TabIndex = 0
         Me.TabPage1.Text = "Main"
+        '
+        'Label17
+        '
+        Me.Label17.AutoSize = True
+        Me.Label17.Location = New System.Drawing.Point(259, 24)
+        Me.Label17.Name = "Label17"
+        Me.Label17.Size = New System.Drawing.Size(22, 13)
+        Me.Label17.TabIndex = 4
+        Me.Label17.Text = "HP"
+        '
+        'Label16
+        '
+        Me.Label16.AutoSize = True
+        Me.Label16.Location = New System.Drawing.Point(102, 101)
+        Me.Label16.Name = "Label16"
+        Me.Label16.Size = New System.Drawing.Size(39, 13)
+        Me.Label16.TabIndex = 3
+        Me.Label16.Text = "Money"
+        '
+        'NumericUpDown48
+        '
+        Me.NumericUpDown48.Location = New System.Drawing.Point(351, 22)
+        Me.NumericUpDown48.Maximum = New Decimal(New Integer() {999, 0, 0, 0})
+        Me.NumericUpDown48.Name = "NumericUpDown48"
+        Me.NumericUpDown48.Size = New System.Drawing.Size(51, 20)
+        Me.NumericUpDown48.TabIndex = 2
+        '
+        'NumericUpDown47
+        '
+        Me.NumericUpDown47.Location = New System.Drawing.Point(287, 22)
+        Me.NumericUpDown47.Maximum = New Decimal(New Integer() {999, 0, 0, 0})
+        Me.NumericUpDown47.Name = "NumericUpDown47"
+        Me.NumericUpDown47.Size = New System.Drawing.Size(58, 20)
+        Me.NumericUpDown47.TabIndex = 1
+        '
+        'NumericUpDown46
+        '
+        Me.NumericUpDown46.Location = New System.Drawing.Point(147, 99)
+        Me.NumericUpDown46.Maximum = New Decimal(New Integer() {9999, 0, 0, 0})
+        Me.NumericUpDown46.Name = "NumericUpDown46"
+        Me.NumericUpDown46.Size = New System.Drawing.Size(120, 20)
+        Me.NumericUpDown46.TabIndex = 0
         '
         'TabPage2
         '
@@ -1702,6 +1758,11 @@ Partial Class Form1
         CType(Me.PictureBox14, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox15, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TabControl1.ResumeLayout(False)
+        Me.TabPage1.ResumeLayout(False)
+        Me.TabPage1.PerformLayout()
+        CType(Me.NumericUpDown48, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.NumericUpDown47, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.NumericUpDown46, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TabPage2.ResumeLayout(False)
         CType(Me.PictureBox16, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox18, System.ComponentModel.ISupportInitialize).EndInit()
@@ -1839,5 +1900,10 @@ Partial Class Form1
     Friend WithEvents ComboBox31 As System.Windows.Forms.ComboBox
     Friend WithEvents Label15 As System.Windows.Forms.Label
     Friend WithEvents ComboBox32 As System.Windows.Forms.ComboBox
+    Friend WithEvents Label17 As System.Windows.Forms.Label
+    Friend WithEvents Label16 As System.Windows.Forms.Label
+    Friend WithEvents NumericUpDown48 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents NumericUpDown47 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents NumericUpDown46 As System.Windows.Forms.NumericUpDown
 
 End Class

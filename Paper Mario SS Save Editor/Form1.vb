@@ -12,6 +12,12 @@
     Private Sub Readfile()
         Try
             Dim Reader As New PackageIO.Reader(filepath, PackageIO.Endian.Little)
+            Reader.Position = &H148 'money
+            NumericUpDown46.Value = Reader.ReadUInt16
+            Reader.Position = &H14C 'hp1
+            NumericUpDown47.Value = Reader.ReadUInt16
+            Reader.Position = &H150 'hp2
+            NumericUpDown48.Value = Reader.ReadUInt16
             Reader.Position = &H1E0
             NumericUpDown3.Value = Reader.ReadUInt16
             Reader.Position = &H1E0 + &HA
@@ -56,11 +62,19 @@
     Private Sub Writefile()
         Try
             Dim Writer As New PackageIO.Writer(filepath, PackageIO.Endian.Little)
+            Writer.Position = &H148
+            Writer.WriteUInt16(NumericUpDown46.Value)
+            Writer.Position = &H14C
+            Writer.WriteUInt16(NumericUpDown47.Value)
+            Writer.Position = &H150
+            Writer.WriteUInt16(NumericUpDown48.Value)
             Writer.Position = &H1E0
             Writer.WriteUInt16(NumericUpDown3.Value)
-            MsgBox("file save")
+            fdialog.Label1.Text = "File save"
+            fdialog.ShowDialog()
         Catch ex As Exception
-            MsgBox("erreur")
+            fdialog.Label1.Text = "An error has ocurred, load a save file first"
+            fdialog.ShowDialog()
         End Try
 
     End Sub
