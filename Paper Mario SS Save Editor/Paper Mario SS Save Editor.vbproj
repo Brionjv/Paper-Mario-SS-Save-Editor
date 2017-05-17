@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{7EEF978B-A724-445C-993C-55F68B3F5149}</ProjectGuid>
+    <ProjectGuid>{E070A5C2-0466-4712-8113-780D67D2B80C}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <StartupObject>Paper_Mario_SS_Save_Editor.My.MyApplication</StartupObject>
     <RootNamespace>Paper_Mario_SS_Save_Editor</RootNamespace>

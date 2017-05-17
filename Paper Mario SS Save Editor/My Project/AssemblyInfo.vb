@@ -12,13 +12,13 @@ Imports System.Runtime.InteropServices
 <Assembly: AssemblyDescription("")> 
 <Assembly: AssemblyCompany("")> 
 <Assembly: AssemblyProduct("Paper Mario SS Save Editor")> 
-<Assembly: AssemblyCopyright("Copyright ©  2016")> 
+<Assembly: AssemblyCopyright("Copyright ©  2017")> 
 <Assembly: AssemblyTrademark("")> 
 
 <Assembly: ComVisible(False)>
 
 'Le GUID suivant est pour l'ID de la typelib si ce projet est exposé à COM
-<Assembly: Guid("542a7c6c-95d9-4c11-b38a-2c1d23391f40")> 
+<Assembly: Guid("46b8b386-1569-479c-ab56-8b1fe96ab057")> 
 
 ' Les informations de version pour un assembly se composent des quatre valeurs suivantes :
 '

@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Express 2012 for Windows Desktop
-Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Paper Mario SS Save Editor", "Paper Mario SS Save Editor\Paper Mario SS Save Editor.vbproj", "{7EEF978B-A724-445C-993C-55F68B3F5149}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Paper Mario SS Save Editor", "Paper Mario SS Save Editor\Paper Mario SS Save Editor.vbproj", "{E070A5C2-0466-4712-8113-780D67D2B80C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -9,10 +9,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{7EEF978B-A724-445C-993C-55F68B3F5149}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7EEF978B-A724-445C-993C-55F68B3F5149}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7EEF978B-A724-445C-993C-55F68B3F5149}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7EEF978B-A724-445C-993C-55F68B3F5149}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E070A5C2-0466-4712-8113-780D67D2B80C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E070A5C2-0466-4712-8113-780D67D2B80C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E070A5C2-0466-4712-8113-780D67D2B80C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E070A5C2-0466-4712-8113-780D67D2B80C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
