@@ -93,39 +93,111 @@
             Reader.Position = &H1E0 + (&HA * 3) 'sticker 4
             sticker4 = Reader.Position
             NumericUpDown7.Value = Reader.ReadUInt16
+            Reader.Position = &H1E6 + (&HA * 3) 'sticker 4x
+            sticker4x = Reader.Position
+            NumericUpDown9.Value = Reader.ReadUInt16
+            Reader.Position = &H1E8 + (&HA * 3) 'sticker 4y
+            sticker4y = Reader.Position
+            NumericUpDown8.Value = Reader.ReadUInt16
             Reader.Position = &H1E0 + (&HA * 4) 'sticker 5
             sticker5 = Reader.Position
             NumericUpDown13.Value = Reader.ReadUInt16
+            Reader.Position = &H1E6 + (&HA * 4) 'sticker 5x
+            sticker5x = Reader.Position
+            NumericUpDown15.Value = Reader.ReadUInt16
+            Reader.Position = &H1E8 + (&HA * 4) 'sticker 5y
+            sticker5y = Reader.Position
+            NumericUpDown14.Value = Reader.ReadUInt16
             Reader.Position = &H1E0 + (&HA * 5) 'sticker 6
             sticker6 = Reader.Position
             NumericUpDown28.Value = Reader.ReadUInt16
+            Reader.Position = &H1E6 + (&HA * 5) 'sticker 6x
+            sticker6x = Reader.Position
+            NumericUpDown30.Value = Reader.ReadUInt16
+            Reader.Position = &H1E8 + (&HA * 5) 'sticker 6y
+            sticker6y = Reader.Position
+            NumericUpDown29.Value = Reader.ReadUInt16
             Reader.Position = &H1E0 + (&HA * 6) 'sticker 7
             sticker7 = Reader.Position
             NumericUpDown25.Value = Reader.ReadUInt16
+            Reader.Position = &H1E6 + (&HA * 6) 'sticker 7x
+            sticker7x = Reader.Position
+            NumericUpDown27.Value = Reader.ReadUInt16
+            Reader.Position = &H1E8 + (&HA * 6) 'sticker 7y
+            sticker7y = Reader.Position
+            NumericUpDown26.Value = Reader.ReadUInt16
             Reader.Position = &H1E0 + (&HA * 7) 'sticker 8
             sticker8 = Reader.Position
             NumericUpDown22.Value = Reader.ReadUInt16
+            Reader.Position = &H1E6 + (&HA * 7) 'sticker 8x
+            sticker8x = Reader.Position
+            NumericUpDown24.Value = Reader.ReadUInt16
+            Reader.Position = &H1E8 + (&HA * 7) 'sticker 8y
+            sticker8y = Reader.Position
+            NumericUpDown23.Value = Reader.ReadUInt16
             Reader.Position = &H1E0 + (&HA * 8) 'sticker 9
             sticker9 = Reader.Position
             NumericUpDown19.Value = Reader.ReadUInt16
+            Reader.Position = &H1E6 + (&HA * 8) 'sticker 9x
+            sticker9x = Reader.Position
+            NumericUpDown21.Value = Reader.ReadUInt16
+            Reader.Position = &H1E8 + (&HA * 8) 'sticker 9y
+            sticker9y = Reader.Position
+            NumericUpDown20.Value = Reader.ReadUInt16
             Reader.Position = &H1E0 + (&HA * 9) 'sticker 10
             sticker10 = Reader.Position
             NumericUpDown16.Value = Reader.ReadUInt16
+            Reader.Position = &H1E6 + (&HA * 9) 'sticker 10x
+            sticker10x = Reader.Position
+            NumericUpDown18.Value = Reader.ReadUInt16
+            Reader.Position = &H1E8 + (&HA * 9) 'sticker 10y
+            sticker10y = Reader.Position
+            NumericUpDown17.Value = Reader.ReadUInt16
             Reader.Position = &H1E0 + (&HA * 10) 'sticker 11
             sticker11 = Reader.Position
             NumericUpDown43.Value = Reader.ReadUInt16
+            Reader.Position = &H1E6 + (&HA * 10) 'sticker 11x
+            sticker11x = Reader.Position
+            NumericUpDown45.Value = Reader.ReadUInt16
+            Reader.Position = &H1E8 + (&HA * 10) 'sticker 11y
+            sticker11y = Reader.Position
+            NumericUpDown44.Value = Reader.ReadUInt16
             Reader.Position = &H1E0 + (&HA * 11) 'sticker 12
             sticker12 = Reader.Position
             NumericUpDown40.Value = Reader.ReadUInt16
+            Reader.Position = &H1E6 + (&HA * 11) 'sticker 12x
+            sticker12x = Reader.Position
+            NumericUpDown42.Value = Reader.ReadUInt16
+            Reader.Position = &H1E8 + (&HA * 11) 'sticker 12y
+            sticker12y = Reader.Position
+            NumericUpDown41.Value = Reader.ReadUInt16
             Reader.Position = &H1E0 + (&HA * 12) 'sticker 13
             sticker13 = Reader.Position
             NumericUpDown37.Value = Reader.ReadUInt16
+            Reader.Position = &H1E6 + (&HA * 12) 'sticker 13x
+            sticker13x = Reader.Position
+            NumericUpDown39.Value = Reader.ReadUInt16
+            Reader.Position = &H1E8 + (&HA * 12) 'sticker 13y
+            sticker13y = Reader.Position
+            NumericUpDown38.Value = Reader.ReadUInt16
             Reader.Position = &H1E0 + (&HA * 13) 'sticker 14
             sticker14 = Reader.Position
             NumericUpDown34.Value = Reader.ReadUInt16
+            Reader.Position = &H1E6 + (&HA * 13) 'sticker 14x
+            sticker14x = Reader.Position
+            NumericUpDown36.Value = Reader.ReadUInt16
+            Reader.Position = &H1E8 + (&HA * 13) 'sticker 14y
+            sticker14y = Reader.Position
+            NumericUpDown35.Value = Reader.ReadUInt16
             Reader.Position = &H1E0 + (&HA * 14) 'sticker 15
             sticker15 = Reader.Position
             NumericUpDown31.Value = Reader.ReadUInt16
+            Reader.Position = &H1E6 + (&HA * 14) 'sticker 15x
+            sticker15x = Reader.Position
+            NumericUpDown33.Value = Reader.ReadUInt16
+            Reader.Position = &H1E8 + (&HA * 14) 'sticker 15y
+            sticker15y = Reader.Position
+            NumericUpDown32.Value = Reader.ReadUInt16
             fdialog.Label1.Text = "Don't exceed limit of album" & vbNewLine & "Exceeding this limit will give you an error " & vbNewLine & "when your save will load"
             fdialog.ShowDialog()
         Catch ex As Exception
@@ -300,6 +372,27 @@
     End Sub
 
     Private Sub NumericUpDown3_ValueChanged(sender As Object, e As EventArgs) Handles NumericUpDown3.ValueChanged
+        If NumericUpDown3.Value = 0 Then
+            ComboBox1.SelectedItem = ComboBox1.Items.Item(0)
+        ElseIf NumericUpDown3.Value = 15 Then
+            PictureBox17.BackgroundImage = My.Resources._0F
+            ComboBox1.SelectedItem = ComboBox1.Items.Item(1)
+        ElseIf NumericUpDown3.Value = 16 Then
+            PictureBox17.BackgroundImage = My.Resources._10
+            ComboBox1.SelectedItem = ComboBox1.Items.Item(2)
+        ElseIf NumericUpDown3.Value = 17 Then
+            PictureBox17.BackgroundImage = My.Resources._11
+            ComboBox1.SelectedItem = ComboBox1.Items.Item(3)
+        ElseIf NumericUpDown3.Value = 18 Then
+            PictureBox17.BackgroundImage = My.Resources._12
+            ComboBox1.SelectedItem = ComboBox1.Items.Item(4)
+        ElseIf NumericUpDown3.Value = 19 Then
+            PictureBox17.BackgroundImage = My.Resources._13
+            ComboBox1.SelectedItem = ComboBox1.Items.Item(5)
+        ElseIf NumericUpDown3.Value = 20 Then
+            PictureBox17.BackgroundImage = My.Resources._14
+            ComboBox1.SelectedItem = ComboBox1.Items.Item(6)
+        End If
         If NumericUpDown3.Value < 15 Then
             NumericUpDown49.Value = 1073676288  'sticker nonexistent
             PictureBox1.Visible = False
@@ -451,4 +544,5 @@
             ComboBox2.SelectedItem = ComboBox2.Items.Item(45)
         End If
     End Sub
+
 End Class

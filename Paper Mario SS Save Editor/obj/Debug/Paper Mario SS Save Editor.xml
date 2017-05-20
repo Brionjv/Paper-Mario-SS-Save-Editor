@@ -8,16 +8,732 @@ PaperMarioSSSaveEditor
 <members>
 <member name="P:Paper_Mario_SS_Save_Editor.My.Resources.Resources.ResourceManager">
 	<summary>
-  Returns the cached ResourceManager instance used by this class.
+  Retourne l'instance ResourceManager mise en cache utilisée par cette classe.
 </summary>
 </member><member name="P:Paper_Mario_SS_Save_Editor.My.Resources.Resources.Culture">
 	<summary>
-  Overrides the current thread's CurrentUICulture property for all
-  resource lookups using this strongly typed resource class.
+  Remplace la propriété CurrentUICulture du thread actuel pour toutes
+  les recherches de ressources à l'aide de cette classe de ressource fortement typée.
+</summary>
+</member><member name="P:Paper_Mario_SS_Save_Editor.My.Resources.Resources._0F">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Paper_Mario_SS_Save_Editor.My.Resources.Resources._10">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Paper_Mario_SS_Save_Editor.My.Resources.Resources._11">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Paper_Mario_SS_Save_Editor.My.Resources.Resources._12">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Paper_Mario_SS_Save_Editor.My.Resources.Resources._13">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Paper_Mario_SS_Save_Editor.My.Resources.Resources._14">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Paper_Mario_SS_Save_Editor.My.Resources.Resources._15">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Paper_Mario_SS_Save_Editor.My.Resources.Resources._16">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Paper_Mario_SS_Save_Editor.My.Resources.Resources._17">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Paper_Mario_SS_Save_Editor.My.Resources.Resources._18">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Paper_Mario_SS_Save_Editor.My.Resources.Resources._19">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Paper_Mario_SS_Save_Editor.My.Resources.Resources._1A">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Paper_Mario_SS_Save_Editor.My.Resources.Resources._1B">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Paper_Mario_SS_Save_Editor.My.Resources.Resources._1C">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Paper_Mario_SS_Save_Editor.My.Resources.Resources._1D">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Paper_Mario_SS_Save_Editor.My.Resources.Resources._1E">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Paper_Mario_SS_Save_Editor.My.Resources.Resources._1F">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Paper_Mario_SS_Save_Editor.My.Resources.Resources._20">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Paper_Mario_SS_Save_Editor.My.Resources.Resources._21">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Paper_Mario_SS_Save_Editor.My.Resources.Resources._22">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Paper_Mario_SS_Save_Editor.My.Resources.Resources._23">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Paper_Mario_SS_Save_Editor.My.Resources.Resources._24">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Paper_Mario_SS_Save_Editor.My.Resources.Resources._25">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Paper_Mario_SS_Save_Editor.My.Resources.Resources._26">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Paper_Mario_SS_Save_Editor.My.Resources.Resources._27">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Paper_Mario_SS_Save_Editor.My.Resources.Resources._28">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Paper_Mario_SS_Save_Editor.My.Resources.Resources._29">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Paper_Mario_SS_Save_Editor.My.Resources.Resources._2A">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Paper_Mario_SS_Save_Editor.My.Resources.Resources._2B">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Paper_Mario_SS_Save_Editor.My.Resources.Resources._2C">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Paper_Mario_SS_Save_Editor.My.Resources.Resources._2D">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Paper_Mario_SS_Save_Editor.My.Resources.Resources._2E">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Paper_Mario_SS_Save_Editor.My.Resources.Resources._2F">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Paper_Mario_SS_Save_Editor.My.Resources.Resources._30">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Paper_Mario_SS_Save_Editor.My.Resources.Resources._31">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Paper_Mario_SS_Save_Editor.My.Resources.Resources._32">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Paper_Mario_SS_Save_Editor.My.Resources.Resources._33">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Paper_Mario_SS_Save_Editor.My.Resources.Resources._34">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Paper_Mario_SS_Save_Editor.My.Resources.Resources._35">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Paper_Mario_SS_Save_Editor.My.Resources.Resources._36">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Paper_Mario_SS_Save_Editor.My.Resources.Resources._37">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Paper_Mario_SS_Save_Editor.My.Resources.Resources._38">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Paper_Mario_SS_Save_Editor.My.Resources.Resources._39">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Paper_Mario_SS_Save_Editor.My.Resources.Resources._3A">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Paper_Mario_SS_Save_Editor.My.Resources.Resources._3B">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Paper_Mario_SS_Save_Editor.My.Resources.Resources._3C">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Paper_Mario_SS_Save_Editor.My.Resources.Resources._3D">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Paper_Mario_SS_Save_Editor.My.Resources.Resources._3E">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Paper_Mario_SS_Save_Editor.My.Resources.Resources._3F">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Paper_Mario_SS_Save_Editor.My.Resources.Resources._40">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Paper_Mario_SS_Save_Editor.My.Resources.Resources._41">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Paper_Mario_SS_Save_Editor.My.Resources.Resources._42">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Paper_Mario_SS_Save_Editor.My.Resources.Resources._43">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Paper_Mario_SS_Save_Editor.My.Resources.Resources._44">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Paper_Mario_SS_Save_Editor.My.Resources.Resources._45">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Paper_Mario_SS_Save_Editor.My.Resources.Resources._46">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Paper_Mario_SS_Save_Editor.My.Resources.Resources._47">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Paper_Mario_SS_Save_Editor.My.Resources.Resources._48">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Paper_Mario_SS_Save_Editor.My.Resources.Resources._49">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Paper_Mario_SS_Save_Editor.My.Resources.Resources._4A">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Paper_Mario_SS_Save_Editor.My.Resources.Resources._4B">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Paper_Mario_SS_Save_Editor.My.Resources.Resources._4C">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Paper_Mario_SS_Save_Editor.My.Resources.Resources._4D">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Paper_Mario_SS_Save_Editor.My.Resources.Resources._4E">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Paper_Mario_SS_Save_Editor.My.Resources.Resources._4F">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Paper_Mario_SS_Save_Editor.My.Resources.Resources._50">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Paper_Mario_SS_Save_Editor.My.Resources.Resources._51">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Paper_Mario_SS_Save_Editor.My.Resources.Resources._52">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Paper_Mario_SS_Save_Editor.My.Resources.Resources._53">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Paper_Mario_SS_Save_Editor.My.Resources.Resources._54">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Paper_Mario_SS_Save_Editor.My.Resources.Resources._55">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Paper_Mario_SS_Save_Editor.My.Resources.Resources._56">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Paper_Mario_SS_Save_Editor.My.Resources.Resources._57">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Paper_Mario_SS_Save_Editor.My.Resources.Resources._58">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Paper_Mario_SS_Save_Editor.My.Resources.Resources._59">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Paper_Mario_SS_Save_Editor.My.Resources.Resources._5A">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Paper_Mario_SS_Save_Editor.My.Resources.Resources._5B">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Paper_Mario_SS_Save_Editor.My.Resources.Resources._5C">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Paper_Mario_SS_Save_Editor.My.Resources.Resources._5D">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Paper_Mario_SS_Save_Editor.My.Resources.Resources._5E">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Paper_Mario_SS_Save_Editor.My.Resources.Resources._5F">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Paper_Mario_SS_Save_Editor.My.Resources.Resources._60">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Paper_Mario_SS_Save_Editor.My.Resources.Resources._61">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Paper_Mario_SS_Save_Editor.My.Resources.Resources._62">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Paper_Mario_SS_Save_Editor.My.Resources.Resources._63">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Paper_Mario_SS_Save_Editor.My.Resources.Resources._64">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Paper_Mario_SS_Save_Editor.My.Resources.Resources._65">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Paper_Mario_SS_Save_Editor.My.Resources.Resources._66">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Paper_Mario_SS_Save_Editor.My.Resources.Resources._67">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Paper_Mario_SS_Save_Editor.My.Resources.Resources._68">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Paper_Mario_SS_Save_Editor.My.Resources.Resources._69">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Paper_Mario_SS_Save_Editor.My.Resources.Resources._6A">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Paper_Mario_SS_Save_Editor.My.Resources.Resources._6B">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Paper_Mario_SS_Save_Editor.My.Resources.Resources._6C">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Paper_Mario_SS_Save_Editor.My.Resources.Resources._6D">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Paper_Mario_SS_Save_Editor.My.Resources.Resources._6E">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Paper_Mario_SS_Save_Editor.My.Resources.Resources._6F">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Paper_Mario_SS_Save_Editor.My.Resources.Resources._70">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Paper_Mario_SS_Save_Editor.My.Resources.Resources._71">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Paper_Mario_SS_Save_Editor.My.Resources.Resources._72">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Paper_Mario_SS_Save_Editor.My.Resources.Resources._73">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Paper_Mario_SS_Save_Editor.My.Resources.Resources._74">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Paper_Mario_SS_Save_Editor.My.Resources.Resources._75">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Paper_Mario_SS_Save_Editor.My.Resources.Resources._76">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Paper_Mario_SS_Save_Editor.My.Resources.Resources._77">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Paper_Mario_SS_Save_Editor.My.Resources.Resources._78">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Paper_Mario_SS_Save_Editor.My.Resources.Resources._79">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Paper_Mario_SS_Save_Editor.My.Resources.Resources._7A">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Paper_Mario_SS_Save_Editor.My.Resources.Resources._7B">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Paper_Mario_SS_Save_Editor.My.Resources.Resources._7C">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Paper_Mario_SS_Save_Editor.My.Resources.Resources._7D">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Paper_Mario_SS_Save_Editor.My.Resources.Resources._7E">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Paper_Mario_SS_Save_Editor.My.Resources.Resources._7F">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Paper_Mario_SS_Save_Editor.My.Resources.Resources._80">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Paper_Mario_SS_Save_Editor.My.Resources.Resources._81">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Paper_Mario_SS_Save_Editor.My.Resources.Resources._82">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Paper_Mario_SS_Save_Editor.My.Resources.Resources._83">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Paper_Mario_SS_Save_Editor.My.Resources.Resources._84">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Paper_Mario_SS_Save_Editor.My.Resources.Resources._85">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Paper_Mario_SS_Save_Editor.My.Resources.Resources._86">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Paper_Mario_SS_Save_Editor.My.Resources.Resources._87">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Paper_Mario_SS_Save_Editor.My.Resources.Resources._88">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Paper_Mario_SS_Save_Editor.My.Resources.Resources._89">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Paper_Mario_SS_Save_Editor.My.Resources.Resources._8A">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Paper_Mario_SS_Save_Editor.My.Resources.Resources._8B">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Paper_Mario_SS_Save_Editor.My.Resources.Resources._8C">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Paper_Mario_SS_Save_Editor.My.Resources.Resources._8D">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Paper_Mario_SS_Save_Editor.My.Resources.Resources._8E">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Paper_Mario_SS_Save_Editor.My.Resources.Resources._8F">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Paper_Mario_SS_Save_Editor.My.Resources.Resources._90">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Paper_Mario_SS_Save_Editor.My.Resources.Resources._91">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Paper_Mario_SS_Save_Editor.My.Resources.Resources._92">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Paper_Mario_SS_Save_Editor.My.Resources.Resources._93">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Paper_Mario_SS_Save_Editor.My.Resources.Resources._94">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Paper_Mario_SS_Save_Editor.My.Resources.Resources._95">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Paper_Mario_SS_Save_Editor.My.Resources.Resources._96">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Paper_Mario_SS_Save_Editor.My.Resources.Resources._97">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Paper_Mario_SS_Save_Editor.My.Resources.Resources._98">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Paper_Mario_SS_Save_Editor.My.Resources.Resources._99">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Paper_Mario_SS_Save_Editor.My.Resources.Resources._9A">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Paper_Mario_SS_Save_Editor.My.Resources.Resources._9B">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Paper_Mario_SS_Save_Editor.My.Resources.Resources._9C">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Paper_Mario_SS_Save_Editor.My.Resources.Resources._9D">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Paper_Mario_SS_Save_Editor.My.Resources.Resources._9E">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Paper_Mario_SS_Save_Editor.My.Resources.Resources._9F">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Paper_Mario_SS_Save_Editor.My.Resources.Resources.A0">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Paper_Mario_SS_Save_Editor.My.Resources.Resources.A1">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Paper_Mario_SS_Save_Editor.My.Resources.Resources.A2">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Paper_Mario_SS_Save_Editor.My.Resources.Resources.A3">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Paper_Mario_SS_Save_Editor.My.Resources.Resources.A4">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Paper_Mario_SS_Save_Editor.My.Resources.Resources.A5">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Paper_Mario_SS_Save_Editor.My.Resources.Resources.A6">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Paper_Mario_SS_Save_Editor.My.Resources.Resources.A7">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Paper_Mario_SS_Save_Editor.My.Resources.Resources.A8">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Paper_Mario_SS_Save_Editor.My.Resources.Resources.A9">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Paper_Mario_SS_Save_Editor.My.Resources.Resources.AA">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Paper_Mario_SS_Save_Editor.My.Resources.Resources.AB">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Paper_Mario_SS_Save_Editor.My.Resources.Resources.AC">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Paper_Mario_SS_Save_Editor.My.Resources.Resources.AD">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Paper_Mario_SS_Save_Editor.My.Resources.Resources.AE">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Paper_Mario_SS_Save_Editor.My.Resources.Resources.AF">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Paper_Mario_SS_Save_Editor.My.Resources.Resources.B0">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Paper_Mario_SS_Save_Editor.My.Resources.Resources.B1">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Paper_Mario_SS_Save_Editor.My.Resources.Resources.B2">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Paper_Mario_SS_Save_Editor.My.Resources.Resources.B3">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Paper_Mario_SS_Save_Editor.My.Resources.Resources.B4">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Paper_Mario_SS_Save_Editor.My.Resources.Resources.B5">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Paper_Mario_SS_Save_Editor.My.Resources.Resources.B6">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Paper_Mario_SS_Save_Editor.My.Resources.Resources.B7">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Paper_Mario_SS_Save_Editor.My.Resources.Resources.B8">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Paper_Mario_SS_Save_Editor.My.Resources.Resources.B9">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Paper_Mario_SS_Save_Editor.My.Resources.Resources.BA">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Paper_Mario_SS_Save_Editor.My.Resources.Resources.BB">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Paper_Mario_SS_Save_Editor.My.Resources.Resources.BC">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Paper_Mario_SS_Save_Editor.My.Resources.Resources.BD">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Paper_Mario_SS_Save_Editor.My.Resources.Resources.BE">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Paper_Mario_SS_Save_Editor.My.Resources.Resources.BF">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Paper_Mario_SS_Save_Editor.My.Resources.Resources.C0">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Paper_Mario_SS_Save_Editor.My.Resources.Resources.C1">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
 </summary>
 </member><member name="T:Paper_Mario_SS_Save_Editor.My.Resources.Resources">
 	<summary>
-  A strongly-typed resource class, for looking up localized strings, etc.
+  Une classe de ressource fortement typée destinée, entre autres, à la consultation des chaînes localisées.
 </summary>
 </member>
 </members>
