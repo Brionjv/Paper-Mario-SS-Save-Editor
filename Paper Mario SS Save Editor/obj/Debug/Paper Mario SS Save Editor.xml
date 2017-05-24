@@ -731,6 +731,38 @@ PaperMarioSSSaveEditor
 	<summary>
   Recherche une ressource localisée de type System.Drawing.Bitmap.
 </summary>
+</member><member name="P:Paper_Mario_SS_Save_Editor.My.Resources.Resources.coins_eu">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Paper_Mario_SS_Save_Editor.My.Resources.Resources.coins_us">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Paper_Mario_SS_Save_Editor.My.Resources.Resources.comet_eu">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Paper_Mario_SS_Save_Editor.My.Resources.Resources.comet_us">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Paper_Mario_SS_Save_Editor.My.Resources.Resources.hp_eu">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Paper_Mario_SS_Save_Editor.My.Resources.Resources.hp_us">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Paper_Mario_SS_Save_Editor.My.Resources.Resources.time_eu">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Paper_Mario_SS_Save_Editor.My.Resources.Resources.time_us">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
 </member><member name="T:Paper_Mario_SS_Save_Editor.My.Resources.Resources">
 	<summary>
   Une classe de ressource fortement typée destinée, entre autres, à la consultation des chaînes localisées.

@@ -1849,5 +1849,85 @@ Namespace My.Resources
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
+        
+        '''<summary>
+        '''  Recherche une ressource localisée de type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property coins_eu() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("coins_eu", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Recherche une ressource localisée de type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property coins_us() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("coins_us", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Recherche une ressource localisée de type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property comet_eu() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("comet_eu", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Recherche une ressource localisée de type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property comet_us() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("comet_us", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Recherche une ressource localisée de type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property hp_eu() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("hp_eu", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Recherche une ressource localisée de type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property hp_us() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("hp_us", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Recherche une ressource localisée de type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property time_eu() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("time_eu", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Recherche une ressource localisée de type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property time_us() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("time_us", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
     End Module
 End Namespace

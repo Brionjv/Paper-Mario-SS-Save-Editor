@@ -25,10 +25,11 @@ Partial Class Form1
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         Me.TabControl1 = New System.Windows.Forms.TabControl()
         Me.TabPage1 = New System.Windows.Forms.TabPage()
-        Me.Label18 = New System.Windows.Forms.Label()
+        Me.PictureBox35 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox34 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox33 = New System.Windows.Forms.PictureBox()
+        Me.Label20 = New System.Windows.Forms.Label()
         Me.NumericUpDown64 = New System.Windows.Forms.NumericUpDown()
-        Me.Label17 = New System.Windows.Forms.Label()
-        Me.Label16 = New System.Windows.Forms.Label()
         Me.NumericUpDown48 = New System.Windows.Forms.NumericUpDown()
         Me.NumericUpDown47 = New System.Windows.Forms.NumericUpDown()
         Me.NumericUpDown46 = New System.Windows.Forms.NumericUpDown()
@@ -177,8 +178,12 @@ Partial Class Form1
         Me.PictureBox16 = New System.Windows.Forms.PictureBox()
         Me.PictureBox18 = New System.Windows.Forms.PictureBox()
         Me.Label19 = New System.Windows.Forms.Label()
+        Me.PictureBox36 = New System.Windows.Forms.PictureBox()
         Me.TabControl1.SuspendLayout()
         Me.TabPage1.SuspendLayout()
+        CType(Me.PictureBox35, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox34, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox33, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.NumericUpDown64, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.NumericUpDown48, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.NumericUpDown47, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -277,6 +282,7 @@ Partial Class Form1
         CType(Me.PictureBox9, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox16, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox18, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox36, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'TabControl1
@@ -291,12 +297,15 @@ Partial Class Form1
         '
         'TabPage1
         '
-        Me.TabPage1.BackColor = System.Drawing.Color.LightCyan
+        Me.TabPage1.BackColor = System.Drawing.Color.Transparent
+        Me.TabPage1.BackgroundImage = CType(resources.GetObject("TabPage1.BackgroundImage"), System.Drawing.Image)
         Me.TabPage1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.TabPage1.Controls.Add(Me.Label18)
+        Me.TabPage1.Controls.Add(Me.PictureBox36)
+        Me.TabPage1.Controls.Add(Me.PictureBox35)
+        Me.TabPage1.Controls.Add(Me.PictureBox34)
+        Me.TabPage1.Controls.Add(Me.PictureBox33)
+        Me.TabPage1.Controls.Add(Me.Label20)
         Me.TabPage1.Controls.Add(Me.NumericUpDown64)
-        Me.TabPage1.Controls.Add(Me.Label17)
-        Me.TabPage1.Controls.Add(Me.Label16)
         Me.TabPage1.Controls.Add(Me.NumericUpDown48)
         Me.TabPage1.Controls.Add(Me.NumericUpDown47)
         Me.TabPage1.Controls.Add(Me.NumericUpDown46)
@@ -307,44 +316,59 @@ Partial Class Form1
         Me.TabPage1.TabIndex = 0
         Me.TabPage1.Text = "Main"
         '
-        'Label18
+        'PictureBox35
         '
-        Me.Label18.AutoSize = True
-        Me.Label18.Location = New System.Drawing.Point(144, 146)
-        Me.Label18.Name = "Label18"
-        Me.Label18.Size = New System.Drawing.Size(42, 13)
-        Me.Label18.TabIndex = 6
-        Me.Label18.Text = "Comets"
+        Me.PictureBox35.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.PictureBox35.Image = Global.Paper_Mario_SS_Save_Editor.My.Resources.Resources.comet_us
+        Me.PictureBox35.Location = New System.Drawing.Point(119, 228)
+        Me.PictureBox35.Name = "PictureBox35"
+        Me.PictureBox35.Size = New System.Drawing.Size(80, 24)
+        Me.PictureBox35.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
+        Me.PictureBox35.TabIndex = 10
+        Me.PictureBox35.TabStop = False
+        '
+        'PictureBox34
+        '
+        Me.PictureBox34.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.PictureBox34.Image = Global.Paper_Mario_SS_Save_Editor.My.Resources.Resources.coins_us
+        Me.PictureBox34.Location = New System.Drawing.Point(119, 191)
+        Me.PictureBox34.Name = "PictureBox34"
+        Me.PictureBox34.Size = New System.Drawing.Size(73, 24)
+        Me.PictureBox34.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
+        Me.PictureBox34.TabIndex = 9
+        Me.PictureBox34.TabStop = False
+        '
+        'PictureBox33
+        '
+        Me.PictureBox33.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.PictureBox33.Image = Global.Paper_Mario_SS_Save_Editor.My.Resources.Resources.hp_us
+        Me.PictureBox33.Location = New System.Drawing.Point(119, 154)
+        Me.PictureBox33.Name = "PictureBox33"
+        Me.PictureBox33.Size = New System.Drawing.Size(50, 24)
+        Me.PictureBox33.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
+        Me.PictureBox33.TabIndex = 8
+        Me.PictureBox33.TabStop = False
+        '
+        'Label20
+        '
+        Me.Label20.AutoSize = True
+        Me.Label20.Location = New System.Drawing.Point(230, 160)
+        Me.Label20.Name = "Label20"
+        Me.Label20.Size = New System.Drawing.Size(12, 13)
+        Me.Label20.TabIndex = 7
+        Me.Label20.Text = "/"
         '
         'NumericUpDown64
         '
-        Me.NumericUpDown64.Location = New System.Drawing.Point(192, 144)
+        Me.NumericUpDown64.Location = New System.Drawing.Point(214, 230)
         Me.NumericUpDown64.Maximum = New Decimal(New Integer() {999, 0, 0, 0})
         Me.NumericUpDown64.Name = "NumericUpDown64"
         Me.NumericUpDown64.Size = New System.Drawing.Size(51, 20)
         Me.NumericUpDown64.TabIndex = 5
         '
-        'Label17
-        '
-        Me.Label17.AutoSize = True
-        Me.Label17.Location = New System.Drawing.Point(259, 24)
-        Me.Label17.Name = "Label17"
-        Me.Label17.Size = New System.Drawing.Size(22, 13)
-        Me.Label17.TabIndex = 4
-        Me.Label17.Text = "HP"
-        '
-        'Label16
-        '
-        Me.Label16.AutoSize = True
-        Me.Label16.Location = New System.Drawing.Point(102, 101)
-        Me.Label16.Name = "Label16"
-        Me.Label16.Size = New System.Drawing.Size(39, 13)
-        Me.Label16.TabIndex = 3
-        Me.Label16.Text = "Money"
-        '
         'NumericUpDown48
         '
-        Me.NumericUpDown48.Location = New System.Drawing.Point(351, 22)
+        Me.NumericUpDown48.Location = New System.Drawing.Point(244, 156)
         Me.NumericUpDown48.Maximum = New Decimal(New Integer() {999, 0, 0, 0})
         Me.NumericUpDown48.Name = "NumericUpDown48"
         Me.NumericUpDown48.Size = New System.Drawing.Size(51, 20)
@@ -352,7 +376,7 @@ Partial Class Form1
         '
         'NumericUpDown47
         '
-        Me.NumericUpDown47.Location = New System.Drawing.Point(287, 22)
+        Me.NumericUpDown47.Location = New System.Drawing.Point(177, 156)
         Me.NumericUpDown47.Maximum = New Decimal(New Integer() {999, 0, 0, 0})
         Me.NumericUpDown47.Name = "NumericUpDown47"
         Me.NumericUpDown47.Size = New System.Drawing.Size(51, 20)
@@ -360,10 +384,10 @@ Partial Class Form1
         '
         'NumericUpDown46
         '
-        Me.NumericUpDown46.Location = New System.Drawing.Point(147, 99)
+        Me.NumericUpDown46.Location = New System.Drawing.Point(214, 193)
         Me.NumericUpDown46.Maximum = New Decimal(New Integer() {9999, 0, 0, 0})
         Me.NumericUpDown46.Name = "NumericUpDown46"
-        Me.NumericUpDown46.Size = New System.Drawing.Size(120, 20)
+        Me.NumericUpDown46.Size = New System.Drawing.Size(68, 20)
         Me.NumericUpDown46.TabIndex = 0
         '
         'TabPage2
@@ -540,7 +564,7 @@ Partial Class Form1
         'NumericUpDown63
         '
         Me.NumericUpDown63.Location = New System.Drawing.Point(214, 1485)
-        Me.NumericUpDown63.Maximum = New Decimal(New Integer() {65535, 0, 0, 0})
+        Me.NumericUpDown63.Maximum = New Decimal(New Integer() {-1, 0, 0, 0})
         Me.NumericUpDown63.Name = "NumericUpDown63"
         Me.NumericUpDown63.Size = New System.Drawing.Size(61, 20)
         Me.NumericUpDown63.TabIndex = 119
@@ -548,7 +572,7 @@ Partial Class Form1
         'NumericUpDown62
         '
         Me.NumericUpDown62.Location = New System.Drawing.Point(214, 1383)
-        Me.NumericUpDown62.Maximum = New Decimal(New Integer() {65535, 0, 0, 0})
+        Me.NumericUpDown62.Maximum = New Decimal(New Integer() {-1, 0, 0, 0})
         Me.NumericUpDown62.Name = "NumericUpDown62"
         Me.NumericUpDown62.Size = New System.Drawing.Size(61, 20)
         Me.NumericUpDown62.TabIndex = 118
@@ -556,7 +580,7 @@ Partial Class Form1
         'NumericUpDown61
         '
         Me.NumericUpDown61.Location = New System.Drawing.Point(214, 1281)
-        Me.NumericUpDown61.Maximum = New Decimal(New Integer() {65535, 0, 0, 0})
+        Me.NumericUpDown61.Maximum = New Decimal(New Integer() {-1, 0, 0, 0})
         Me.NumericUpDown61.Name = "NumericUpDown61"
         Me.NumericUpDown61.Size = New System.Drawing.Size(61, 20)
         Me.NumericUpDown61.TabIndex = 117
@@ -564,7 +588,7 @@ Partial Class Form1
         'NumericUpDown60
         '
         Me.NumericUpDown60.Location = New System.Drawing.Point(214, 1179)
-        Me.NumericUpDown60.Maximum = New Decimal(New Integer() {65535, 0, 0, 0})
+        Me.NumericUpDown60.Maximum = New Decimal(New Integer() {-1, 0, 0, 0})
         Me.NumericUpDown60.Name = "NumericUpDown60"
         Me.NumericUpDown60.Size = New System.Drawing.Size(61, 20)
         Me.NumericUpDown60.TabIndex = 116
@@ -572,7 +596,7 @@ Partial Class Form1
         'NumericUpDown59
         '
         Me.NumericUpDown59.Location = New System.Drawing.Point(214, 1077)
-        Me.NumericUpDown59.Maximum = New Decimal(New Integer() {65535, 0, 0, 0})
+        Me.NumericUpDown59.Maximum = New Decimal(New Integer() {-1, 0, 0, 0})
         Me.NumericUpDown59.Name = "NumericUpDown59"
         Me.NumericUpDown59.Size = New System.Drawing.Size(61, 20)
         Me.NumericUpDown59.TabIndex = 115
@@ -580,7 +604,7 @@ Partial Class Form1
         'NumericUpDown58
         '
         Me.NumericUpDown58.Location = New System.Drawing.Point(214, 975)
-        Me.NumericUpDown58.Maximum = New Decimal(New Integer() {65535, 0, 0, 0})
+        Me.NumericUpDown58.Maximum = New Decimal(New Integer() {-1, 0, 0, 0})
         Me.NumericUpDown58.Name = "NumericUpDown58"
         Me.NumericUpDown58.Size = New System.Drawing.Size(61, 20)
         Me.NumericUpDown58.TabIndex = 114
@@ -588,7 +612,7 @@ Partial Class Form1
         'NumericUpDown57
         '
         Me.NumericUpDown57.Location = New System.Drawing.Point(214, 873)
-        Me.NumericUpDown57.Maximum = New Decimal(New Integer() {65535, 0, 0, 0})
+        Me.NumericUpDown57.Maximum = New Decimal(New Integer() {-1, 0, 0, 0})
         Me.NumericUpDown57.Name = "NumericUpDown57"
         Me.NumericUpDown57.Size = New System.Drawing.Size(61, 20)
         Me.NumericUpDown57.TabIndex = 113
@@ -596,7 +620,7 @@ Partial Class Form1
         'NumericUpDown56
         '
         Me.NumericUpDown56.Location = New System.Drawing.Point(214, 771)
-        Me.NumericUpDown56.Maximum = New Decimal(New Integer() {65535, 0, 0, 0})
+        Me.NumericUpDown56.Maximum = New Decimal(New Integer() {-1, 0, 0, 0})
         Me.NumericUpDown56.Name = "NumericUpDown56"
         Me.NumericUpDown56.Size = New System.Drawing.Size(61, 20)
         Me.NumericUpDown56.TabIndex = 112
@@ -604,7 +628,7 @@ Partial Class Form1
         'NumericUpDown55
         '
         Me.NumericUpDown55.Location = New System.Drawing.Point(214, 669)
-        Me.NumericUpDown55.Maximum = New Decimal(New Integer() {65535, 0, 0, 0})
+        Me.NumericUpDown55.Maximum = New Decimal(New Integer() {-1, 0, 0, 0})
         Me.NumericUpDown55.Name = "NumericUpDown55"
         Me.NumericUpDown55.Size = New System.Drawing.Size(61, 20)
         Me.NumericUpDown55.TabIndex = 111
@@ -612,7 +636,7 @@ Partial Class Form1
         'NumericUpDown54
         '
         Me.NumericUpDown54.Location = New System.Drawing.Point(214, 567)
-        Me.NumericUpDown54.Maximum = New Decimal(New Integer() {65535, 0, 0, 0})
+        Me.NumericUpDown54.Maximum = New Decimal(New Integer() {-1, 0, 0, 0})
         Me.NumericUpDown54.Name = "NumericUpDown54"
         Me.NumericUpDown54.Size = New System.Drawing.Size(61, 20)
         Me.NumericUpDown54.TabIndex = 110
@@ -620,7 +644,7 @@ Partial Class Form1
         'NumericUpDown53
         '
         Me.NumericUpDown53.Location = New System.Drawing.Point(214, 465)
-        Me.NumericUpDown53.Maximum = New Decimal(New Integer() {65535, 0, 0, 0})
+        Me.NumericUpDown53.Maximum = New Decimal(New Integer() {-1, 0, 0, 0})
         Me.NumericUpDown53.Name = "NumericUpDown53"
         Me.NumericUpDown53.Size = New System.Drawing.Size(61, 20)
         Me.NumericUpDown53.TabIndex = 109
@@ -628,7 +652,7 @@ Partial Class Form1
         'NumericUpDown52
         '
         Me.NumericUpDown52.Location = New System.Drawing.Point(214, 363)
-        Me.NumericUpDown52.Maximum = New Decimal(New Integer() {65535, 0, 0, 0})
+        Me.NumericUpDown52.Maximum = New Decimal(New Integer() {-1, 0, 0, 0})
         Me.NumericUpDown52.Name = "NumericUpDown52"
         Me.NumericUpDown52.Size = New System.Drawing.Size(61, 20)
         Me.NumericUpDown52.TabIndex = 108
@@ -636,7 +660,7 @@ Partial Class Form1
         'NumericUpDown51
         '
         Me.NumericUpDown51.Location = New System.Drawing.Point(214, 261)
-        Me.NumericUpDown51.Maximum = New Decimal(New Integer() {65535, 0, 0, 0})
+        Me.NumericUpDown51.Maximum = New Decimal(New Integer() {-1, 0, 0, 0})
         Me.NumericUpDown51.Name = "NumericUpDown51"
         Me.NumericUpDown51.Size = New System.Drawing.Size(61, 20)
         Me.NumericUpDown51.TabIndex = 107
@@ -1845,20 +1869,20 @@ Partial Class Form1
         '
         'Button2
         '
-        Me.Button2.Image = CType(resources.GetObject("Button2.Image"), System.Drawing.Image)
-        Me.Button2.Location = New System.Drawing.Point(330, 13)
+        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.Button2.Location = New System.Drawing.Point(313, 12)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(75, 29)
+        Me.Button2.Size = New System.Drawing.Size(83, 29)
         Me.Button2.TabIndex = 24
         Me.Button2.Text = "Save"
         Me.Button2.UseVisualStyleBackColor = True
         '
         'Button1
         '
-        Me.Button1.Image = CType(resources.GetObject("Button1.Image"), System.Drawing.Image)
-        Me.Button1.Location = New System.Drawing.Point(20, 13)
+        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.Button1.Location = New System.Drawing.Point(24, 13)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 29)
+        Me.Button1.Size = New System.Drawing.Size(83, 29)
         Me.Button1.TabIndex = 23
         Me.Button1.Text = "Open"
         Me.Button1.UseVisualStyleBackColor = True
@@ -1907,6 +1931,16 @@ Partial Class Form1
         Me.Label19.TabIndex = 29
         Me.Label19.Text = "Version 1.0.0"
         '
+        'PictureBox36
+        '
+        Me.PictureBox36.BackgroundImage = CType(resources.GetObject("PictureBox36.BackgroundImage"), System.Drawing.Image)
+        Me.PictureBox36.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.PictureBox36.Location = New System.Drawing.Point(152, 7)
+        Me.PictureBox36.Name = "PictureBox36"
+        Me.PictureBox36.Size = New System.Drawing.Size(111, 130)
+        Me.PictureBox36.TabIndex = 11
+        Me.PictureBox36.TabStop = False
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -1927,6 +1961,9 @@ Partial Class Form1
         Me.TabControl1.ResumeLayout(False)
         Me.TabPage1.ResumeLayout(False)
         Me.TabPage1.PerformLayout()
+        CType(Me.PictureBox35, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox34, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox33, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.NumericUpDown64, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.NumericUpDown48, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.NumericUpDown47, System.ComponentModel.ISupportInitialize).EndInit()
@@ -2027,16 +2064,14 @@ Partial Class Form1
         CType(Me.PictureBox9, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox16, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox18, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox36, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
     Friend WithEvents TabControl1 As System.Windows.Forms.TabControl
     Friend WithEvents TabPage1 As System.Windows.Forms.TabPage
-    Friend WithEvents Label18 As System.Windows.Forms.Label
     Friend WithEvents NumericUpDown64 As System.Windows.Forms.NumericUpDown
-    Friend WithEvents Label17 As System.Windows.Forms.Label
-    Friend WithEvents Label16 As System.Windows.Forms.Label
     Friend WithEvents NumericUpDown48 As System.Windows.Forms.NumericUpDown
     Friend WithEvents NumericUpDown47 As System.Windows.Forms.NumericUpDown
     Friend WithEvents NumericUpDown46 As System.Windows.Forms.NumericUpDown
@@ -2185,5 +2220,10 @@ Partial Class Form1
     Friend WithEvents PictureBox16 As System.Windows.Forms.PictureBox
     Friend WithEvents PictureBox18 As System.Windows.Forms.PictureBox
     Friend WithEvents Label19 As System.Windows.Forms.Label
+    Friend WithEvents PictureBox35 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox34 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox33 As System.Windows.Forms.PictureBox
+    Friend WithEvents Label20 As System.Windows.Forms.Label
+    Friend WithEvents PictureBox36 As System.Windows.Forms.PictureBox
 
 End Class
