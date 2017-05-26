@@ -1601,6 +1601,7 @@ Partial Class Form1
         Me.NumericUpDown5.Name = "NumericUpDown5"
         Me.NumericUpDown5.Size = New System.Drawing.Size(48, 20)
         Me.NumericUpDown5.TabIndex = 11
+        Me.NumericUpDown5.Value = New Decimal(New Integer() {1, 0, 0, 0})
         '
         'NumericUpDown6
         '
@@ -1609,6 +1610,7 @@ Partial Class Form1
         Me.NumericUpDown6.Name = "NumericUpDown6"
         Me.NumericUpDown6.Size = New System.Drawing.Size(47, 20)
         Me.NumericUpDown6.TabIndex = 10
+        Me.NumericUpDown6.Value = New Decimal(New Integer() {1, 0, 0, 0})
         '
         'ComboBox4
         '
@@ -1717,152 +1719,182 @@ Partial Class Form1
         'PictureBox15
         '
         Me.PictureBox15.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox15.Cursor = System.Windows.Forms.Cursors.Hand
         Me.PictureBox15.Location = New System.Drawing.Point(354, 266)
         Me.PictureBox15.Name = "PictureBox15"
         Me.PictureBox15.Size = New System.Drawing.Size(48, 48)
         Me.PictureBox15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
         Me.PictureBox15.TabIndex = 18
         Me.PictureBox15.TabStop = False
+        Me.PictureBox15.Visible = False
         '
         'PictureBox14
         '
         Me.PictureBox14.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox14.Cursor = System.Windows.Forms.Cursors.Hand
         Me.PictureBox14.Location = New System.Drawing.Point(354, 212)
         Me.PictureBox14.Name = "PictureBox14"
         Me.PictureBox14.Size = New System.Drawing.Size(48, 48)
         Me.PictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
         Me.PictureBox14.TabIndex = 17
         Me.PictureBox14.TabStop = False
+        Me.PictureBox14.Visible = False
         '
         'PictureBox1
         '
         Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox1.Cursor = System.Windows.Forms.Cursors.Hand
         Me.PictureBox1.Location = New System.Drawing.Point(8, 158)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(48, 48)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
         Me.PictureBox1.TabIndex = 2
         Me.PictureBox1.TabStop = False
+        Me.PictureBox1.Visible = False
         '
         'PictureBox13
         '
         Me.PictureBox13.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox13.Cursor = System.Windows.Forms.Cursors.Hand
         Me.PictureBox13.Location = New System.Drawing.Point(354, 158)
         Me.PictureBox13.Name = "PictureBox13"
         Me.PictureBox13.Size = New System.Drawing.Size(48, 48)
         Me.PictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
         Me.PictureBox13.TabIndex = 16
         Me.PictureBox13.TabStop = False
+        Me.PictureBox13.Visible = False
         '
         'PictureBox2
         '
         Me.PictureBox2.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox2.Cursor = System.Windows.Forms.Cursors.Hand
         Me.PictureBox2.Location = New System.Drawing.Point(3, 212)
         Me.PictureBox2.Name = "PictureBox2"
         Me.PictureBox2.Size = New System.Drawing.Size(48, 48)
         Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
         Me.PictureBox2.TabIndex = 3
         Me.PictureBox2.TabStop = False
+        Me.PictureBox2.Visible = False
         '
         'PictureBox12
         '
         Me.PictureBox12.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox12.Cursor = System.Windows.Forms.Cursors.Hand
         Me.PictureBox12.Location = New System.Drawing.Point(341, 266)
         Me.PictureBox12.Name = "PictureBox12"
         Me.PictureBox12.Size = New System.Drawing.Size(48, 48)
         Me.PictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
         Me.PictureBox12.TabIndex = 15
         Me.PictureBox12.TabStop = False
+        Me.PictureBox12.Visible = False
         '
         'PictureBox3
         '
         Me.PictureBox3.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox3.Cursor = System.Windows.Forms.Cursors.Hand
         Me.PictureBox3.Location = New System.Drawing.Point(3, 266)
         Me.PictureBox3.Name = "PictureBox3"
         Me.PictureBox3.Size = New System.Drawing.Size(48, 48)
         Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
         Me.PictureBox3.TabIndex = 6
         Me.PictureBox3.TabStop = False
+        Me.PictureBox3.Visible = False
         '
         'PictureBox11
         '
         Me.PictureBox11.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox11.Cursor = System.Windows.Forms.Cursors.Hand
         Me.PictureBox11.Location = New System.Drawing.Point(341, 212)
         Me.PictureBox11.Name = "PictureBox11"
         Me.PictureBox11.Size = New System.Drawing.Size(48, 48)
         Me.PictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
         Me.PictureBox11.TabIndex = 14
         Me.PictureBox11.TabStop = False
+        Me.PictureBox11.Visible = False
         '
         'PictureBox4
         '
         Me.PictureBox4.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox4.Cursor = System.Windows.Forms.Cursors.Hand
         Me.PictureBox4.Location = New System.Drawing.Point(17, 158)
         Me.PictureBox4.Name = "PictureBox4"
         Me.PictureBox4.Size = New System.Drawing.Size(48, 48)
         Me.PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
         Me.PictureBox4.TabIndex = 7
         Me.PictureBox4.TabStop = False
+        Me.PictureBox4.Visible = False
         '
         'PictureBox10
         '
         Me.PictureBox10.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox10.Cursor = System.Windows.Forms.Cursors.Hand
         Me.PictureBox10.Location = New System.Drawing.Point(341, 158)
         Me.PictureBox10.Name = "PictureBox10"
         Me.PictureBox10.Size = New System.Drawing.Size(48, 48)
         Me.PictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
         Me.PictureBox10.TabIndex = 13
         Me.PictureBox10.TabStop = False
+        Me.PictureBox10.Visible = False
         '
         'PictureBox5
         '
         Me.PictureBox5.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox5.Cursor = System.Windows.Forms.Cursors.Hand
         Me.PictureBox5.Location = New System.Drawing.Point(17, 212)
         Me.PictureBox5.Name = "PictureBox5"
         Me.PictureBox5.Size = New System.Drawing.Size(48, 48)
         Me.PictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
         Me.PictureBox5.TabIndex = 8
         Me.PictureBox5.TabStop = False
+        Me.PictureBox5.Visible = False
         '
         'PictureBox6
         '
         Me.PictureBox6.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox6.Cursor = System.Windows.Forms.Cursors.Hand
         Me.PictureBox6.Location = New System.Drawing.Point(17, 266)
         Me.PictureBox6.Name = "PictureBox6"
         Me.PictureBox6.Size = New System.Drawing.Size(48, 48)
         Me.PictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
         Me.PictureBox6.TabIndex = 9
         Me.PictureBox6.TabStop = False
+        Me.PictureBox6.Visible = False
         '
         'PictureBox8
         '
         Me.PictureBox8.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox8.Cursor = System.Windows.Forms.Cursors.Hand
         Me.PictureBox8.Location = New System.Drawing.Point(35, 212)
         Me.PictureBox8.Name = "PictureBox8"
         Me.PictureBox8.Size = New System.Drawing.Size(48, 48)
         Me.PictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
         Me.PictureBox8.TabIndex = 11
         Me.PictureBox8.TabStop = False
+        Me.PictureBox8.Visible = False
         '
         'PictureBox7
         '
         Me.PictureBox7.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox7.Cursor = System.Windows.Forms.Cursors.Hand
         Me.PictureBox7.Location = New System.Drawing.Point(35, 158)
         Me.PictureBox7.Name = "PictureBox7"
         Me.PictureBox7.Size = New System.Drawing.Size(48, 48)
         Me.PictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
         Me.PictureBox7.TabIndex = 10
         Me.PictureBox7.TabStop = False
+        Me.PictureBox7.Visible = False
         '
         'PictureBox9
         '
         Me.PictureBox9.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox9.Cursor = System.Windows.Forms.Cursors.Hand
         Me.PictureBox9.Location = New System.Drawing.Point(35, 266)
         Me.PictureBox9.Name = "PictureBox9"
         Me.PictureBox9.Size = New System.Drawing.Size(48, 48)
         Me.PictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
         Me.PictureBox9.TabIndex = 12
         Me.PictureBox9.TabStop = False
+        Me.PictureBox9.Visible = False
         '
         'TableLayoutPanel1
         '
@@ -1967,6 +1999,7 @@ Partial Class Form1
         Me.Label16.Size = New System.Drawing.Size(45, 13)
         Me.Label16.TabIndex = 30
         Me.Label16.Text = "Label16"
+        Me.Label16.Visible = False
         '
         'Form1
         '

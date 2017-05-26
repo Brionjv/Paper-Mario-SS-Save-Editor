@@ -46,6 +46,21 @@
     Dim sticker13y As String
     Dim sticker14y As String
     Dim sticker15y As String
+    Dim sticker1ex As String
+    Dim sticker2ex As String
+    Dim sticker3ex As String
+    Dim sticker4ex As String
+    Dim sticker5ex As String
+    Dim sticker6ex As String
+    Dim sticker7ex As String
+    Dim sticker8ex As String
+    Dim sticker9ex As String
+    Dim sticker10ex As String
+    Dim sticker11ex As String
+    Dim sticker12ex As String
+    Dim sticker13ex As String
+    Dim sticker14ex As String
+    Dim sticker15ex As String
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         Dim open As New OpenFileDialog
@@ -74,6 +89,8 @@
             Reader.Position = &H1E8 'sticker 1y
             sticker1y = Reader.Position
             NumericUpDown2.Value = Reader.ReadUInt16
+            Reader.Position = &H1E2 'sticker 1ex
+            sticker1ex = Reader.Position
             Reader.Position = &H1E0 + &HA 'sticker 2
             sticker2 = Reader.Position
             NumericUpDown4.Value = Reader.ReadUInt16
@@ -83,6 +100,8 @@
             Reader.Position = &H1E8 + &HA 'sticker 2y
             sticker2y = Reader.Position
             NumericUpDown5.Value = Reader.ReadUInt16
+            Reader.Position = &H1E2 + &HA 'sticker 2ex
+            sticker2ex = Reader.Position
             Reader.Position = &H1E0 + (&HA * 2) 'sticker 3
             sticker3 = Reader.Position
             NumericUpDown10.Value = Reader.ReadUInt16
@@ -92,6 +111,8 @@
             Reader.Position = &H1E8 + (&HA * 2) 'sticker 3y
             sticker3y = Reader.Position
             NumericUpDown11.Value = Reader.ReadUInt16
+            Reader.Position = &H1E2 + (&HA * 2) 'sticker 3ex
+            sticker3ex = Reader.Position
             Reader.Position = &H1E0 + (&HA * 3) 'sticker 4
             sticker4 = Reader.Position
             NumericUpDown7.Value = Reader.ReadUInt16
@@ -101,6 +122,8 @@
             Reader.Position = &H1E8 + (&HA * 3) 'sticker 4y
             sticker4y = Reader.Position
             NumericUpDown8.Value = Reader.ReadUInt16
+            Reader.Position = &H1E2 + (&HA * 3) 'sticker 4ex
+            sticker4ex = Reader.Position
             Reader.Position = &H1E0 + (&HA * 4) 'sticker 5
             sticker5 = Reader.Position
             NumericUpDown13.Value = Reader.ReadUInt16
@@ -110,6 +133,8 @@
             Reader.Position = &H1E8 + (&HA * 4) 'sticker 5y
             sticker5y = Reader.Position
             NumericUpDown14.Value = Reader.ReadUInt16
+            Reader.Position = &H1E2 + (&HA * 4) 'sticker 5ex
+            sticker5ex = Reader.Position
             Reader.Position = &H1E0 + (&HA * 5) 'sticker 6
             sticker6 = Reader.Position
             NumericUpDown28.Value = Reader.ReadUInt16
@@ -119,6 +144,8 @@
             Reader.Position = &H1E8 + (&HA * 5) 'sticker 6y
             sticker6y = Reader.Position
             NumericUpDown29.Value = Reader.ReadUInt16
+            Reader.Position = &H1E2 + (&HA * 5) 'sticker 6ex
+            sticker6ex = Reader.Position
             Reader.Position = &H1E0 + (&HA * 6) 'sticker 7
             sticker7 = Reader.Position
             NumericUpDown25.Value = Reader.ReadUInt16
@@ -128,6 +155,8 @@
             Reader.Position = &H1E8 + (&HA * 6) 'sticker 7y
             sticker7y = Reader.Position
             NumericUpDown26.Value = Reader.ReadUInt16
+            Reader.Position = &H1E2 + (&HA * 6) 'sticker 7ex
+            sticker7ex = Reader.Position
             Reader.Position = &H1E0 + (&HA * 7) 'sticker 8
             sticker8 = Reader.Position
             NumericUpDown22.Value = Reader.ReadUInt16
@@ -137,6 +166,8 @@
             Reader.Position = &H1E8 + (&HA * 7) 'sticker 8y
             sticker8y = Reader.Position
             NumericUpDown23.Value = Reader.ReadUInt16
+            Reader.Position = &H1E2 + (&HA * 7) 'sticker 8ex
+            sticker8ex = Reader.Position
             Reader.Position = &H1E0 + (&HA * 8) 'sticker 9
             sticker9 = Reader.Position
             NumericUpDown19.Value = Reader.ReadUInt16
@@ -146,6 +177,8 @@
             Reader.Position = &H1E8 + (&HA * 8) 'sticker 9y
             sticker9y = Reader.Position
             NumericUpDown20.Value = Reader.ReadUInt16
+            Reader.Position = &H1E2 + (&HA * 8) 'sticker 9ex
+            sticker9ex = Reader.Position
             Reader.Position = &H1E0 + (&HA * 9) 'sticker 10
             sticker10 = Reader.Position
             NumericUpDown16.Value = Reader.ReadUInt16
@@ -155,6 +188,8 @@
             Reader.Position = &H1E8 + (&HA * 9) 'sticker 10y
             sticker10y = Reader.Position
             NumericUpDown17.Value = Reader.ReadUInt16
+            Reader.Position = &H1E2 + (&HA * 9) 'sticker 10ex
+            sticker10ex = Reader.Position
             Reader.Position = &H1E0 + (&HA * 10) 'sticker 11
             sticker11 = Reader.Position
             NumericUpDown43.Value = Reader.ReadUInt16
@@ -164,6 +199,8 @@
             Reader.Position = &H1E8 + (&HA * 10) 'sticker 11y
             sticker11y = Reader.Position
             NumericUpDown44.Value = Reader.ReadUInt16
+            Reader.Position = &H1E2 + (&HA * 10) 'sticker 11ex
+            sticker11ex = Reader.Position
             Reader.Position = &H1E0 + (&HA * 11) 'sticker 12
             sticker12 = Reader.Position
             NumericUpDown40.Value = Reader.ReadUInt16
@@ -173,6 +210,8 @@
             Reader.Position = &H1E8 + (&HA * 11) 'sticker 12y
             sticker12y = Reader.Position
             NumericUpDown41.Value = Reader.ReadUInt16
+            Reader.Position = &H1E2 + (&HA * 11) 'sticker 12ex
+            sticker12ex = Reader.Position
             Reader.Position = &H1E0 + (&HA * 12) 'sticker 13
             sticker13 = Reader.Position
             NumericUpDown37.Value = Reader.ReadUInt16
@@ -182,6 +221,8 @@
             Reader.Position = &H1E8 + (&HA * 12) 'sticker 13y
             sticker13y = Reader.Position
             NumericUpDown38.Value = Reader.ReadUInt16
+            Reader.Position = &H1E2 + (&HA * 12) 'sticker 13ex
+            sticker13ex = Reader.Position
             Reader.Position = &H1E0 + (&HA * 13) 'sticker 14
             sticker14 = Reader.Position
             NumericUpDown34.Value = Reader.ReadUInt16
@@ -191,6 +232,8 @@
             Reader.Position = &H1E8 + (&HA * 13) 'sticker 14y
             sticker14y = Reader.Position
             NumericUpDown35.Value = Reader.ReadUInt16
+            Reader.Position = &H1E2 + (&HA * 13) 'sticker 14ex
+            sticker14ex = Reader.Position
             Reader.Position = &H1E0 + (&HA * 14) 'sticker 15
             sticker15 = Reader.Position
             NumericUpDown31.Value = Reader.ReadUInt16
@@ -200,6 +243,8 @@
             Reader.Position = &H1E8 + (&HA * 14) 'sticker 15y
             sticker15y = Reader.Position
             NumericUpDown32.Value = Reader.ReadUInt16
+            Reader.Position = &H1E2 + (&HA * 14) 'sticker 15ex
+            sticker15ex = Reader.Position
             fdialog.Label1.Text = "Don't exceed limit of album" & vbNewLine & "Exceeding this limit will give you an error " & vbNewLine & "when your save will load"
             fdialog.ShowDialog()
         Catch ex As Exception
@@ -224,6 +269,127 @@
             Writer.WriteUInt16(NumericUpDown3.Value)
             Writer.Position = &H17C
             Writer.WriteUInt16(NumericUpDown64.Value)
+
+            Writer.Position = sticker1
+            Writer.WriteUInt16(NumericUpDown3.Value)
+            Writer.Position = sticker1x
+            Writer.WriteUInt16(NumericUpDown1.Value)
+            Writer.Position = sticker1y
+            Writer.WriteUInt16(NumericUpDown2.Value)
+            Writer.Position = sticker1ex
+            Writer.WriteUInt32(NumericUpDown49.Value)
+            Writer.Position = sticker2
+            Writer.WriteUInt16(NumericUpDown4.Value)
+            Writer.Position = sticker2x
+            Writer.WriteUInt16(NumericUpDown6.Value)
+            Writer.Position = sticker2y
+            Writer.WriteUInt16(NumericUpDown5.Value)
+            Writer.Position = sticker2ex
+            Writer.WriteUInt32(NumericUpDown50.Value)
+            Writer.Position = sticker3
+            Writer.WriteUInt16(NumericUpDown10.Value)
+            Writer.Position = sticker3x
+            Writer.WriteUInt16(NumericUpDown12.Value)
+            Writer.Position = sticker3y
+            Writer.WriteUInt16(NumericUpDown11.Value)
+            Writer.Position = sticker3ex
+            Writer.WriteUInt32(NumericUpDown51.Value)
+            Writer.Position = sticker4
+            Writer.WriteUInt16(NumericUpDown7.Value)
+            Writer.Position = sticker4x
+            Writer.WriteUInt16(NumericUpDown9.Value)
+            Writer.Position = sticker4y
+            Writer.WriteUInt16(NumericUpDown8.Value)
+            Writer.Position = sticker4ex
+            Writer.WriteUInt32(NumericUpDown52.Value)
+            Writer.Position = sticker5
+            Writer.WriteUInt16(NumericUpDown13.Value)
+            Writer.Position = sticker5x
+            Writer.WriteUInt16(NumericUpDown15.Value)
+            Writer.Position = sticker5y
+            Writer.WriteUInt16(NumericUpDown14.Value)
+            Writer.Position = sticker5ex
+            Writer.WriteUInt32(NumericUpDown53.Value)
+            Writer.Position = sticker6
+            Writer.WriteUInt16(NumericUpDown28.Value)
+            Writer.Position = sticker6x
+            Writer.WriteUInt16(NumericUpDown30.Value)
+            Writer.Position = sticker6y
+            Writer.WriteUInt16(NumericUpDown29.Value)
+            Writer.Position = sticker6ex
+            Writer.WriteUInt32(NumericUpDown54.Value)
+            Writer.Position = sticker7
+            Writer.WriteUInt16(NumericUpDown25.Value)
+            Writer.Position = sticker7x
+            Writer.WriteUInt16(NumericUpDown27.Value)
+            Writer.Position = sticker7y
+            Writer.WriteUInt16(NumericUpDown26.Value)
+            Writer.Position = sticker7ex
+            Writer.WriteUInt32(NumericUpDown55.Value)
+            Writer.Position = sticker8
+            Writer.WriteUInt16(NumericUpDown22.Value)
+            Writer.Position = sticker8x
+            Writer.WriteUInt16(NumericUpDown24.Value)
+            Writer.Position = sticker8y
+            Writer.WriteUInt16(NumericUpDown23.Value)
+            Writer.Position = sticker8ex
+            Writer.WriteUInt32(NumericUpDown56.Value)
+            Writer.Position = sticker9
+            Writer.WriteUInt16(NumericUpDown19.Value)
+            Writer.Position = sticker9x
+            Writer.WriteUInt16(NumericUpDown21.Value)
+            Writer.Position = sticker9y
+            Writer.WriteUInt16(NumericUpDown20.Value)
+            Writer.Position = sticker9ex
+            Writer.WriteUInt32(NumericUpDown57.Value)
+            Writer.Position = sticker10
+            Writer.WriteUInt16(NumericUpDown16.Value)
+            Writer.Position = sticker10x
+            Writer.WriteUInt16(NumericUpDown18.Value)
+            Writer.Position = sticker10y
+            Writer.WriteUInt16(NumericUpDown17.Value)
+            Writer.Position = sticker10ex
+            Writer.WriteUInt32(NumericUpDown58.Value)
+            Writer.Position = sticker11
+            Writer.WriteUInt16(NumericUpDown43.Value)
+            Writer.Position = sticker11x
+            Writer.WriteUInt16(NumericUpDown45.Value)
+            Writer.Position = sticker11y
+            Writer.WriteUInt16(NumericUpDown44.Value)
+            Writer.Position = sticker11ex
+            Writer.WriteUInt32(NumericUpDown59.Value)
+            Writer.Position = sticker12
+            Writer.WriteUInt16(NumericUpDown40.Value)
+            Writer.Position = sticker12x
+            Writer.WriteUInt16(NumericUpDown42.Value)
+            Writer.Position = sticker12y
+            Writer.WriteUInt16(NumericUpDown41.Value)
+            Writer.Position = sticker12ex
+            Writer.WriteUInt32(NumericUpDown60.Value)
+            Writer.Position = sticker13
+            Writer.WriteUInt16(NumericUpDown37.Value)
+            Writer.Position = sticker13x
+            Writer.WriteUInt16(NumericUpDown39.Value)
+            Writer.Position = sticker13y
+            Writer.WriteUInt16(NumericUpDown38.Value)
+            Writer.Position = sticker13ex
+            Writer.WriteUInt32(NumericUpDown61.Value)
+            Writer.Position = sticker14
+            Writer.WriteUInt16(NumericUpDown34.Value)
+            Writer.Position = sticker14x
+            Writer.WriteUInt16(NumericUpDown36.Value)
+            Writer.Position = sticker14y
+            Writer.WriteUInt16(NumericUpDown35.Value)
+            Writer.Position = sticker14ex
+            Writer.WriteUInt32(NumericUpDown62.Value)
+            Writer.Position = sticker15
+            Writer.WriteUInt16(NumericUpDown31.Value)
+            Writer.Position = sticker15x
+            Writer.WriteUInt16(NumericUpDown33.Value)
+            Writer.Position = sticker15y
+            Writer.WriteUInt16(NumericUpDown32.Value)
+            Writer.Position = sticker15ex
+            Writer.WriteUInt32(NumericUpDown63.Value)
             fdialog.Label1.Text = "File save"
             fdialog.ShowDialog()
         Catch ex As Exception
@@ -376,8 +542,10 @@
     End Sub
 
     Private Sub NumericUpDown3_ValueChanged(sender As Object, e As EventArgs) Handles NumericUpDown3.ValueChanged
+        PictureBox1.Visible = True
         If NumericUpDown3.Value = 0 Then
             ComboBox1.SelectedItem = ComboBox1.Items.Item(0)
+            PictureBox1.Visible = False
         ElseIf NumericUpDown3.Value = 15 Then
             PictureBox17.BackgroundImage = My.Resources._0F
             ComboBox1.SelectedItem = ComboBox1.Items.Item(1)
@@ -1069,7 +1237,9 @@
     End Sub
 
     Private Sub NumericUpDown4_ValueChanged(sender As Object, e As EventArgs) Handles NumericUpDown4.ValueChanged
+        PictureBox2.Visible = True
         If NumericUpDown4.Value = 0 Then
+            PictureBox2.Visible = False
             ComboBox5.SelectedItem = ComboBox5.Items.Item(0)
         ElseIf NumericUpDown4.Value = 15 Then
             PictureBox19.BackgroundImage = My.Resources._0F
@@ -1626,7 +1796,9 @@
     End Sub
 
     Private Sub NumericUpDown10_ValueChanged(sender As Object, e As EventArgs) Handles NumericUpDown10.ValueChanged
+        PictureBox3.Visible = True
         If NumericUpDown10.Value = 0 Then
+            PictureBox3.Visible = False
             ComboBox9.SelectedItem = ComboBox9.Items.Item(0)
         ElseIf NumericUpDown10.Value = 15 Then
             PictureBox21.BackgroundImage = My.Resources._0F
@@ -2182,136 +2354,136 @@
         If NumericUpDown6.Value = 0 And NumericUpDown5.Value = 0 Then
             PictureBox2.Location = New Point(88, 158)
             ComboBox4.SelectedItem = ComboBox4.Items.Item(1)
-        ElseIf NumericUpDown6.Value = 0 And NumericUpDown5.Value = 1 Then
+        ElseIf NumericUpDown6.Value = 0 And NumericUpDown5.Value = 25 Then
             PictureBox2.Location = New Point(88, 182)
             ComboBox4.SelectedItem = ComboBox4.Items.Item(2)
-        ElseIf NumericUpDown6.Value = 0 And NumericUpDown5.Value = 2 Then
+        ElseIf NumericUpDown6.Value = 0 And NumericUpDown5.Value = 50 Then
             PictureBox2.Location = New Point(88, 206)
             ComboBox4.SelectedItem = ComboBox4.Items.Item(3)
-        ElseIf NumericUpDown6.Value = 0 And NumericUpDown5.Value = 3 Then
+        ElseIf NumericUpDown6.Value = 0 And NumericUpDown5.Value = 75 Then
             PictureBox2.Location = New Point(88, 230)
             ComboBox4.SelectedItem = ComboBox4.Items.Item(4)
-        ElseIf NumericUpDown6.Value = 0 And NumericUpDown5.Value = 4 Then
+        ElseIf NumericUpDown6.Value = 0 And NumericUpDown5.Value = 100 Then
             PictureBox2.Location = New Point(88, 254)
             ComboBox4.SelectedItem = ComboBox4.Items.Item(5)
-        ElseIf NumericUpDown6.Value = 1 And NumericUpDown5.Value = 0 Then
+        ElseIf NumericUpDown6.Value = 25 And NumericUpDown5.Value = 0 Then
             PictureBox2.Location = New Point(112, 158)
             ComboBox4.SelectedItem = ComboBox4.Items.Item(6)
-        ElseIf NumericUpDown6.Value = 1 And NumericUpDown5.Value = 1 Then
+        ElseIf NumericUpDown6.Value = 25 And NumericUpDown5.Value = 25 Then
             PictureBox2.Location = New Point(112, 182)
             ComboBox4.SelectedItem = ComboBox4.Items.Item(7)
-        ElseIf NumericUpDown6.Value = 1 And NumericUpDown5.Value = 2 Then
+        ElseIf NumericUpDown6.Value = 25 And NumericUpDown5.Value = 50 Then
             PictureBox2.Location = New Point(112, 206)
             ComboBox4.SelectedItem = ComboBox4.Items.Item(8)
-        ElseIf NumericUpDown6.Value = 1 And NumericUpDown5.Value = 3 Then
+        ElseIf NumericUpDown6.Value = 25 And NumericUpDown5.Value = 75 Then
             PictureBox2.Location = New Point(112, 230)
             ComboBox4.SelectedItem = ComboBox4.Items.Item(9)
-        ElseIf NumericUpDown6.Value = 1 And NumericUpDown5.Value = 4 Then
+        ElseIf NumericUpDown6.Value = 25 And NumericUpDown5.Value = 100 Then
             PictureBox2.Location = New Point(112, 254)
             ComboBox4.SelectedItem = ComboBox4.Items.Item(10)
-        ElseIf NumericUpDown6.Value = 2 And NumericUpDown5.Value = 0 Then
+        ElseIf NumericUpDown6.Value = 50 And NumericUpDown5.Value = 0 Then
             PictureBox2.Location = New Point(136, 158)
             ComboBox4.SelectedItem = ComboBox4.Items.Item(11)
-        ElseIf NumericUpDown6.Value = 2 And NumericUpDown5.Value = 1 Then
+        ElseIf NumericUpDown6.Value = 50 And NumericUpDown5.Value = 25 Then
             PictureBox2.Location = New Point(136, 182)
             ComboBox4.SelectedItem = ComboBox4.Items.Item(12)
-        ElseIf NumericUpDown6.Value = 2 And NumericUpDown5.Value = 2 Then
+        ElseIf NumericUpDown6.Value = 50 And NumericUpDown5.Value = 50 Then
             PictureBox2.Location = New Point(136, 206)
             ComboBox4.SelectedItem = ComboBox4.Items.Item(13)
-        ElseIf NumericUpDown6.Value = 2 And NumericUpDown5.Value = 3 Then
+        ElseIf NumericUpDown6.Value = 50 And NumericUpDown5.Value = 75 Then
             PictureBox2.Location = New Point(136, 230)
             ComboBox4.SelectedItem = ComboBox4.Items.Item(14)
-        ElseIf NumericUpDown6.Value = 2 And NumericUpDown5.Value = 4 Then
+        ElseIf NumericUpDown6.Value = 50 And NumericUpDown5.Value = 100 Then
             PictureBox2.Location = New Point(136, 254)
             ComboBox4.SelectedItem = ComboBox4.Items.Item(15)
-        ElseIf NumericUpDown6.Value = 3 And NumericUpDown5.Value = 0 Then
+        ElseIf NumericUpDown6.Value = 75 And NumericUpDown5.Value = 0 Then
             PictureBox2.Location = New Point(160, 158)
             ComboBox4.SelectedItem = ComboBox4.Items.Item(16)
-        ElseIf NumericUpDown6.Value = 3 And NumericUpDown5.Value = 1 Then
+        ElseIf NumericUpDown6.Value = 75 And NumericUpDown5.Value = 25 Then
             PictureBox2.Location = New Point(160, 182)
             ComboBox4.SelectedItem = ComboBox4.Items.Item(17)
-        ElseIf NumericUpDown6.Value = 3 And NumericUpDown5.Value = 2 Then
+        ElseIf NumericUpDown6.Value = 75 And NumericUpDown5.Value = 50 Then
             PictureBox2.Location = New Point(160, 206)
             ComboBox4.SelectedItem = ComboBox4.Items.Item(18)
-        ElseIf NumericUpDown6.Value = 3 And NumericUpDown5.Value = 3 Then
+        ElseIf NumericUpDown6.Value = 75 And NumericUpDown5.Value = 75 Then
             PictureBox2.Location = New Point(160, 230)
             ComboBox4.SelectedItem = ComboBox4.Items.Item(19)
-        ElseIf NumericUpDown6.Value = 3 And NumericUpDown5.Value = 4 Then
+        ElseIf NumericUpDown6.Value = 75 And NumericUpDown5.Value = 100 Then
             PictureBox2.Location = New Point(160, 254)
             ComboBox4.SelectedItem = ComboBox4.Items.Item(20)
         ElseIf NumericUpDown6.Value = 4 And NumericUpDown5.Value = 0 Then
             PictureBox2.Location = New Point(184, 158)
             ComboBox4.SelectedItem = ComboBox4.Items.Item(21)
-        ElseIf NumericUpDown6.Value = 4 And NumericUpDown5.Value = 1 Then
+        ElseIf NumericUpDown6.Value = 4 And NumericUpDown5.Value = 25 Then
             PictureBox2.Location = New Point(184, 182)
             ComboBox4.SelectedItem = ComboBox4.Items.Item(22)
-        ElseIf NumericUpDown6.Value = 4 And NumericUpDown5.Value = 2 Then
+        ElseIf NumericUpDown6.Value = 4 And NumericUpDown5.Value = 50 Then
             PictureBox2.Location = New Point(184, 206)
             ComboBox4.SelectedItem = ComboBox4.Items.Item(23)
-        ElseIf NumericUpDown6.Value = 4 And NumericUpDown5.Value = 3 Then
+        ElseIf NumericUpDown6.Value = 4 And NumericUpDown5.Value = 75 Then
             PictureBox2.Location = New Point(184, 230)
             ComboBox4.SelectedItem = ComboBox4.Items.Item(24)
-        ElseIf NumericUpDown6.Value = 4 And NumericUpDown5.Value = 4 Then
+        ElseIf NumericUpDown6.Value = 4 And NumericUpDown5.Value = 100 Then
             PictureBox2.Location = New Point(184, 254)
             ComboBox4.SelectedItem = ComboBox4.Items.Item(25)
-        ElseIf NumericUpDown6.Value = 5 And NumericUpDown5.Value = 0 Then
+        ElseIf NumericUpDown6.Value = 125 And NumericUpDown5.Value = 0 Then
             PictureBox2.Location = New Point(208, 158)
             ComboBox4.SelectedItem = ComboBox4.Items.Item(26)
-        ElseIf NumericUpDown6.Value = 5 And NumericUpDown5.Value = 1 Then
+        ElseIf NumericUpDown6.Value = 125 And NumericUpDown5.Value = 25 Then
             PictureBox2.Location = New Point(208, 182)
             ComboBox4.SelectedItem = ComboBox4.Items.Item(27)
-        ElseIf NumericUpDown6.Value = 5 And NumericUpDown5.Value = 2 Then
+        ElseIf NumericUpDown6.Value = 125 And NumericUpDown5.Value = 50 Then
             PictureBox2.Location = New Point(208, 206)
             ComboBox4.SelectedItem = ComboBox4.Items.Item(28)
-        ElseIf NumericUpDown6.Value = 5 And NumericUpDown5.Value = 3 Then
+        ElseIf NumericUpDown6.Value = 125 And NumericUpDown5.Value = 75 Then
             PictureBox2.Location = New Point(208, 230)
             ComboBox4.SelectedItem = ComboBox4.Items.Item(29)
-        ElseIf NumericUpDown6.Value = 5 And NumericUpDown5.Value = 4 Then
+        ElseIf NumericUpDown6.Value = 125 And NumericUpDown5.Value = 100 Then
             PictureBox2.Location = New Point(208, 254)
             ComboBox4.SelectedItem = ComboBox4.Items.Item(30)
-        ElseIf NumericUpDown6.Value = 6 And NumericUpDown5.Value = 0 Then
+        ElseIf NumericUpDown6.Value = 150 And NumericUpDown5.Value = 0 Then
             PictureBox2.Location = New Point(232, 158)
             ComboBox4.SelectedItem = ComboBox4.Items.Item(31)
-        ElseIf NumericUpDown6.Value = 6 And NumericUpDown5.Value = 1 Then
+        ElseIf NumericUpDown6.Value = 150 And NumericUpDown5.Value = 25 Then
             PictureBox2.Location = New Point(232, 182)
             ComboBox4.SelectedItem = ComboBox4.Items.Item(32)
-        ElseIf NumericUpDown6.Value = 6 And NumericUpDown5.Value = 2 Then
+        ElseIf NumericUpDown6.Value = 150 And NumericUpDown5.Value = 50 Then
             PictureBox2.Location = New Point(232, 206)
             ComboBox4.SelectedItem = ComboBox4.Items.Item(33)
-        ElseIf NumericUpDown6.Value = 6 And NumericUpDown5.Value = 3 Then
+        ElseIf NumericUpDown6.Value = 150 And NumericUpDown5.Value = 75 Then
             PictureBox2.Location = New Point(232, 230)
             ComboBox4.SelectedItem = ComboBox4.Items.Item(34)
-        ElseIf NumericUpDown6.Value = 6 And NumericUpDown5.Value = 4 Then
+        ElseIf NumericUpDown6.Value = 150 And NumericUpDown5.Value = 100 Then
             PictureBox2.Location = New Point(232, 254)
             ComboBox4.SelectedItem = ComboBox4.Items.Item(35)
-        ElseIf NumericUpDown6.Value = 7 And NumericUpDown5.Value = 0 Then
+        ElseIf NumericUpDown6.Value = 175 And NumericUpDown5.Value = 0 Then
             PictureBox2.Location = New Point(256, 158)
             ComboBox4.SelectedItem = ComboBox4.Items.Item(36)
-        ElseIf NumericUpDown6.Value = 7 And NumericUpDown5.Value = 1 Then
+        ElseIf NumericUpDown6.Value = 175 And NumericUpDown5.Value = 25 Then
             PictureBox2.Location = New Point(256, 182)
             ComboBox4.SelectedItem = ComboBox4.Items.Item(37)
-        ElseIf NumericUpDown6.Value = 7 And NumericUpDown5.Value = 2 Then
+        ElseIf NumericUpDown6.Value = 175 And NumericUpDown5.Value = 50 Then
             PictureBox2.Location = New Point(256, 206)
             ComboBox4.SelectedItem = ComboBox4.Items.Item(38)
-        ElseIf NumericUpDown6.Value = 7 And NumericUpDown5.Value = 3 Then
+        ElseIf NumericUpDown6.Value = 175 And NumericUpDown5.Value = 75 Then
             PictureBox2.Location = New Point(256, 230)
             ComboBox4.SelectedItem = ComboBox4.Items.Item(39)
-        ElseIf NumericUpDown6.Value = 7 And NumericUpDown5.Value = 4 Then
+        ElseIf NumericUpDown6.Value = 175 And NumericUpDown5.Value = 100 Then
             PictureBox2.Location = New Point(256, 254)
             ComboBox4.SelectedItem = ComboBox4.Items.Item(40)
-        ElseIf NumericUpDown6.Value = 8 And NumericUpDown5.Value = 0 Then
+        ElseIf NumericUpDown6.Value = 200 And NumericUpDown5.Value = 0 Then
             PictureBox2.Location = New Point(280, 158)
             ComboBox4.SelectedItem = ComboBox4.Items.Item(41)
-        ElseIf NumericUpDown6.Value = 8 And NumericUpDown5.Value = 1 Then
+        ElseIf NumericUpDown6.Value = 200 And NumericUpDown5.Value = 25 Then
             PictureBox2.Location = New Point(280, 182)
             ComboBox4.SelectedItem = ComboBox4.Items.Item(42)
-        ElseIf NumericUpDown6.Value = 8 And NumericUpDown5.Value = 2 Then
+        ElseIf NumericUpDown6.Value = 200 And NumericUpDown5.Value = 50 Then
             PictureBox2.Location = New Point(280, 206)
             ComboBox4.SelectedItem = ComboBox4.Items.Item(43)
-        ElseIf NumericUpDown6.Value = 8 And NumericUpDown5.Value = 3 Then
+        ElseIf NumericUpDown6.Value = 200 And NumericUpDown5.Value = 75 Then
             PictureBox2.Location = New Point(280, 230)
             ComboBox4.SelectedItem = ComboBox4.Items.Item(44)
-        ElseIf NumericUpDown6.Value = 8 And NumericUpDown5.Value = 4 Then
+        ElseIf NumericUpDown6.Value = 200 And NumericUpDown5.Value = 100 Then
             PictureBox2.Location = New Point(280, 254)
             ComboBox4.SelectedItem = ComboBox4.Items.Item(45)
         End If
@@ -2974,136 +3146,136 @@
             NumericUpDown8.Value = 0
         ElseIf ComboBox6.SelectedItem = ComboBox6.Items.Item(2) Then
             NumericUpDown9.Value = 0
-            NumericUpDown8.Value = 1
+            NumericUpDown8.Value = 25
         ElseIf ComboBox6.SelectedItem = ComboBox6.Items.Item(3) Then
             NumericUpDown9.Value = 0
-            NumericUpDown8.Value = 2
+            NumericUpDown8.Value = 50
         ElseIf ComboBox6.SelectedItem = ComboBox6.Items.Item(4) Then
             NumericUpDown9.Value = 0
-            NumericUpDown8.Value = 3
+            NumericUpDown8.Value = 75
         ElseIf ComboBox6.SelectedItem = ComboBox6.Items.Item(5) Then
             NumericUpDown9.Value = 0
-            NumericUpDown8.Value = 4
+            NumericUpDown8.Value = 100
         ElseIf ComboBox6.SelectedItem = ComboBox6.Items.Item(6) Then
-            NumericUpDown9.Value = 1
+            NumericUpDown9.Value = 25
             NumericUpDown8.Value = 0
         ElseIf ComboBox6.SelectedItem = ComboBox6.Items.Item(7) Then
-            NumericUpDown9.Value = 1
-            NumericUpDown8.Value = 1
+            NumericUpDown9.Value = 25
+            NumericUpDown8.Value = 25
         ElseIf ComboBox6.SelectedItem = ComboBox6.Items.Item(8) Then
-            NumericUpDown9.Value = 1
-            NumericUpDown8.Value = 2
+            NumericUpDown9.Value = 25
+            NumericUpDown8.Value = 50
         ElseIf ComboBox6.SelectedItem = ComboBox6.Items.Item(9) Then
-            NumericUpDown9.Value = 1
-            NumericUpDown8.Value = 3
+            NumericUpDown9.Value = 25
+            NumericUpDown8.Value = 75
         ElseIf ComboBox6.SelectedItem = ComboBox6.Items.Item(10) Then
-            NumericUpDown9.Value = 1
-            NumericUpDown8.Value = 4
+            NumericUpDown9.Value = 25
+            NumericUpDown8.Value = 100
         ElseIf ComboBox6.SelectedItem = ComboBox6.Items.Item(11) Then
-            NumericUpDown9.Value = 2
+            NumericUpDown9.Value = 50
             NumericUpDown8.Value = 0
         ElseIf ComboBox6.SelectedItem = ComboBox6.Items.Item(12) Then
-            NumericUpDown9.Value = 2
-            NumericUpDown8.Value = 1
+            NumericUpDown9.Value = 50
+            NumericUpDown8.Value = 25
         ElseIf ComboBox6.SelectedItem = ComboBox6.Items.Item(13) Then
-            NumericUpDown9.Value = 2
-            NumericUpDown8.Value = 2
+            NumericUpDown9.Value = 50
+            NumericUpDown8.Value = 50
         ElseIf ComboBox6.SelectedItem = ComboBox6.Items.Item(14) Then
-            NumericUpDown9.Value = 2
-            NumericUpDown8.Value = 3
+            NumericUpDown9.Value = 50
+            NumericUpDown8.Value = 75
         ElseIf ComboBox6.SelectedItem = ComboBox6.Items.Item(15) Then
-            NumericUpDown9.Value = 2
-            NumericUpDown8.Value = 4
+            NumericUpDown9.Value = 50
+            NumericUpDown8.Value = 100
         ElseIf ComboBox6.SelectedItem = ComboBox6.Items.Item(16) Then
-            NumericUpDown9.Value = 3
+            NumericUpDown9.Value = 75
             NumericUpDown8.Value = 0
         ElseIf ComboBox6.SelectedItem = ComboBox6.Items.Item(17) Then
-            NumericUpDown9.Value = 3
-            NumericUpDown8.Value = 1
+            NumericUpDown9.Value = 75
+            NumericUpDown8.Value = 25
         ElseIf ComboBox6.SelectedItem = ComboBox6.Items.Item(18) Then
-            NumericUpDown9.Value = 3
-            NumericUpDown8.Value = 2
+            NumericUpDown9.Value = 75
+            NumericUpDown8.Value = 50
         ElseIf ComboBox6.SelectedItem = ComboBox6.Items.Item(19) Then
-            NumericUpDown9.Value = 3
-            NumericUpDown8.Value = 3
+            NumericUpDown9.Value = 75
+            NumericUpDown8.Value = 75
         ElseIf ComboBox6.SelectedItem = ComboBox6.Items.Item(20) Then
-            NumericUpDown9.Value = 3
-            NumericUpDown8.Value = 4
+            NumericUpDown9.Value = 75
+            NumericUpDown8.Value = 100
         ElseIf ComboBox6.SelectedItem = ComboBox6.Items.Item(21) Then
-            NumericUpDown9.Value = 4
+            NumericUpDown9.Value = 100
             NumericUpDown8.Value = 0
         ElseIf ComboBox6.SelectedItem = ComboBox6.Items.Item(22) Then
-            NumericUpDown9.Value = 4
-            NumericUpDown8.Value = 1
+            NumericUpDown9.Value = 100
+            NumericUpDown8.Value = 25
         ElseIf ComboBox6.SelectedItem = ComboBox6.Items.Item(23) Then
-            NumericUpDown9.Value = 4
-            NumericUpDown8.Value = 2
+            NumericUpDown9.Value = 100
+            NumericUpDown8.Value = 50
         ElseIf ComboBox6.SelectedItem = ComboBox6.Items.Item(24) Then
-            NumericUpDown9.Value = 4
-            NumericUpDown8.Value = 3
+            NumericUpDown9.Value = 100
+            NumericUpDown8.Value = 75
         ElseIf ComboBox6.SelectedItem = ComboBox6.Items.Item(25) Then
-            NumericUpDown9.Value = 4
-            NumericUpDown8.Value = 4
+            NumericUpDown9.Value = 100
+            NumericUpDown8.Value = 100
         ElseIf ComboBox6.SelectedItem = ComboBox6.Items.Item(26) Then
-            NumericUpDown9.Value = 5
+            NumericUpDown9.Value = 125
             NumericUpDown8.Value = 0
         ElseIf ComboBox6.SelectedItem = ComboBox6.Items.Item(27) Then
-            NumericUpDown9.Value = 5
-            NumericUpDown8.Value = 1
+            NumericUpDown9.Value = 125
+            NumericUpDown8.Value = 25
         ElseIf ComboBox6.SelectedItem = ComboBox6.Items.Item(28) Then
-            NumericUpDown9.Value = 5
-            NumericUpDown8.Value = 2
+            NumericUpDown9.Value = 125
+            NumericUpDown8.Value = 50
         ElseIf ComboBox6.SelectedItem = ComboBox6.Items.Item(29) Then
-            NumericUpDown9.Value = 5
-            NumericUpDown8.Value = 3
+            NumericUpDown9.Value = 125
+            NumericUpDown8.Value = 75
         ElseIf ComboBox6.SelectedItem = ComboBox6.Items.Item(30) Then
-            NumericUpDown9.Value = 5
-            NumericUpDown8.Value = 4
+            NumericUpDown9.Value = 125
+            NumericUpDown8.Value = 100
         ElseIf ComboBox6.SelectedItem = ComboBox6.Items.Item(31) Then
-            NumericUpDown9.Value = 6
+            NumericUpDown9.Value = 150
             NumericUpDown8.Value = 0
         ElseIf ComboBox6.SelectedItem = ComboBox6.Items.Item(32) Then
-            NumericUpDown9.Value = 6
-            NumericUpDown8.Value = 1
+            NumericUpDown9.Value = 150
+            NumericUpDown8.Value = 25
         ElseIf ComboBox6.SelectedItem = ComboBox6.Items.Item(33) Then
-            NumericUpDown9.Value = 6
-            NumericUpDown8.Value = 2
+            NumericUpDown9.Value = 150
+            NumericUpDown8.Value = 50
         ElseIf ComboBox6.SelectedItem = ComboBox6.Items.Item(34) Then
-            NumericUpDown9.Value = 6
-            NumericUpDown8.Value = 3
+            NumericUpDown9.Value = 150
+            NumericUpDown8.Value = 75
         ElseIf ComboBox6.SelectedItem = ComboBox6.Items.Item(35) Then
-            NumericUpDown9.Value = 6
-            NumericUpDown8.Value = 4
+            NumericUpDown9.Value = 150
+            NumericUpDown8.Value = 100
         ElseIf ComboBox6.SelectedItem = ComboBox6.Items.Item(36) Then
-            NumericUpDown9.Value = 7
+            NumericUpDown9.Value = 175
             NumericUpDown8.Value = 0
         ElseIf ComboBox6.SelectedItem = ComboBox6.Items.Item(37) Then
-            NumericUpDown9.Value = 7
-            NumericUpDown8.Value = 1
+            NumericUpDown9.Value = 175
+            NumericUpDown8.Value = 25
         ElseIf ComboBox6.SelectedItem = ComboBox6.Items.Item(38) Then
-            NumericUpDown9.Value = 7
-            NumericUpDown8.Value = 2
+            NumericUpDown9.Value = 175
+            NumericUpDown8.Value = 50
         ElseIf ComboBox6.SelectedItem = ComboBox6.Items.Item(39) Then
-            NumericUpDown9.Value = 7
-            NumericUpDown8.Value = 3
+            NumericUpDown9.Value = 175
+            NumericUpDown8.Value = 75
         ElseIf ComboBox6.SelectedItem = ComboBox6.Items.Item(40) Then
-            NumericUpDown9.Value = 7
-            NumericUpDown8.Value = 4
+            NumericUpDown9.Value = 175
+            NumericUpDown8.Value = 100
         ElseIf ComboBox6.SelectedItem = ComboBox6.Items.Item(41) Then
-            NumericUpDown9.Value = 8
+            NumericUpDown9.Value = 200
             NumericUpDown8.Value = 0
         ElseIf ComboBox6.SelectedItem = ComboBox6.Items.Item(42) Then
-            NumericUpDown9.Value = 8
-            NumericUpDown8.Value = 1
+            NumericUpDown9.Value = 200
+            NumericUpDown8.Value = 25
         ElseIf ComboBox6.SelectedItem = ComboBox6.Items.Item(43) Then
-            NumericUpDown9.Value = 8
-            NumericUpDown8.Value = 2
+            NumericUpDown9.Value = 200
+            NumericUpDown8.Value = 50
         ElseIf ComboBox6.SelectedItem = ComboBox6.Items.Item(44) Then
-            NumericUpDown9.Value = 8
-            NumericUpDown8.Value = 3
+            NumericUpDown9.Value = 200
+            NumericUpDown8.Value = 75
         ElseIf ComboBox6.SelectedItem = ComboBox6.Items.Item(45) Then
-            NumericUpDown9.Value = 8
-            NumericUpDown8.Value = 4
+            NumericUpDown9.Value = 200
+            NumericUpDown8.Value = 100
         End If
     End Sub
 
@@ -3116,136 +3288,136 @@
             NumericUpDown14.Value = 0
         ElseIf ComboBox10.SelectedItem = ComboBox10.Items.Item(2) Then
             NumericUpDown15.Value = 0
-            NumericUpDown14.Value = 1
+            NumericUpDown14.Value = 25
         ElseIf ComboBox10.SelectedItem = ComboBox10.Items.Item(3) Then
             NumericUpDown15.Value = 0
-            NumericUpDown14.Value = 2
+            NumericUpDown14.Value = 50
         ElseIf ComboBox10.SelectedItem = ComboBox10.Items.Item(4) Then
             NumericUpDown15.Value = 0
-            NumericUpDown14.Value = 3
+            NumericUpDown14.Value = 75
         ElseIf ComboBox10.SelectedItem = ComboBox10.Items.Item(5) Then
             NumericUpDown15.Value = 0
-            NumericUpDown14.Value = 4
+            NumericUpDown14.Value = 100
         ElseIf ComboBox10.SelectedItem = ComboBox10.Items.Item(6) Then
-            NumericUpDown15.Value = 1
+            NumericUpDown15.Value = 25
             NumericUpDown14.Value = 0
         ElseIf ComboBox10.SelectedItem = ComboBox10.Items.Item(7) Then
-            NumericUpDown15.Value = 1
-            NumericUpDown14.Value = 1
+            NumericUpDown15.Value = 25
+            NumericUpDown14.Value = 25
         ElseIf ComboBox10.SelectedItem = ComboBox10.Items.Item(8) Then
-            NumericUpDown15.Value = 1
-            NumericUpDown14.Value = 2
+            NumericUpDown15.Value = 25
+            NumericUpDown14.Value = 50
         ElseIf ComboBox10.SelectedItem = ComboBox10.Items.Item(9) Then
-            NumericUpDown15.Value = 1
-            NumericUpDown14.Value = 3
+            NumericUpDown15.Value = 25
+            NumericUpDown14.Value = 75
         ElseIf ComboBox10.SelectedItem = ComboBox10.Items.Item(10) Then
-            NumericUpDown15.Value = 1
-            NumericUpDown14.Value = 4
+            NumericUpDown15.Value = 25
+            NumericUpDown14.Value = 100
         ElseIf ComboBox10.SelectedItem = ComboBox10.Items.Item(11) Then
-            NumericUpDown15.Value = 2
+            NumericUpDown15.Value = 50
             NumericUpDown14.Value = 0
         ElseIf ComboBox10.SelectedItem = ComboBox10.Items.Item(12) Then
-            NumericUpDown15.Value = 2
-            NumericUpDown14.Value = 1
+            NumericUpDown15.Value = 50
+            NumericUpDown14.Value = 25
         ElseIf ComboBox10.SelectedItem = ComboBox10.Items.Item(13) Then
-            NumericUpDown15.Value = 2
-            NumericUpDown14.Value = 2
+            NumericUpDown15.Value = 50
+            NumericUpDown14.Value = 50
         ElseIf ComboBox10.SelectedItem = ComboBox10.Items.Item(14) Then
-            NumericUpDown15.Value = 2
-            NumericUpDown14.Value = 3
+            NumericUpDown15.Value = 50
+            NumericUpDown14.Value = 75
         ElseIf ComboBox10.SelectedItem = ComboBox10.Items.Item(15) Then
-            NumericUpDown15.Value = 2
-            NumericUpDown14.Value = 4
+            NumericUpDown15.Value = 50
+            NumericUpDown14.Value = 100
         ElseIf ComboBox10.SelectedItem = ComboBox10.Items.Item(16) Then
-            NumericUpDown15.Value = 3
+            NumericUpDown15.Value = 75
             NumericUpDown14.Value = 0
         ElseIf ComboBox10.SelectedItem = ComboBox10.Items.Item(17) Then
-            NumericUpDown15.Value = 3
-            NumericUpDown14.Value = 1
+            NumericUpDown15.Value = 75
+            NumericUpDown14.Value = 25
         ElseIf ComboBox10.SelectedItem = ComboBox10.Items.Item(18) Then
-            NumericUpDown15.Value = 3
-            NumericUpDown14.Value = 2
+            NumericUpDown15.Value = 75
+            NumericUpDown14.Value = 50
         ElseIf ComboBox10.SelectedItem = ComboBox10.Items.Item(19) Then
-            NumericUpDown15.Value = 3
-            NumericUpDown14.Value = 3
+            NumericUpDown15.Value = 75
+            NumericUpDown14.Value = 75
         ElseIf ComboBox10.SelectedItem = ComboBox10.Items.Item(20) Then
-            NumericUpDown15.Value = 3
-            NumericUpDown14.Value = 4
+            NumericUpDown15.Value = 75
+            NumericUpDown14.Value = 100
         ElseIf ComboBox10.SelectedItem = ComboBox10.Items.Item(21) Then
-            NumericUpDown15.Value = 4
+            NumericUpDown15.Value = 100
             NumericUpDown14.Value = 0
         ElseIf ComboBox10.SelectedItem = ComboBox10.Items.Item(22) Then
-            NumericUpDown15.Value = 4
-            NumericUpDown14.Value = 1
+            NumericUpDown15.Value = 100
+            NumericUpDown14.Value = 25
         ElseIf ComboBox10.SelectedItem = ComboBox10.Items.Item(23) Then
-            NumericUpDown15.Value = 4
-            NumericUpDown14.Value = 2
+            NumericUpDown15.Value = 100
+            NumericUpDown14.Value = 50
         ElseIf ComboBox10.SelectedItem = ComboBox10.Items.Item(24) Then
-            NumericUpDown15.Value = 4
-            NumericUpDown14.Value = 3
+            NumericUpDown15.Value = 100
+            NumericUpDown14.Value = 75
         ElseIf ComboBox10.SelectedItem = ComboBox10.Items.Item(25) Then
-            NumericUpDown15.Value = 4
-            NumericUpDown14.Value = 4
+            NumericUpDown15.Value = 100
+            NumericUpDown14.Value = 100
         ElseIf ComboBox10.SelectedItem = ComboBox10.Items.Item(26) Then
-            NumericUpDown15.Value = 5
+            NumericUpDown15.Value = 125
             NumericUpDown14.Value = 0
         ElseIf ComboBox10.SelectedItem = ComboBox10.Items.Item(27) Then
-            NumericUpDown15.Value = 5
-            NumericUpDown14.Value = 1
+            NumericUpDown15.Value = 125
+            NumericUpDown14.Value = 25
         ElseIf ComboBox10.SelectedItem = ComboBox10.Items.Item(28) Then
-            NumericUpDown15.Value = 5
-            NumericUpDown14.Value = 2
+            NumericUpDown15.Value = 125
+            NumericUpDown14.Value = 50
         ElseIf ComboBox10.SelectedItem = ComboBox10.Items.Item(29) Then
-            NumericUpDown15.Value = 5
-            NumericUpDown14.Value = 3
+            NumericUpDown15.Value = 125
+            NumericUpDown14.Value = 75
         ElseIf ComboBox10.SelectedItem = ComboBox10.Items.Item(30) Then
-            NumericUpDown15.Value = 5
-            NumericUpDown14.Value = 4
+            NumericUpDown15.Value = 125
+            NumericUpDown14.Value = 100
         ElseIf ComboBox10.SelectedItem = ComboBox10.Items.Item(31) Then
-            NumericUpDown15.Value = 6
+            NumericUpDown15.Value = 150
             NumericUpDown14.Value = 0
         ElseIf ComboBox10.SelectedItem = ComboBox10.Items.Item(32) Then
-            NumericUpDown15.Value = 6
-            NumericUpDown14.Value = 1
+            NumericUpDown15.Value = 150
+            NumericUpDown14.Value = 25
         ElseIf ComboBox10.SelectedItem = ComboBox10.Items.Item(33) Then
-            NumericUpDown15.Value = 6
-            NumericUpDown14.Value = 2
+            NumericUpDown15.Value = 150
+            NumericUpDown14.Value = 50
         ElseIf ComboBox10.SelectedItem = ComboBox10.Items.Item(34) Then
-            NumericUpDown15.Value = 6
-            NumericUpDown14.Value = 3
+            NumericUpDown15.Value = 150
+            NumericUpDown14.Value = 75
         ElseIf ComboBox10.SelectedItem = ComboBox10.Items.Item(35) Then
-            NumericUpDown15.Value = 6
-            NumericUpDown14.Value = 4
+            NumericUpDown15.Value = 150
+            NumericUpDown14.Value = 100
         ElseIf ComboBox10.SelectedItem = ComboBox10.Items.Item(36) Then
-            NumericUpDown15.Value = 7
+            NumericUpDown15.Value = 175
             NumericUpDown14.Value = 0
         ElseIf ComboBox10.SelectedItem = ComboBox10.Items.Item(37) Then
-            NumericUpDown15.Value = 7
-            NumericUpDown14.Value = 1
+            NumericUpDown15.Value = 175
+            NumericUpDown14.Value = 25
         ElseIf ComboBox10.SelectedItem = ComboBox10.Items.Item(38) Then
-            NumericUpDown15.Value = 7
-            NumericUpDown14.Value = 2
+            NumericUpDown15.Value = 175
+            NumericUpDown14.Value = 50
         ElseIf ComboBox10.SelectedItem = ComboBox10.Items.Item(39) Then
-            NumericUpDown15.Value = 7
-            NumericUpDown14.Value = 3
+            NumericUpDown15.Value = 175
+            NumericUpDown14.Value = 75
         ElseIf ComboBox10.SelectedItem = ComboBox10.Items.Item(40) Then
-            NumericUpDown15.Value = 7
-            NumericUpDown14.Value = 4
+            NumericUpDown15.Value = 175
+            NumericUpDown14.Value = 100
         ElseIf ComboBox10.SelectedItem = ComboBox10.Items.Item(41) Then
-            NumericUpDown15.Value = 8
+            NumericUpDown15.Value = 200
             NumericUpDown14.Value = 0
         ElseIf ComboBox10.SelectedItem = ComboBox10.Items.Item(42) Then
-            NumericUpDown15.Value = 8
-            NumericUpDown14.Value = 1
+            NumericUpDown15.Value = 200
+            NumericUpDown14.Value = 25
         ElseIf ComboBox10.SelectedItem = ComboBox10.Items.Item(43) Then
-            NumericUpDown15.Value = 8
-            NumericUpDown14.Value = 2
+            NumericUpDown15.Value = 200
+            NumericUpDown14.Value = 50
         ElseIf ComboBox10.SelectedItem = ComboBox10.Items.Item(44) Then
-            NumericUpDown15.Value = 8
-            NumericUpDown14.Value = 3
+            NumericUpDown15.Value = 200
+            NumericUpDown14.Value = 75
         ElseIf ComboBox10.SelectedItem = ComboBox10.Items.Item(45) Then
-            NumericUpDown15.Value = 8
-            NumericUpDown14.Value = 4
+            NumericUpDown15.Value = 200
+            NumericUpDown14.Value = 100
         End If
     End Sub
 
@@ -3258,136 +3430,136 @@
             NumericUpDown29.Value = 0
         ElseIf ComboBox20.SelectedItem = ComboBox20.Items.Item(2) Then
             NumericUpDown30.Value = 0
-            NumericUpDown29.Value = 1
+            NumericUpDown29.Value = 25
         ElseIf ComboBox20.SelectedItem = ComboBox20.Items.Item(3) Then
             NumericUpDown30.Value = 0
-            NumericUpDown29.Value = 2
+            NumericUpDown29.Value = 50
         ElseIf ComboBox20.SelectedItem = ComboBox20.Items.Item(4) Then
             NumericUpDown30.Value = 0
-            NumericUpDown29.Value = 3
+            NumericUpDown29.Value = 75
         ElseIf ComboBox20.SelectedItem = ComboBox20.Items.Item(5) Then
             NumericUpDown30.Value = 0
-            NumericUpDown29.Value = 4
+            NumericUpDown29.Value = 100
         ElseIf ComboBox20.SelectedItem = ComboBox20.Items.Item(6) Then
-            NumericUpDown30.Value = 1
+            NumericUpDown30.Value = 25
             NumericUpDown29.Value = 0
         ElseIf ComboBox20.SelectedItem = ComboBox20.Items.Item(7) Then
-            NumericUpDown30.Value = 1
-            NumericUpDown29.Value = 1
+            NumericUpDown30.Value = 25
+            NumericUpDown29.Value = 25
         ElseIf ComboBox20.SelectedItem = ComboBox20.Items.Item(8) Then
-            NumericUpDown30.Value = 1
-            NumericUpDown29.Value = 2
+            NumericUpDown30.Value = 25
+            NumericUpDown29.Value = 50
         ElseIf ComboBox20.SelectedItem = ComboBox20.Items.Item(9) Then
-            NumericUpDown30.Value = 1
-            NumericUpDown29.Value = 3
+            NumericUpDown30.Value = 25
+            NumericUpDown29.Value = 75
         ElseIf ComboBox20.SelectedItem = ComboBox20.Items.Item(10) Then
-            NumericUpDown30.Value = 1
-            NumericUpDown29.Value = 4
+            NumericUpDown30.Value = 25
+            NumericUpDown29.Value = 100
         ElseIf ComboBox20.SelectedItem = ComboBox20.Items.Item(11) Then
-            NumericUpDown30.Value = 2
+            NumericUpDown30.Value = 50
             NumericUpDown29.Value = 0
         ElseIf ComboBox20.SelectedItem = ComboBox20.Items.Item(12) Then
-            NumericUpDown30.Value = 2
-            NumericUpDown29.Value = 1
+            NumericUpDown30.Value = 50
+            NumericUpDown29.Value = 25
         ElseIf ComboBox20.SelectedItem = ComboBox20.Items.Item(13) Then
-            NumericUpDown30.Value = 2
-            NumericUpDown29.Value = 2
+            NumericUpDown30.Value = 50
+            NumericUpDown29.Value = 50
         ElseIf ComboBox20.SelectedItem = ComboBox20.Items.Item(14) Then
-            NumericUpDown30.Value = 2
-            NumericUpDown29.Value = 3
+            NumericUpDown30.Value = 50
+            NumericUpDown29.Value = 75
         ElseIf ComboBox20.SelectedItem = ComboBox20.Items.Item(15) Then
-            NumericUpDown30.Value = 2
-            NumericUpDown29.Value = 4
+            NumericUpDown30.Value = 50
+            NumericUpDown29.Value = 100
         ElseIf ComboBox20.SelectedItem = ComboBox20.Items.Item(16) Then
-            NumericUpDown30.Value = 3
+            NumericUpDown30.Value = 75
             NumericUpDown29.Value = 0
         ElseIf ComboBox20.SelectedItem = ComboBox20.Items.Item(17) Then
-            NumericUpDown30.Value = 3
-            NumericUpDown29.Value = 1
+            NumericUpDown30.Value = 75
+            NumericUpDown29.Value = 25
         ElseIf ComboBox20.SelectedItem = ComboBox20.Items.Item(18) Then
-            NumericUpDown30.Value = 3
-            NumericUpDown29.Value = 2
+            NumericUpDown30.Value = 75
+            NumericUpDown29.Value = 50
         ElseIf ComboBox20.SelectedItem = ComboBox20.Items.Item(19) Then
-            NumericUpDown30.Value = 3
-            NumericUpDown29.Value = 3
+            NumericUpDown30.Value = 75
+            NumericUpDown29.Value = 75
         ElseIf ComboBox20.SelectedItem = ComboBox20.Items.Item(20) Then
-            NumericUpDown30.Value = 3
-            NumericUpDown29.Value = 4
+            NumericUpDown30.Value = 75
+            NumericUpDown29.Value = 100
         ElseIf ComboBox20.SelectedItem = ComboBox20.Items.Item(21) Then
-            NumericUpDown30.Value = 4
+            NumericUpDown30.Value = 100
             NumericUpDown29.Value = 0
         ElseIf ComboBox20.SelectedItem = ComboBox20.Items.Item(22) Then
-            NumericUpDown30.Value = 4
-            NumericUpDown29.Value = 1
+            NumericUpDown30.Value = 100
+            NumericUpDown29.Value = 25
         ElseIf ComboBox20.SelectedItem = ComboBox20.Items.Item(23) Then
-            NumericUpDown30.Value = 4
-            NumericUpDown29.Value = 2
+            NumericUpDown30.Value = 100
+            NumericUpDown29.Value = 50
         ElseIf ComboBox20.SelectedItem = ComboBox20.Items.Item(24) Then
-            NumericUpDown30.Value = 4
-            NumericUpDown29.Value = 3
+            NumericUpDown30.Value = 100
+            NumericUpDown29.Value = 75
         ElseIf ComboBox20.SelectedItem = ComboBox20.Items.Item(25) Then
-            NumericUpDown30.Value = 4
-            NumericUpDown29.Value = 4
+            NumericUpDown30.Value = 100
+            NumericUpDown29.Value = 100
         ElseIf ComboBox20.SelectedItem = ComboBox20.Items.Item(26) Then
-            NumericUpDown30.Value = 5
+            NumericUpDown30.Value = 125
             NumericUpDown29.Value = 0
         ElseIf ComboBox20.SelectedItem = ComboBox20.Items.Item(27) Then
-            NumericUpDown30.Value = 5
-            NumericUpDown29.Value = 1
+            NumericUpDown30.Value = 125
+            NumericUpDown29.Value = 25
         ElseIf ComboBox20.SelectedItem = ComboBox20.Items.Item(28) Then
-            NumericUpDown30.Value = 5
-            NumericUpDown29.Value = 2
+            NumericUpDown30.Value = 125
+            NumericUpDown29.Value = 50
         ElseIf ComboBox20.SelectedItem = ComboBox20.Items.Item(29) Then
-            NumericUpDown30.Value = 5
-            NumericUpDown29.Value = 3
+            NumericUpDown30.Value = 125
+            NumericUpDown29.Value = 75
         ElseIf ComboBox20.SelectedItem = ComboBox20.Items.Item(30) Then
-            NumericUpDown30.Value = 5
-            NumericUpDown29.Value = 4
+            NumericUpDown30.Value = 125
+            NumericUpDown29.Value = 100
         ElseIf ComboBox20.SelectedItem = ComboBox20.Items.Item(31) Then
-            NumericUpDown30.Value = 6
+            NumericUpDown30.Value = 150
             NumericUpDown29.Value = 0
         ElseIf ComboBox20.SelectedItem = ComboBox20.Items.Item(32) Then
-            NumericUpDown30.Value = 6
-            NumericUpDown29.Value = 1
+            NumericUpDown30.Value = 150
+            NumericUpDown29.Value = 25
         ElseIf ComboBox20.SelectedItem = ComboBox20.Items.Item(33) Then
-            NumericUpDown30.Value = 6
-            NumericUpDown29.Value = 2
+            NumericUpDown30.Value = 150
+            NumericUpDown29.Value = 50
         ElseIf ComboBox20.SelectedItem = ComboBox20.Items.Item(34) Then
-            NumericUpDown30.Value = 6
-            NumericUpDown29.Value = 3
+            NumericUpDown30.Value = 150
+            NumericUpDown29.Value = 75
         ElseIf ComboBox20.SelectedItem = ComboBox20.Items.Item(35) Then
-            NumericUpDown30.Value = 6
-            NumericUpDown29.Value = 4
+            NumericUpDown30.Value = 150
+            NumericUpDown29.Value = 100
         ElseIf ComboBox20.SelectedItem = ComboBox20.Items.Item(36) Then
-            NumericUpDown30.Value = 7
+            NumericUpDown30.Value = 175
             NumericUpDown29.Value = 0
         ElseIf ComboBox20.SelectedItem = ComboBox20.Items.Item(37) Then
-            NumericUpDown30.Value = 7
-            NumericUpDown29.Value = 1
+            NumericUpDown30.Value = 175
+            NumericUpDown29.Value = 25
         ElseIf ComboBox20.SelectedItem = ComboBox20.Items.Item(38) Then
-            NumericUpDown30.Value = 7
-            NumericUpDown29.Value = 2
+            NumericUpDown30.Value = 175
+            NumericUpDown29.Value = 50
         ElseIf ComboBox20.SelectedItem = ComboBox20.Items.Item(39) Then
-            NumericUpDown30.Value = 7
-            NumericUpDown29.Value = 3
+            NumericUpDown30.Value = 175
+            NumericUpDown29.Value = 75
         ElseIf ComboBox20.SelectedItem = ComboBox20.Items.Item(40) Then
-            NumericUpDown30.Value = 7
-            NumericUpDown29.Value = 4
+            NumericUpDown30.Value = 175
+            NumericUpDown29.Value = 100
         ElseIf ComboBox20.SelectedItem = ComboBox20.Items.Item(41) Then
-            NumericUpDown30.Value = 8
+            NumericUpDown30.Value = 200
             NumericUpDown29.Value = 0
         ElseIf ComboBox20.SelectedItem = ComboBox20.Items.Item(42) Then
-            NumericUpDown30.Value = 8
-            NumericUpDown29.Value = 1
+            NumericUpDown30.Value = 200
+            NumericUpDown29.Value = 25
         ElseIf ComboBox20.SelectedItem = ComboBox20.Items.Item(43) Then
-            NumericUpDown30.Value = 8
-            NumericUpDown29.Value = 2
+            NumericUpDown30.Value = 200
+            NumericUpDown29.Value = 50
         ElseIf ComboBox20.SelectedItem = ComboBox20.Items.Item(44) Then
-            NumericUpDown30.Value = 8
-            NumericUpDown29.Value = 3
+            NumericUpDown30.Value = 200
+            NumericUpDown29.Value = 75
         ElseIf ComboBox20.SelectedItem = ComboBox20.Items.Item(45) Then
-            NumericUpDown30.Value = 8
-            NumericUpDown29.Value = 4
+            NumericUpDown30.Value = 200
+            NumericUpDown29.Value = 100
         End If
     End Sub
 
@@ -3400,136 +3572,136 @@
             NumericUpDown26.Value = 0
         ElseIf ComboBox18.SelectedItem = ComboBox18.Items.Item(2) Then
             NumericUpDown27.Value = 0
-            NumericUpDown26.Value = 1
+            NumericUpDown26.Value = 25
         ElseIf ComboBox18.SelectedItem = ComboBox18.Items.Item(3) Then
             NumericUpDown27.Value = 0
-            NumericUpDown26.Value = 2
+            NumericUpDown26.Value = 50
         ElseIf ComboBox18.SelectedItem = ComboBox18.Items.Item(4) Then
             NumericUpDown27.Value = 0
-            NumericUpDown26.Value = 3
+            NumericUpDown26.Value = 75
         ElseIf ComboBox18.SelectedItem = ComboBox18.Items.Item(5) Then
             NumericUpDown27.Value = 0
-            NumericUpDown26.Value = 4
+            NumericUpDown26.Value = 100
         ElseIf ComboBox18.SelectedItem = ComboBox18.Items.Item(6) Then
-            NumericUpDown27.Value = 1
+            NumericUpDown27.Value = 25
             NumericUpDown26.Value = 0
         ElseIf ComboBox18.SelectedItem = ComboBox18.Items.Item(7) Then
-            NumericUpDown27.Value = 1
-            NumericUpDown26.Value = 1
+            NumericUpDown27.Value = 25
+            NumericUpDown26.Value = 25
         ElseIf ComboBox18.SelectedItem = ComboBox18.Items.Item(8) Then
-            NumericUpDown27.Value = 1
-            NumericUpDown26.Value = 2
+            NumericUpDown27.Value = 25
+            NumericUpDown26.Value = 50
         ElseIf ComboBox18.SelectedItem = ComboBox18.Items.Item(9) Then
-            NumericUpDown27.Value = 1
-            NumericUpDown26.Value = 3
+            NumericUpDown27.Value = 25
+            NumericUpDown26.Value = 75
         ElseIf ComboBox18.SelectedItem = ComboBox18.Items.Item(10) Then
-            NumericUpDown27.Value = 1
-            NumericUpDown26.Value = 4
+            NumericUpDown27.Value = 25
+            NumericUpDown26.Value = 100
         ElseIf ComboBox18.SelectedItem = ComboBox18.Items.Item(11) Then
-            NumericUpDown27.Value = 2
+            NumericUpDown27.Value = 50
             NumericUpDown26.Value = 0
         ElseIf ComboBox18.SelectedItem = ComboBox18.Items.Item(12) Then
-            NumericUpDown27.Value = 2
-            NumericUpDown26.Value = 1
+            NumericUpDown27.Value = 50
+            NumericUpDown26.Value = 25
         ElseIf ComboBox18.SelectedItem = ComboBox18.Items.Item(13) Then
-            NumericUpDown27.Value = 2
-            NumericUpDown26.Value = 2
+            NumericUpDown27.Value = 50
+            NumericUpDown26.Value = 50
         ElseIf ComboBox18.SelectedItem = ComboBox18.Items.Item(14) Then
-            NumericUpDown27.Value = 2
-            NumericUpDown26.Value = 3
+            NumericUpDown27.Value = 50
+            NumericUpDown26.Value = 75
         ElseIf ComboBox18.SelectedItem = ComboBox18.Items.Item(15) Then
-            NumericUpDown27.Value = 2
-            NumericUpDown26.Value = 4
+            NumericUpDown27.Value = 50
+            NumericUpDown26.Value = 100
         ElseIf ComboBox18.SelectedItem = ComboBox18.Items.Item(16) Then
-            NumericUpDown27.Value = 3
+            NumericUpDown27.Value = 75
             NumericUpDown26.Value = 0
         ElseIf ComboBox18.SelectedItem = ComboBox18.Items.Item(17) Then
-            NumericUpDown27.Value = 3
-            NumericUpDown26.Value = 1
+            NumericUpDown27.Value = 75
+            NumericUpDown26.Value = 25
         ElseIf ComboBox18.SelectedItem = ComboBox18.Items.Item(18) Then
-            NumericUpDown27.Value = 3
-            NumericUpDown26.Value = 2
+            NumericUpDown27.Value = 75
+            NumericUpDown26.Value = 50
         ElseIf ComboBox18.SelectedItem = ComboBox18.Items.Item(19) Then
-            NumericUpDown27.Value = 3
-            NumericUpDown26.Value = 3
+            NumericUpDown27.Value = 75
+            NumericUpDown26.Value = 75
         ElseIf ComboBox18.SelectedItem = ComboBox18.Items.Item(20) Then
-            NumericUpDown27.Value = 3
-            NumericUpDown26.Value = 4
+            NumericUpDown27.Value = 75
+            NumericUpDown26.Value = 100
         ElseIf ComboBox18.SelectedItem = ComboBox18.Items.Item(21) Then
-            NumericUpDown27.Value = 4
+            NumericUpDown27.Value = 100
             NumericUpDown26.Value = 0
         ElseIf ComboBox18.SelectedItem = ComboBox18.Items.Item(22) Then
-            NumericUpDown27.Value = 4
-            NumericUpDown26.Value = 1
+            NumericUpDown27.Value = 100
+            NumericUpDown26.Value = 25
         ElseIf ComboBox18.SelectedItem = ComboBox18.Items.Item(23) Then
-            NumericUpDown27.Value = 4
-            NumericUpDown26.Value = 2
+            NumericUpDown27.Value = 100
+            NumericUpDown26.Value = 50
         ElseIf ComboBox18.SelectedItem = ComboBox18.Items.Item(24) Then
-            NumericUpDown27.Value = 4
-            NumericUpDown26.Value = 3
+            NumericUpDown27.Value = 100
+            NumericUpDown26.Value = 75
         ElseIf ComboBox18.SelectedItem = ComboBox18.Items.Item(25) Then
-            NumericUpDown27.Value = 4
-            NumericUpDown26.Value = 4
+            NumericUpDown27.Value = 100
+            NumericUpDown26.Value = 100
         ElseIf ComboBox18.SelectedItem = ComboBox18.Items.Item(26) Then
-            NumericUpDown27.Value = 5
+            NumericUpDown27.Value = 125
             NumericUpDown26.Value = 0
         ElseIf ComboBox18.SelectedItem = ComboBox18.Items.Item(27) Then
-            NumericUpDown27.Value = 5
-            NumericUpDown26.Value = 1
+            NumericUpDown27.Value = 125
+            NumericUpDown26.Value = 25
         ElseIf ComboBox18.SelectedItem = ComboBox18.Items.Item(28) Then
-            NumericUpDown27.Value = 5
-            NumericUpDown26.Value = 2
+            NumericUpDown27.Value = 125
+            NumericUpDown26.Value = 50
         ElseIf ComboBox18.SelectedItem = ComboBox18.Items.Item(29) Then
-            NumericUpDown27.Value = 5
-            NumericUpDown26.Value = 3
+            NumericUpDown27.Value = 125
+            NumericUpDown26.Value = 75
         ElseIf ComboBox18.SelectedItem = ComboBox18.Items.Item(30) Then
-            NumericUpDown27.Value = 5
-            NumericUpDown26.Value = 4
+            NumericUpDown27.Value = 125
+            NumericUpDown26.Value = 100
         ElseIf ComboBox18.SelectedItem = ComboBox18.Items.Item(31) Then
-            NumericUpDown27.Value = 6
+            NumericUpDown27.Value = 150
             NumericUpDown26.Value = 0
         ElseIf ComboBox18.SelectedItem = ComboBox18.Items.Item(32) Then
-            NumericUpDown27.Value = 6
-            NumericUpDown26.Value = 1
+            NumericUpDown27.Value = 150
+            NumericUpDown26.Value = 25
         ElseIf ComboBox18.SelectedItem = ComboBox18.Items.Item(33) Then
-            NumericUpDown27.Value = 6
-            NumericUpDown26.Value = 2
+            NumericUpDown27.Value = 150
+            NumericUpDown26.Value = 50
         ElseIf ComboBox18.SelectedItem = ComboBox18.Items.Item(34) Then
-            NumericUpDown27.Value = 6
-            NumericUpDown26.Value = 3
+            NumericUpDown27.Value = 150
+            NumericUpDown26.Value = 75
         ElseIf ComboBox18.SelectedItem = ComboBox18.Items.Item(35) Then
-            NumericUpDown27.Value = 6
-            NumericUpDown26.Value = 4
+            NumericUpDown27.Value = 150
+            NumericUpDown26.Value = 100
         ElseIf ComboBox18.SelectedItem = ComboBox18.Items.Item(36) Then
-            NumericUpDown27.Value = 7
+            NumericUpDown27.Value = 175
             NumericUpDown26.Value = 0
         ElseIf ComboBox18.SelectedItem = ComboBox18.Items.Item(37) Then
-            NumericUpDown27.Value = 7
-            NumericUpDown26.Value = 1
+            NumericUpDown27.Value = 175
+            NumericUpDown26.Value = 25
         ElseIf ComboBox18.SelectedItem = ComboBox18.Items.Item(38) Then
-            NumericUpDown27.Value = 7
-            NumericUpDown26.Value = 2
+            NumericUpDown27.Value = 175
+            NumericUpDown26.Value = 50
         ElseIf ComboBox18.SelectedItem = ComboBox18.Items.Item(39) Then
-            NumericUpDown27.Value = 7
-            NumericUpDown26.Value = 3
+            NumericUpDown27.Value = 175
+            NumericUpDown26.Value = 75
         ElseIf ComboBox18.SelectedItem = ComboBox18.Items.Item(40) Then
-            NumericUpDown27.Value = 7
-            NumericUpDown26.Value = 4
+            NumericUpDown27.Value = 175
+            NumericUpDown26.Value = 100
         ElseIf ComboBox18.SelectedItem = ComboBox18.Items.Item(41) Then
-            NumericUpDown27.Value = 8
+            NumericUpDown27.Value = 200
             NumericUpDown26.Value = 0
         ElseIf ComboBox18.SelectedItem = ComboBox18.Items.Item(42) Then
-            NumericUpDown27.Value = 8
-            NumericUpDown26.Value = 1
+            NumericUpDown27.Value = 200
+            NumericUpDown26.Value = 25
         ElseIf ComboBox18.SelectedItem = ComboBox18.Items.Item(43) Then
-            NumericUpDown27.Value = 8
-            NumericUpDown26.Value = 2
+            NumericUpDown27.Value = 200
+            NumericUpDown26.Value = 50
         ElseIf ComboBox18.SelectedItem = ComboBox18.Items.Item(44) Then
-            NumericUpDown27.Value = 8
-            NumericUpDown26.Value = 3
+            NumericUpDown27.Value = 200
+            NumericUpDown26.Value = 75
         ElseIf ComboBox18.SelectedItem = ComboBox18.Items.Item(45) Then
-            NumericUpDown27.Value = 8
-            NumericUpDown26.Value = 4
+            NumericUpDown27.Value = 200
+            NumericUpDown26.Value = 100
         End If
     End Sub
 
@@ -3542,136 +3714,136 @@
             NumericUpDown23.Value = 0
         ElseIf ComboBox16.SelectedItem = ComboBox16.Items.Item(2) Then
             NumericUpDown24.Value = 0
-            NumericUpDown23.Value = 1
+            NumericUpDown23.Value = 25
         ElseIf ComboBox16.SelectedItem = ComboBox16.Items.Item(3) Then
             NumericUpDown24.Value = 0
-            NumericUpDown23.Value = 2
+            NumericUpDown23.Value = 50
         ElseIf ComboBox16.SelectedItem = ComboBox16.Items.Item(4) Then
             NumericUpDown24.Value = 0
-            NumericUpDown23.Value = 3
+            NumericUpDown23.Value = 75
         ElseIf ComboBox16.SelectedItem = ComboBox16.Items.Item(5) Then
             NumericUpDown24.Value = 0
-            NumericUpDown23.Value = 4
+            NumericUpDown23.Value = 100
         ElseIf ComboBox16.SelectedItem = ComboBox16.Items.Item(6) Then
-            NumericUpDown24.Value = 1
+            NumericUpDown24.Value = 25
             NumericUpDown23.Value = 0
         ElseIf ComboBox16.SelectedItem = ComboBox16.Items.Item(7) Then
-            NumericUpDown24.Value = 1
-            NumericUpDown23.Value = 1
+            NumericUpDown24.Value = 25
+            NumericUpDown23.Value = 25
         ElseIf ComboBox16.SelectedItem = ComboBox16.Items.Item(8) Then
-            NumericUpDown24.Value = 1
-            NumericUpDown23.Value = 2
+            NumericUpDown24.Value = 25
+            NumericUpDown23.Value = 50
         ElseIf ComboBox16.SelectedItem = ComboBox16.Items.Item(9) Then
-            NumericUpDown24.Value = 1
-            NumericUpDown23.Value = 3
+            NumericUpDown24.Value = 25
+            NumericUpDown23.Value = 75
         ElseIf ComboBox16.SelectedItem = ComboBox16.Items.Item(10) Then
-            NumericUpDown24.Value = 1
-            NumericUpDown23.Value = 4
+            NumericUpDown24.Value = 25
+            NumericUpDown23.Value = 100
         ElseIf ComboBox16.SelectedItem = ComboBox16.Items.Item(11) Then
-            NumericUpDown24.Value = 2
+            NumericUpDown24.Value = 50
             NumericUpDown23.Value = 0
         ElseIf ComboBox16.SelectedItem = ComboBox16.Items.Item(12) Then
-            NumericUpDown24.Value = 2
-            NumericUpDown23.Value = 1
+            NumericUpDown24.Value = 50
+            NumericUpDown23.Value = 25
         ElseIf ComboBox16.SelectedItem = ComboBox16.Items.Item(13) Then
-            NumericUpDown24.Value = 2
-            NumericUpDown23.Value = 2
+            NumericUpDown24.Value = 50
+            NumericUpDown23.Value = 50
         ElseIf ComboBox16.SelectedItem = ComboBox16.Items.Item(14) Then
-            NumericUpDown24.Value = 2
-            NumericUpDown23.Value = 3
+            NumericUpDown24.Value = 50
+            NumericUpDown23.Value = 75
         ElseIf ComboBox16.SelectedItem = ComboBox16.Items.Item(15) Then
-            NumericUpDown24.Value = 2
-            NumericUpDown23.Value = 4
+            NumericUpDown24.Value = 50
+            NumericUpDown23.Value = 100
         ElseIf ComboBox16.SelectedItem = ComboBox16.Items.Item(16) Then
-            NumericUpDown24.Value = 3
+            NumericUpDown24.Value = 75
             NumericUpDown23.Value = 0
         ElseIf ComboBox16.SelectedItem = ComboBox16.Items.Item(17) Then
-            NumericUpDown24.Value = 3
-            NumericUpDown23.Value = 1
+            NumericUpDown24.Value = 75
+            NumericUpDown23.Value = 25
         ElseIf ComboBox16.SelectedItem = ComboBox16.Items.Item(18) Then
-            NumericUpDown24.Value = 3
-            NumericUpDown23.Value = 2
+            NumericUpDown24.Value = 75
+            NumericUpDown23.Value = 50
         ElseIf ComboBox16.SelectedItem = ComboBox16.Items.Item(19) Then
-            NumericUpDown24.Value = 3
-            NumericUpDown23.Value = 3
+            NumericUpDown24.Value = 75
+            NumericUpDown23.Value = 75
         ElseIf ComboBox16.SelectedItem = ComboBox16.Items.Item(20) Then
-            NumericUpDown24.Value = 3
-            NumericUpDown23.Value = 4
+            NumericUpDown24.Value = 75
+            NumericUpDown23.Value = 100
         ElseIf ComboBox16.SelectedItem = ComboBox16.Items.Item(21) Then
-            NumericUpDown24.Value = 4
+            NumericUpDown24.Value = 100
             NumericUpDown23.Value = 0
         ElseIf ComboBox16.SelectedItem = ComboBox16.Items.Item(22) Then
-            NumericUpDown24.Value = 4
-            NumericUpDown23.Value = 1
+            NumericUpDown24.Value = 100
+            NumericUpDown23.Value = 25
         ElseIf ComboBox16.SelectedItem = ComboBox16.Items.Item(23) Then
-            NumericUpDown24.Value = 4
-            NumericUpDown23.Value = 2
+            NumericUpDown24.Value = 100
+            NumericUpDown23.Value = 50
         ElseIf ComboBox16.SelectedItem = ComboBox16.Items.Item(24) Then
-            NumericUpDown24.Value = 4
-            NumericUpDown23.Value = 3
+            NumericUpDown24.Value = 100
+            NumericUpDown23.Value = 75
         ElseIf ComboBox16.SelectedItem = ComboBox16.Items.Item(25) Then
-            NumericUpDown24.Value = 4
-            NumericUpDown23.Value = 4
+            NumericUpDown24.Value = 100
+            NumericUpDown23.Value = 100
         ElseIf ComboBox16.SelectedItem = ComboBox16.Items.Item(26) Then
-            NumericUpDown24.Value = 5
+            NumericUpDown24.Value = 125
             NumericUpDown23.Value = 0
         ElseIf ComboBox16.SelectedItem = ComboBox16.Items.Item(27) Then
-            NumericUpDown24.Value = 5
-            NumericUpDown23.Value = 1
+            NumericUpDown24.Value = 125
+            NumericUpDown23.Value = 25
         ElseIf ComboBox16.SelectedItem = ComboBox16.Items.Item(28) Then
-            NumericUpDown24.Value = 5
-            NumericUpDown23.Value = 2
+            NumericUpDown24.Value = 125
+            NumericUpDown23.Value = 50
         ElseIf ComboBox16.SelectedItem = ComboBox16.Items.Item(29) Then
-            NumericUpDown24.Value = 5
-            NumericUpDown23.Value = 3
+            NumericUpDown24.Value = 125
+            NumericUpDown23.Value = 75
         ElseIf ComboBox16.SelectedItem = ComboBox16.Items.Item(30) Then
-            NumericUpDown24.Value = 5
-            NumericUpDown23.Value = 4
+            NumericUpDown24.Value = 125
+            NumericUpDown23.Value = 100
         ElseIf ComboBox16.SelectedItem = ComboBox16.Items.Item(31) Then
-            NumericUpDown24.Value = 6
+            NumericUpDown24.Value = 150
             NumericUpDown23.Value = 0
         ElseIf ComboBox16.SelectedItem = ComboBox16.Items.Item(32) Then
-            NumericUpDown24.Value = 6
-            NumericUpDown23.Value = 1
+            NumericUpDown24.Value = 150
+            NumericUpDown23.Value = 25
         ElseIf ComboBox16.SelectedItem = ComboBox16.Items.Item(33) Then
-            NumericUpDown24.Value = 6
-            NumericUpDown23.Value = 2
+            NumericUpDown24.Value = 150
+            NumericUpDown23.Value = 50
         ElseIf ComboBox16.SelectedItem = ComboBox16.Items.Item(34) Then
-            NumericUpDown24.Value = 6
-            NumericUpDown23.Value = 3
+            NumericUpDown24.Value = 150
+            NumericUpDown23.Value = 75
         ElseIf ComboBox16.SelectedItem = ComboBox16.Items.Item(35) Then
-            NumericUpDown24.Value = 6
-            NumericUpDown23.Value = 4
+            NumericUpDown24.Value = 150
+            NumericUpDown23.Value = 100
         ElseIf ComboBox16.SelectedItem = ComboBox16.Items.Item(36) Then
-            NumericUpDown24.Value = 7
+            NumericUpDown24.Value = 175
             NumericUpDown23.Value = 0
         ElseIf ComboBox16.SelectedItem = ComboBox16.Items.Item(37) Then
-            NumericUpDown24.Value = 7
-            NumericUpDown23.Value = 1
+            NumericUpDown24.Value = 175
+            NumericUpDown23.Value = 25
         ElseIf ComboBox16.SelectedItem = ComboBox16.Items.Item(38) Then
-            NumericUpDown24.Value = 7
-            NumericUpDown23.Value = 2
+            NumericUpDown24.Value = 175
+            NumericUpDown23.Value = 50
         ElseIf ComboBox16.SelectedItem = ComboBox16.Items.Item(39) Then
-            NumericUpDown24.Value = 7
-            NumericUpDown23.Value = 3
+            NumericUpDown24.Value = 175
+            NumericUpDown23.Value = 75
         ElseIf ComboBox16.SelectedItem = ComboBox16.Items.Item(40) Then
-            NumericUpDown24.Value = 7
-            NumericUpDown23.Value = 4
+            NumericUpDown24.Value = 175
+            NumericUpDown23.Value = 100
         ElseIf ComboBox16.SelectedItem = ComboBox16.Items.Item(41) Then
-            NumericUpDown24.Value = 8
+            NumericUpDown24.Value = 200
             NumericUpDown23.Value = 0
         ElseIf ComboBox16.SelectedItem = ComboBox16.Items.Item(42) Then
-            NumericUpDown24.Value = 8
-            NumericUpDown23.Value = 1
+            NumericUpDown24.Value = 200
+            NumericUpDown23.Value = 25
         ElseIf ComboBox16.SelectedItem = ComboBox16.Items.Item(43) Then
-            NumericUpDown24.Value = 8
-            NumericUpDown23.Value = 2
+            NumericUpDown24.Value = 200
+            NumericUpDown23.Value = 50
         ElseIf ComboBox16.SelectedItem = ComboBox16.Items.Item(44) Then
-            NumericUpDown24.Value = 8
-            NumericUpDown23.Value = 3
+            NumericUpDown24.Value = 200
+            NumericUpDown23.Value = 75
         ElseIf ComboBox16.SelectedItem = ComboBox16.Items.Item(45) Then
-            NumericUpDown24.Value = 8
-            NumericUpDown23.Value = 4
+            NumericUpDown24.Value = 200
+            NumericUpDown23.Value = 100
         End If
     End Sub
 
@@ -3684,136 +3856,136 @@
             NumericUpDown20.Value = 0
         ElseIf ComboBox14.SelectedItem = ComboBox14.Items.Item(2) Then
             NumericUpDown21.Value = 0
-            NumericUpDown20.Value = 1
+            NumericUpDown20.Value = 25
         ElseIf ComboBox14.SelectedItem = ComboBox14.Items.Item(3) Then
             NumericUpDown21.Value = 0
-            NumericUpDown20.Value = 2
+            NumericUpDown20.Value = 50
         ElseIf ComboBox14.SelectedItem = ComboBox14.Items.Item(4) Then
             NumericUpDown21.Value = 0
-            NumericUpDown20.Value = 3
+            NumericUpDown20.Value = 75
         ElseIf ComboBox14.SelectedItem = ComboBox14.Items.Item(5) Then
             NumericUpDown21.Value = 0
-            NumericUpDown20.Value = 4
+            NumericUpDown20.Value = 100
         ElseIf ComboBox14.SelectedItem = ComboBox14.Items.Item(6) Then
-            NumericUpDown21.Value = 1
+            NumericUpDown21.Value = 25
             NumericUpDown20.Value = 0
         ElseIf ComboBox14.SelectedItem = ComboBox14.Items.Item(7) Then
-            NumericUpDown21.Value = 1
-            NumericUpDown20.Value = 1
+            NumericUpDown21.Value = 25
+            NumericUpDown20.Value = 25
         ElseIf ComboBox14.SelectedItem = ComboBox14.Items.Item(8) Then
-            NumericUpDown21.Value = 1
-            NumericUpDown20.Value = 2
+            NumericUpDown21.Value = 25
+            NumericUpDown20.Value = 50
         ElseIf ComboBox14.SelectedItem = ComboBox14.Items.Item(9) Then
-            NumericUpDown21.Value = 1
-            NumericUpDown20.Value = 3
+            NumericUpDown21.Value = 25
+            NumericUpDown20.Value = 75
         ElseIf ComboBox14.SelectedItem = ComboBox14.Items.Item(10) Then
-            NumericUpDown21.Value = 1
-            NumericUpDown20.Value = 4
+            NumericUpDown21.Value = 25
+            NumericUpDown20.Value = 100
         ElseIf ComboBox14.SelectedItem = ComboBox14.Items.Item(11) Then
-            NumericUpDown21.Value = 2
+            NumericUpDown21.Value = 50
             NumericUpDown20.Value = 0
         ElseIf ComboBox14.SelectedItem = ComboBox14.Items.Item(12) Then
-            NumericUpDown21.Value = 2
-            NumericUpDown20.Value = 1
+            NumericUpDown21.Value = 50
+            NumericUpDown20.Value = 25
         ElseIf ComboBox14.SelectedItem = ComboBox14.Items.Item(13) Then
-            NumericUpDown21.Value = 2
-            NumericUpDown20.Value = 2
+            NumericUpDown21.Value = 50
+            NumericUpDown20.Value = 50
         ElseIf ComboBox14.SelectedItem = ComboBox14.Items.Item(14) Then
-            NumericUpDown21.Value = 2
-            NumericUpDown20.Value = 3
+            NumericUpDown21.Value = 50
+            NumericUpDown20.Value = 75
         ElseIf ComboBox14.SelectedItem = ComboBox14.Items.Item(15) Then
-            NumericUpDown21.Value = 2
-            NumericUpDown20.Value = 4
+            NumericUpDown21.Value = 50
+            NumericUpDown20.Value = 100
         ElseIf ComboBox14.SelectedItem = ComboBox14.Items.Item(16) Then
-            NumericUpDown21.Value = 3
+            NumericUpDown21.Value = 75
             NumericUpDown20.Value = 0
         ElseIf ComboBox14.SelectedItem = ComboBox14.Items.Item(17) Then
-            NumericUpDown21.Value = 3
-            NumericUpDown20.Value = 1
+            NumericUpDown21.Value = 75
+            NumericUpDown20.Value = 25
         ElseIf ComboBox14.SelectedItem = ComboBox14.Items.Item(18) Then
-            NumericUpDown21.Value = 3
-            NumericUpDown20.Value = 2
+            NumericUpDown21.Value = 75
+            NumericUpDown20.Value = 50
         ElseIf ComboBox14.SelectedItem = ComboBox14.Items.Item(19) Then
-            NumericUpDown21.Value = 3
-            NumericUpDown20.Value = 3
+            NumericUpDown21.Value = 75
+            NumericUpDown20.Value = 75
         ElseIf ComboBox14.SelectedItem = ComboBox14.Items.Item(20) Then
-            NumericUpDown21.Value = 3
-            NumericUpDown20.Value = 4
+            NumericUpDown21.Value = 75
+            NumericUpDown20.Value = 100
         ElseIf ComboBox14.SelectedItem = ComboBox14.Items.Item(21) Then
-            NumericUpDown21.Value = 4
+            NumericUpDown21.Value = 100
             NumericUpDown20.Value = 0
         ElseIf ComboBox14.SelectedItem = ComboBox14.Items.Item(22) Then
-            NumericUpDown21.Value = 4
-            NumericUpDown20.Value = 1
+            NumericUpDown21.Value = 100
+            NumericUpDown20.Value = 25
         ElseIf ComboBox14.SelectedItem = ComboBox14.Items.Item(23) Then
-            NumericUpDown21.Value = 4
-            NumericUpDown20.Value = 2
+            NumericUpDown21.Value = 100
+            NumericUpDown20.Value = 50
         ElseIf ComboBox14.SelectedItem = ComboBox14.Items.Item(24) Then
-            NumericUpDown21.Value = 4
-            NumericUpDown20.Value = 3
+            NumericUpDown21.Value = 100
+            NumericUpDown20.Value = 75
         ElseIf ComboBox14.SelectedItem = ComboBox14.Items.Item(25) Then
-            NumericUpDown21.Value = 4
-            NumericUpDown20.Value = 4
+            NumericUpDown21.Value = 100
+            NumericUpDown20.Value = 100
         ElseIf ComboBox14.SelectedItem = ComboBox14.Items.Item(26) Then
-            NumericUpDown21.Value = 5
+            NumericUpDown21.Value = 125
             NumericUpDown20.Value = 0
         ElseIf ComboBox14.SelectedItem = ComboBox14.Items.Item(27) Then
-            NumericUpDown21.Value = 5
-            NumericUpDown20.Value = 1
+            NumericUpDown21.Value = 125
+            NumericUpDown20.Value = 25
         ElseIf ComboBox14.SelectedItem = ComboBox14.Items.Item(28) Then
-            NumericUpDown21.Value = 5
-            NumericUpDown20.Value = 2
+            NumericUpDown21.Value = 125
+            NumericUpDown20.Value = 50
         ElseIf ComboBox14.SelectedItem = ComboBox14.Items.Item(29) Then
-            NumericUpDown21.Value = 5
-            NumericUpDown20.Value = 3
+            NumericUpDown21.Value = 125
+            NumericUpDown20.Value = 75
         ElseIf ComboBox14.SelectedItem = ComboBox14.Items.Item(30) Then
-            NumericUpDown21.Value = 5
-            NumericUpDown20.Value = 4
+            NumericUpDown21.Value = 125
+            NumericUpDown20.Value = 100
         ElseIf ComboBox14.SelectedItem = ComboBox14.Items.Item(31) Then
-            NumericUpDown21.Value = 6
+            NumericUpDown21.Value = 150
             NumericUpDown20.Value = 0
         ElseIf ComboBox14.SelectedItem = ComboBox14.Items.Item(32) Then
-            NumericUpDown21.Value = 6
-            NumericUpDown20.Value = 1
+            NumericUpDown21.Value = 150
+            NumericUpDown20.Value = 25
         ElseIf ComboBox14.SelectedItem = ComboBox14.Items.Item(33) Then
-            NumericUpDown21.Value = 6
-            NumericUpDown20.Value = 2
+            NumericUpDown21.Value = 150
+            NumericUpDown20.Value = 50
         ElseIf ComboBox14.SelectedItem = ComboBox14.Items.Item(34) Then
-            NumericUpDown21.Value = 6
-            NumericUpDown20.Value = 3
+            NumericUpDown21.Value = 150
+            NumericUpDown20.Value = 75
         ElseIf ComboBox14.SelectedItem = ComboBox14.Items.Item(35) Then
-            NumericUpDown21.Value = 6
-            NumericUpDown20.Value = 4
+            NumericUpDown21.Value = 150
+            NumericUpDown20.Value = 100
         ElseIf ComboBox14.SelectedItem = ComboBox14.Items.Item(36) Then
-            NumericUpDown21.Value = 7
+            NumericUpDown21.Value = 175
             NumericUpDown20.Value = 0
         ElseIf ComboBox14.SelectedItem = ComboBox14.Items.Item(37) Then
-            NumericUpDown21.Value = 7
-            NumericUpDown20.Value = 1
+            NumericUpDown21.Value = 175
+            NumericUpDown20.Value = 25
         ElseIf ComboBox14.SelectedItem = ComboBox14.Items.Item(38) Then
-            NumericUpDown21.Value = 7
-            NumericUpDown20.Value = 2
+            NumericUpDown21.Value = 175
+            NumericUpDown20.Value = 50
         ElseIf ComboBox14.SelectedItem = ComboBox14.Items.Item(39) Then
-            NumericUpDown21.Value = 7
-            NumericUpDown20.Value = 3
+            NumericUpDown21.Value = 175
+            NumericUpDown20.Value = 75
         ElseIf ComboBox14.SelectedItem = ComboBox14.Items.Item(40) Then
-            NumericUpDown21.Value = 7
-            NumericUpDown20.Value = 4
+            NumericUpDown21.Value = 175
+            NumericUpDown20.Value = 100
         ElseIf ComboBox14.SelectedItem = ComboBox14.Items.Item(41) Then
-            NumericUpDown21.Value = 8
+            NumericUpDown21.Value = 200
             NumericUpDown20.Value = 0
         ElseIf ComboBox14.SelectedItem = ComboBox14.Items.Item(42) Then
-            NumericUpDown21.Value = 8
-            NumericUpDown20.Value = 1
+            NumericUpDown21.Value = 200
+            NumericUpDown20.Value = 25
         ElseIf ComboBox14.SelectedItem = ComboBox14.Items.Item(43) Then
-            NumericUpDown21.Value = 8
-            NumericUpDown20.Value = 2
+            NumericUpDown21.Value = 200
+            NumericUpDown20.Value = 50
         ElseIf ComboBox14.SelectedItem = ComboBox14.Items.Item(44) Then
-            NumericUpDown21.Value = 8
-            NumericUpDown20.Value = 3
+            NumericUpDown21.Value = 200
+            NumericUpDown20.Value = 75
         ElseIf ComboBox14.SelectedItem = ComboBox14.Items.Item(45) Then
-            NumericUpDown21.Value = 8
-            NumericUpDown20.Value = 4
+            NumericUpDown21.Value = 200
+            NumericUpDown20.Value = 100
         End If
     End Sub
 
@@ -3826,136 +3998,136 @@
             NumericUpDown17.Value = 0
         ElseIf ComboBox12.SelectedItem = ComboBox12.Items.Item(2) Then
             NumericUpDown18.Value = 0
-            NumericUpDown17.Value = 1
+            NumericUpDown17.Value = 25
         ElseIf ComboBox12.SelectedItem = ComboBox12.Items.Item(3) Then
             NumericUpDown18.Value = 0
-            NumericUpDown17.Value = 2
+            NumericUpDown17.Value = 50
         ElseIf ComboBox12.SelectedItem = ComboBox12.Items.Item(4) Then
             NumericUpDown18.Value = 0
-            NumericUpDown17.Value = 3
+            NumericUpDown17.Value = 75
         ElseIf ComboBox12.SelectedItem = ComboBox12.Items.Item(5) Then
             NumericUpDown18.Value = 0
-            NumericUpDown17.Value = 4
+            NumericUpDown17.Value = 100
         ElseIf ComboBox12.SelectedItem = ComboBox12.Items.Item(6) Then
-            NumericUpDown18.Value = 1
+            NumericUpDown18.Value = 25
             NumericUpDown17.Value = 0
         ElseIf ComboBox12.SelectedItem = ComboBox12.Items.Item(7) Then
-            NumericUpDown18.Value = 1
-            NumericUpDown17.Value = 1
+            NumericUpDown18.Value = 25
+            NumericUpDown17.Value = 25
         ElseIf ComboBox12.SelectedItem = ComboBox12.Items.Item(8) Then
-            NumericUpDown18.Value = 1
-            NumericUpDown17.Value = 2
+            NumericUpDown18.Value = 25
+            NumericUpDown17.Value = 50
         ElseIf ComboBox12.SelectedItem = ComboBox12.Items.Item(9) Then
-            NumericUpDown18.Value = 1
-            NumericUpDown17.Value = 3
+            NumericUpDown18.Value = 25
+            NumericUpDown17.Value = 75
         ElseIf ComboBox12.SelectedItem = ComboBox12.Items.Item(10) Then
-            NumericUpDown18.Value = 1
-            NumericUpDown17.Value = 4
+            NumericUpDown18.Value = 25
+            NumericUpDown17.Value = 100
         ElseIf ComboBox12.SelectedItem = ComboBox12.Items.Item(11) Then
-            NumericUpDown18.Value = 2
+            NumericUpDown18.Value = 50
             NumericUpDown17.Value = 0
         ElseIf ComboBox12.SelectedItem = ComboBox12.Items.Item(12) Then
-            NumericUpDown18.Value = 2
-            NumericUpDown17.Value = 1
+            NumericUpDown18.Value = 50
+            NumericUpDown17.Value = 25
         ElseIf ComboBox12.SelectedItem = ComboBox12.Items.Item(13) Then
-            NumericUpDown18.Value = 2
-            NumericUpDown17.Value = 2
+            NumericUpDown18.Value = 50
+            NumericUpDown17.Value = 50
         ElseIf ComboBox12.SelectedItem = ComboBox12.Items.Item(14) Then
-            NumericUpDown18.Value = 2
-            NumericUpDown17.Value = 3
+            NumericUpDown18.Value = 50
+            NumericUpDown17.Value = 75
         ElseIf ComboBox12.SelectedItem = ComboBox12.Items.Item(15) Then
-            NumericUpDown18.Value = 2
-            NumericUpDown17.Value = 4
+            NumericUpDown18.Value = 50
+            NumericUpDown17.Value = 100
         ElseIf ComboBox12.SelectedItem = ComboBox12.Items.Item(16) Then
-            NumericUpDown18.Value = 3
+            NumericUpDown18.Value = 75
             NumericUpDown17.Value = 0
         ElseIf ComboBox12.SelectedItem = ComboBox12.Items.Item(17) Then
-            NumericUpDown18.Value = 3
-            NumericUpDown17.Value = 1
+            NumericUpDown18.Value = 75
+            NumericUpDown17.Value = 25
         ElseIf ComboBox12.SelectedItem = ComboBox12.Items.Item(18) Then
-            NumericUpDown18.Value = 3
-            NumericUpDown17.Value = 2
+            NumericUpDown18.Value = 75
+            NumericUpDown17.Value = 50
         ElseIf ComboBox12.SelectedItem = ComboBox12.Items.Item(19) Then
-            NumericUpDown18.Value = 3
-            NumericUpDown17.Value = 3
+            NumericUpDown18.Value = 75
+            NumericUpDown17.Value = 75
         ElseIf ComboBox12.SelectedItem = ComboBox12.Items.Item(20) Then
-            NumericUpDown18.Value = 3
-            NumericUpDown17.Value = 4
+            NumericUpDown18.Value = 75
+            NumericUpDown17.Value = 100
         ElseIf ComboBox12.SelectedItem = ComboBox12.Items.Item(21) Then
-            NumericUpDown18.Value = 4
+            NumericUpDown18.Value = 100
             NumericUpDown17.Value = 0
         ElseIf ComboBox12.SelectedItem = ComboBox12.Items.Item(22) Then
-            NumericUpDown18.Value = 4
-            NumericUpDown17.Value = 1
+            NumericUpDown18.Value = 100
+            NumericUpDown17.Value = 25
         ElseIf ComboBox12.SelectedItem = ComboBox12.Items.Item(23) Then
-            NumericUpDown18.Value = 4
-            NumericUpDown17.Value = 2
+            NumericUpDown18.Value = 100
+            NumericUpDown17.Value = 50
         ElseIf ComboBox12.SelectedItem = ComboBox12.Items.Item(24) Then
-            NumericUpDown18.Value = 4
-            NumericUpDown17.Value = 3
+            NumericUpDown18.Value = 100
+            NumericUpDown17.Value = 75
         ElseIf ComboBox12.SelectedItem = ComboBox12.Items.Item(25) Then
-            NumericUpDown18.Value = 4
-            NumericUpDown17.Value = 4
+            NumericUpDown18.Value = 100
+            NumericUpDown17.Value = 100
         ElseIf ComboBox12.SelectedItem = ComboBox12.Items.Item(26) Then
-            NumericUpDown18.Value = 5
+            NumericUpDown18.Value = 125
             NumericUpDown17.Value = 0
         ElseIf ComboBox12.SelectedItem = ComboBox12.Items.Item(27) Then
-            NumericUpDown18.Value = 5
-            NumericUpDown17.Value = 1
+            NumericUpDown18.Value = 125
+            NumericUpDown17.Value = 25
         ElseIf ComboBox12.SelectedItem = ComboBox12.Items.Item(28) Then
-            NumericUpDown18.Value = 5
-            NumericUpDown17.Value = 2
+            NumericUpDown18.Value = 125
+            NumericUpDown17.Value = 50
         ElseIf ComboBox12.SelectedItem = ComboBox12.Items.Item(29) Then
-            NumericUpDown18.Value = 5
-            NumericUpDown17.Value = 3
+            NumericUpDown18.Value = 125
+            NumericUpDown17.Value = 75
         ElseIf ComboBox12.SelectedItem = ComboBox12.Items.Item(30) Then
-            NumericUpDown18.Value = 5
-            NumericUpDown17.Value = 4
+            NumericUpDown18.Value = 125
+            NumericUpDown17.Value = 100
         ElseIf ComboBox12.SelectedItem = ComboBox12.Items.Item(31) Then
-            NumericUpDown18.Value = 6
+            NumericUpDown18.Value = 150
             NumericUpDown17.Value = 0
         ElseIf ComboBox12.SelectedItem = ComboBox12.Items.Item(32) Then
-            NumericUpDown18.Value = 6
-            NumericUpDown17.Value = 1
+            NumericUpDown18.Value = 150
+            NumericUpDown17.Value = 25
         ElseIf ComboBox12.SelectedItem = ComboBox12.Items.Item(33) Then
-            NumericUpDown18.Value = 6
-            NumericUpDown17.Value = 2
+            NumericUpDown18.Value = 150
+            NumericUpDown17.Value = 50
         ElseIf ComboBox12.SelectedItem = ComboBox12.Items.Item(34) Then
-            NumericUpDown18.Value = 6
-            NumericUpDown17.Value = 3
+            NumericUpDown18.Value = 150
+            NumericUpDown17.Value = 75
         ElseIf ComboBox12.SelectedItem = ComboBox12.Items.Item(35) Then
-            NumericUpDown18.Value = 6
-            NumericUpDown17.Value = 4
+            NumericUpDown18.Value = 150
+            NumericUpDown17.Value = 100
         ElseIf ComboBox12.SelectedItem = ComboBox12.Items.Item(36) Then
-            NumericUpDown18.Value = 7
+            NumericUpDown18.Value = 175
             NumericUpDown17.Value = 0
         ElseIf ComboBox12.SelectedItem = ComboBox12.Items.Item(37) Then
-            NumericUpDown18.Value = 7
-            NumericUpDown17.Value = 1
+            NumericUpDown18.Value = 175
+            NumericUpDown17.Value = 25
         ElseIf ComboBox12.SelectedItem = ComboBox12.Items.Item(38) Then
-            NumericUpDown18.Value = 7
-            NumericUpDown17.Value = 2
+            NumericUpDown18.Value = 175
+            NumericUpDown17.Value = 50
         ElseIf ComboBox12.SelectedItem = ComboBox12.Items.Item(39) Then
-            NumericUpDown18.Value = 7
-            NumericUpDown17.Value = 3
+            NumericUpDown18.Value = 175
+            NumericUpDown17.Value = 75
         ElseIf ComboBox12.SelectedItem = ComboBox12.Items.Item(40) Then
-            NumericUpDown18.Value = 7
-            NumericUpDown17.Value = 4
+            NumericUpDown18.Value = 175
+            NumericUpDown17.Value = 100
         ElseIf ComboBox12.SelectedItem = ComboBox12.Items.Item(41) Then
-            NumericUpDown18.Value = 8
+            NumericUpDown18.Value = 200
             NumericUpDown17.Value = 0
         ElseIf ComboBox12.SelectedItem = ComboBox12.Items.Item(42) Then
-            NumericUpDown18.Value = 8
-            NumericUpDown17.Value = 1
+            NumericUpDown18.Value = 200
+            NumericUpDown17.Value = 25
         ElseIf ComboBox12.SelectedItem = ComboBox12.Items.Item(43) Then
-            NumericUpDown18.Value = 8
-            NumericUpDown17.Value = 2
+            NumericUpDown18.Value = 200
+            NumericUpDown17.Value = 50
         ElseIf ComboBox12.SelectedItem = ComboBox12.Items.Item(44) Then
-            NumericUpDown18.Value = 8
-            NumericUpDown17.Value = 3
+            NumericUpDown18.Value = 200
+            NumericUpDown17.Value = 75
         ElseIf ComboBox12.SelectedItem = ComboBox12.Items.Item(45) Then
-            NumericUpDown18.Value = 8
-            NumericUpDown17.Value = 4
+            NumericUpDown18.Value = 200
+            NumericUpDown17.Value = 100
         End If
     End Sub
 
@@ -3968,136 +4140,136 @@
             NumericUpDown44.Value = 0
         ElseIf ComboBox30.SelectedItem = ComboBox30.Items.Item(2) Then
             NumericUpDown45.Value = 0
-            NumericUpDown44.Value = 1
+            NumericUpDown44.Value = 25
         ElseIf ComboBox30.SelectedItem = ComboBox30.Items.Item(3) Then
             NumericUpDown45.Value = 0
-            NumericUpDown44.Value = 2
+            NumericUpDown44.Value = 50
         ElseIf ComboBox30.SelectedItem = ComboBox30.Items.Item(4) Then
             NumericUpDown45.Value = 0
-            NumericUpDown44.Value = 3
+            NumericUpDown44.Value = 75
         ElseIf ComboBox30.SelectedItem = ComboBox30.Items.Item(5) Then
             NumericUpDown45.Value = 0
-            NumericUpDown44.Value = 4
+            NumericUpDown44.Value = 100
         ElseIf ComboBox30.SelectedItem = ComboBox30.Items.Item(6) Then
-            NumericUpDown45.Value = 1
+            NumericUpDown45.Value = 25
             NumericUpDown44.Value = 0
         ElseIf ComboBox30.SelectedItem = ComboBox30.Items.Item(7) Then
-            NumericUpDown45.Value = 1
-            NumericUpDown44.Value = 1
+            NumericUpDown45.Value = 25
+            NumericUpDown44.Value = 25
         ElseIf ComboBox30.SelectedItem = ComboBox30.Items.Item(8) Then
-            NumericUpDown45.Value = 1
-            NumericUpDown44.Value = 2
+            NumericUpDown45.Value = 25
+            NumericUpDown44.Value = 50
         ElseIf ComboBox30.SelectedItem = ComboBox30.Items.Item(9) Then
-            NumericUpDown45.Value = 1
-            NumericUpDown44.Value = 3
+            NumericUpDown45.Value = 25
+            NumericUpDown44.Value = 75
         ElseIf ComboBox30.SelectedItem = ComboBox30.Items.Item(10) Then
-            NumericUpDown45.Value = 1
-            NumericUpDown44.Value = 4
+            NumericUpDown45.Value = 25
+            NumericUpDown44.Value = 100
         ElseIf ComboBox30.SelectedItem = ComboBox30.Items.Item(11) Then
-            NumericUpDown45.Value = 2
+            NumericUpDown45.Value = 50
             NumericUpDown44.Value = 0
         ElseIf ComboBox30.SelectedItem = ComboBox30.Items.Item(12) Then
-            NumericUpDown45.Value = 2
-            NumericUpDown44.Value = 1
+            NumericUpDown45.Value = 50
+            NumericUpDown44.Value = 25
         ElseIf ComboBox30.SelectedItem = ComboBox30.Items.Item(13) Then
-            NumericUpDown45.Value = 2
-            NumericUpDown44.Value = 2
+            NumericUpDown45.Value = 50
+            NumericUpDown44.Value = 50
         ElseIf ComboBox30.SelectedItem = ComboBox30.Items.Item(14) Then
-            NumericUpDown45.Value = 2
-            NumericUpDown44.Value = 3
+            NumericUpDown45.Value = 50
+            NumericUpDown44.Value = 75
         ElseIf ComboBox30.SelectedItem = ComboBox30.Items.Item(15) Then
-            NumericUpDown45.Value = 2
-            NumericUpDown44.Value = 4
+            NumericUpDown45.Value = 50
+            NumericUpDown44.Value = 100
         ElseIf ComboBox30.SelectedItem = ComboBox30.Items.Item(16) Then
-            NumericUpDown45.Value = 3
+            NumericUpDown45.Value = 75
             NumericUpDown44.Value = 0
         ElseIf ComboBox30.SelectedItem = ComboBox30.Items.Item(17) Then
-            NumericUpDown45.Value = 3
-            NumericUpDown44.Value = 1
+            NumericUpDown45.Value = 75
+            NumericUpDown44.Value = 25
         ElseIf ComboBox30.SelectedItem = ComboBox30.Items.Item(18) Then
-            NumericUpDown45.Value = 3
-            NumericUpDown44.Value = 2
+            NumericUpDown45.Value = 75
+            NumericUpDown44.Value = 50
         ElseIf ComboBox30.SelectedItem = ComboBox30.Items.Item(19) Then
-            NumericUpDown45.Value = 3
-            NumericUpDown44.Value = 3
+            NumericUpDown45.Value = 75
+            NumericUpDown44.Value = 75
         ElseIf ComboBox30.SelectedItem = ComboBox30.Items.Item(20) Then
-            NumericUpDown45.Value = 3
-            NumericUpDown44.Value = 4
+            NumericUpDown45.Value = 75
+            NumericUpDown44.Value = 100
         ElseIf ComboBox30.SelectedItem = ComboBox30.Items.Item(21) Then
-            NumericUpDown45.Value = 4
+            NumericUpDown45.Value = 100
             NumericUpDown44.Value = 0
         ElseIf ComboBox30.SelectedItem = ComboBox30.Items.Item(22) Then
-            NumericUpDown45.Value = 4
-            NumericUpDown44.Value = 1
+            NumericUpDown45.Value = 100
+            NumericUpDown44.Value = 25
         ElseIf ComboBox30.SelectedItem = ComboBox30.Items.Item(23) Then
-            NumericUpDown45.Value = 4
-            NumericUpDown44.Value = 2
+            NumericUpDown45.Value = 100
+            NumericUpDown44.Value = 50
         ElseIf ComboBox30.SelectedItem = ComboBox30.Items.Item(24) Then
-            NumericUpDown45.Value = 4
-            NumericUpDown44.Value = 3
+            NumericUpDown45.Value = 100
+            NumericUpDown44.Value = 75
         ElseIf ComboBox30.SelectedItem = ComboBox30.Items.Item(25) Then
-            NumericUpDown45.Value = 4
-            NumericUpDown44.Value = 4
+            NumericUpDown45.Value = 100
+            NumericUpDown44.Value = 100
         ElseIf ComboBox30.SelectedItem = ComboBox30.Items.Item(26) Then
-            NumericUpDown45.Value = 5
+            NumericUpDown45.Value = 125
             NumericUpDown44.Value = 0
         ElseIf ComboBox30.SelectedItem = ComboBox30.Items.Item(27) Then
-            NumericUpDown45.Value = 5
-            NumericUpDown44.Value = 1
+            NumericUpDown45.Value = 125
+            NumericUpDown44.Value = 25
         ElseIf ComboBox30.SelectedItem = ComboBox30.Items.Item(28) Then
-            NumericUpDown45.Value = 5
-            NumericUpDown44.Value = 2
+            NumericUpDown45.Value = 125
+            NumericUpDown44.Value = 50
         ElseIf ComboBox30.SelectedItem = ComboBox30.Items.Item(29) Then
-            NumericUpDown45.Value = 5
-            NumericUpDown44.Value = 3
+            NumericUpDown45.Value = 125
+            NumericUpDown44.Value = 75
         ElseIf ComboBox30.SelectedItem = ComboBox30.Items.Item(30) Then
-            NumericUpDown45.Value = 5
-            NumericUpDown44.Value = 4
+            NumericUpDown45.Value = 125
+            NumericUpDown44.Value = 100
         ElseIf ComboBox30.SelectedItem = ComboBox30.Items.Item(31) Then
-            NumericUpDown45.Value = 6
+            NumericUpDown45.Value = 150
             NumericUpDown44.Value = 0
         ElseIf ComboBox30.SelectedItem = ComboBox30.Items.Item(32) Then
-            NumericUpDown45.Value = 6
-            NumericUpDown44.Value = 1
+            NumericUpDown45.Value = 150
+            NumericUpDown44.Value = 25
         ElseIf ComboBox30.SelectedItem = ComboBox30.Items.Item(33) Then
-            NumericUpDown45.Value = 6
-            NumericUpDown44.Value = 2
+            NumericUpDown45.Value = 150
+            NumericUpDown44.Value = 50
         ElseIf ComboBox30.SelectedItem = ComboBox30.Items.Item(34) Then
-            NumericUpDown45.Value = 6
-            NumericUpDown44.Value = 3
+            NumericUpDown45.Value = 150
+            NumericUpDown44.Value = 75
         ElseIf ComboBox30.SelectedItem = ComboBox30.Items.Item(35) Then
-            NumericUpDown45.Value = 6
-            NumericUpDown44.Value = 4
+            NumericUpDown45.Value = 150
+            NumericUpDown44.Value = 100
         ElseIf ComboBox30.SelectedItem = ComboBox30.Items.Item(36) Then
-            NumericUpDown45.Value = 7
+            NumericUpDown45.Value = 175
             NumericUpDown44.Value = 0
         ElseIf ComboBox30.SelectedItem = ComboBox30.Items.Item(37) Then
-            NumericUpDown45.Value = 7
-            NumericUpDown44.Value = 1
+            NumericUpDown45.Value = 175
+            NumericUpDown44.Value = 25
         ElseIf ComboBox30.SelectedItem = ComboBox30.Items.Item(38) Then
-            NumericUpDown45.Value = 7
-            NumericUpDown44.Value = 2
+            NumericUpDown45.Value = 175
+            NumericUpDown44.Value = 50
         ElseIf ComboBox30.SelectedItem = ComboBox30.Items.Item(39) Then
-            NumericUpDown45.Value = 7
-            NumericUpDown44.Value = 3
+            NumericUpDown45.Value = 175
+            NumericUpDown44.Value = 75
         ElseIf ComboBox30.SelectedItem = ComboBox30.Items.Item(40) Then
-            NumericUpDown45.Value = 7
-            NumericUpDown44.Value = 4
+            NumericUpDown45.Value = 175
+            NumericUpDown44.Value = 100
         ElseIf ComboBox30.SelectedItem = ComboBox30.Items.Item(41) Then
-            NumericUpDown45.Value = 8
+            NumericUpDown45.Value = 200
             NumericUpDown44.Value = 0
         ElseIf ComboBox30.SelectedItem = ComboBox30.Items.Item(42) Then
-            NumericUpDown45.Value = 8
-            NumericUpDown44.Value = 1
+            NumericUpDown45.Value = 200
+            NumericUpDown44.Value = 25
         ElseIf ComboBox30.SelectedItem = ComboBox30.Items.Item(43) Then
-            NumericUpDown45.Value = 8
-            NumericUpDown44.Value = 2
+            NumericUpDown45.Value = 200
+            NumericUpDown44.Value = 50
         ElseIf ComboBox30.SelectedItem = ComboBox30.Items.Item(44) Then
-            NumericUpDown45.Value = 8
-            NumericUpDown44.Value = 3
+            NumericUpDown45.Value = 200
+            NumericUpDown44.Value = 75
         ElseIf ComboBox30.SelectedItem = ComboBox30.Items.Item(45) Then
-            NumericUpDown45.Value = 8
-            NumericUpDown44.Value = 4
+            NumericUpDown45.Value = 200
+            NumericUpDown44.Value = 100
         End If
     End Sub
 
@@ -4110,136 +4282,136 @@
             NumericUpDown41.Value = 0
         ElseIf ComboBox28.SelectedItem = ComboBox28.Items.Item(2) Then
             NumericUpDown42.Value = 0
-            NumericUpDown41.Value = 1
+            NumericUpDown41.Value = 25
         ElseIf ComboBox28.SelectedItem = ComboBox28.Items.Item(3) Then
             NumericUpDown42.Value = 0
-            NumericUpDown41.Value = 2
+            NumericUpDown41.Value = 50
         ElseIf ComboBox28.SelectedItem = ComboBox28.Items.Item(4) Then
             NumericUpDown42.Value = 0
-            NumericUpDown41.Value = 3
+            NumericUpDown41.Value = 75
         ElseIf ComboBox28.SelectedItem = ComboBox28.Items.Item(5) Then
             NumericUpDown42.Value = 0
-            NumericUpDown41.Value = 4
+            NumericUpDown41.Value = 100
         ElseIf ComboBox28.SelectedItem = ComboBox28.Items.Item(6) Then
-            NumericUpDown42.Value = 1
+            NumericUpDown42.Value = 25
             NumericUpDown41.Value = 0
         ElseIf ComboBox28.SelectedItem = ComboBox28.Items.Item(7) Then
-            NumericUpDown42.Value = 1
-            NumericUpDown41.Value = 1
+            NumericUpDown42.Value = 25
+            NumericUpDown41.Value = 25
         ElseIf ComboBox28.SelectedItem = ComboBox28.Items.Item(8) Then
-            NumericUpDown42.Value = 1
-            NumericUpDown41.Value = 2
+            NumericUpDown42.Value = 25
+            NumericUpDown41.Value = 50
         ElseIf ComboBox28.SelectedItem = ComboBox28.Items.Item(9) Then
-            NumericUpDown42.Value = 1
-            NumericUpDown41.Value = 3
+            NumericUpDown42.Value = 25
+            NumericUpDown41.Value = 75
         ElseIf ComboBox28.SelectedItem = ComboBox28.Items.Item(10) Then
-            NumericUpDown42.Value = 1
-            NumericUpDown41.Value = 4
+            NumericUpDown42.Value = 25
+            NumericUpDown41.Value = 100
         ElseIf ComboBox28.SelectedItem = ComboBox28.Items.Item(11) Then
-            NumericUpDown42.Value = 2
+            NumericUpDown42.Value = 50
             NumericUpDown41.Value = 0
         ElseIf ComboBox28.SelectedItem = ComboBox28.Items.Item(12) Then
-            NumericUpDown42.Value = 2
-            NumericUpDown41.Value = 1
+            NumericUpDown42.Value = 50
+            NumericUpDown41.Value = 25
         ElseIf ComboBox28.SelectedItem = ComboBox28.Items.Item(13) Then
-            NumericUpDown42.Value = 2
-            NumericUpDown41.Value = 2
+            NumericUpDown42.Value = 50
+            NumericUpDown41.Value = 50
         ElseIf ComboBox28.SelectedItem = ComboBox28.Items.Item(14) Then
-            NumericUpDown42.Value = 2
-            NumericUpDown41.Value = 3
+            NumericUpDown42.Value = 50
+            NumericUpDown41.Value = 75
         ElseIf ComboBox28.SelectedItem = ComboBox28.Items.Item(15) Then
-            NumericUpDown42.Value = 2
-            NumericUpDown41.Value = 4
+            NumericUpDown42.Value = 50
+            NumericUpDown41.Value = 100
         ElseIf ComboBox28.SelectedItem = ComboBox28.Items.Item(16) Then
-            NumericUpDown42.Value = 3
+            NumericUpDown42.Value = 75
             NumericUpDown41.Value = 0
         ElseIf ComboBox28.SelectedItem = ComboBox28.Items.Item(17) Then
-            NumericUpDown42.Value = 3
-            NumericUpDown41.Value = 1
+            NumericUpDown42.Value = 75
+            NumericUpDown41.Value = 25
         ElseIf ComboBox28.SelectedItem = ComboBox28.Items.Item(18) Then
-            NumericUpDown42.Value = 3
-            NumericUpDown41.Value = 2
+            NumericUpDown42.Value = 75
+            NumericUpDown41.Value = 50
         ElseIf ComboBox28.SelectedItem = ComboBox28.Items.Item(19) Then
-            NumericUpDown42.Value = 3
-            NumericUpDown41.Value = 3
+            NumericUpDown42.Value = 75
+            NumericUpDown41.Value = 75
         ElseIf ComboBox28.SelectedItem = ComboBox28.Items.Item(20) Then
-            NumericUpDown42.Value = 3
-            NumericUpDown41.Value = 4
+            NumericUpDown42.Value = 75
+            NumericUpDown41.Value = 100
         ElseIf ComboBox28.SelectedItem = ComboBox28.Items.Item(21) Then
-            NumericUpDown42.Value = 4
+            NumericUpDown42.Value = 100
             NumericUpDown41.Value = 0
         ElseIf ComboBox28.SelectedItem = ComboBox28.Items.Item(22) Then
-            NumericUpDown42.Value = 4
-            NumericUpDown41.Value = 1
+            NumericUpDown42.Value = 100
+            NumericUpDown41.Value = 25
         ElseIf ComboBox28.SelectedItem = ComboBox28.Items.Item(23) Then
-            NumericUpDown42.Value = 4
-            NumericUpDown41.Value = 2
+            NumericUpDown42.Value = 100
+            NumericUpDown41.Value = 50
         ElseIf ComboBox28.SelectedItem = ComboBox28.Items.Item(24) Then
-            NumericUpDown42.Value = 4
-            NumericUpDown41.Value = 3
+            NumericUpDown42.Value = 100
+            NumericUpDown41.Value = 75
         ElseIf ComboBox28.SelectedItem = ComboBox28.Items.Item(25) Then
-            NumericUpDown42.Value = 4
-            NumericUpDown41.Value = 4
+            NumericUpDown42.Value = 100
+            NumericUpDown41.Value = 100
         ElseIf ComboBox28.SelectedItem = ComboBox28.Items.Item(26) Then
-            NumericUpDown42.Value = 5
+            NumericUpDown42.Value = 125
             NumericUpDown41.Value = 0
         ElseIf ComboBox28.SelectedItem = ComboBox28.Items.Item(27) Then
-            NumericUpDown42.Value = 5
-            NumericUpDown41.Value = 1
+            NumericUpDown42.Value = 125
+            NumericUpDown41.Value = 25
         ElseIf ComboBox28.SelectedItem = ComboBox28.Items.Item(28) Then
-            NumericUpDown42.Value = 5
-            NumericUpDown41.Value = 2
+            NumericUpDown42.Value = 125
+            NumericUpDown41.Value = 50
         ElseIf ComboBox28.SelectedItem = ComboBox28.Items.Item(29) Then
-            NumericUpDown42.Value = 5
-            NumericUpDown41.Value = 3
+            NumericUpDown42.Value = 125
+            NumericUpDown41.Value = 75
         ElseIf ComboBox28.SelectedItem = ComboBox28.Items.Item(30) Then
-            NumericUpDown42.Value = 5
-            NumericUpDown41.Value = 4
+            NumericUpDown42.Value = 125
+            NumericUpDown41.Value = 100
         ElseIf ComboBox28.SelectedItem = ComboBox28.Items.Item(31) Then
-            NumericUpDown42.Value = 6
+            NumericUpDown42.Value = 150
             NumericUpDown41.Value = 0
         ElseIf ComboBox28.SelectedItem = ComboBox28.Items.Item(32) Then
-            NumericUpDown42.Value = 6
-            NumericUpDown41.Value = 1
+            NumericUpDown42.Value = 150
+            NumericUpDown41.Value = 25
         ElseIf ComboBox28.SelectedItem = ComboBox28.Items.Item(33) Then
-            NumericUpDown42.Value = 6
-            NumericUpDown41.Value = 2
+            NumericUpDown42.Value = 150
+            NumericUpDown41.Value = 50
         ElseIf ComboBox28.SelectedItem = ComboBox28.Items.Item(34) Then
-            NumericUpDown42.Value = 6
-            NumericUpDown41.Value = 3
+            NumericUpDown42.Value = 150
+            NumericUpDown41.Value = 75
         ElseIf ComboBox28.SelectedItem = ComboBox28.Items.Item(35) Then
-            NumericUpDown42.Value = 6
-            NumericUpDown41.Value = 4
+            NumericUpDown42.Value = 150
+            NumericUpDown41.Value = 100
         ElseIf ComboBox28.SelectedItem = ComboBox28.Items.Item(36) Then
-            NumericUpDown42.Value = 7
+            NumericUpDown42.Value = 175
             NumericUpDown41.Value = 0
         ElseIf ComboBox28.SelectedItem = ComboBox28.Items.Item(37) Then
-            NumericUpDown42.Value = 7
-            NumericUpDown41.Value = 1
+            NumericUpDown42.Value = 175
+            NumericUpDown41.Value = 25
         ElseIf ComboBox28.SelectedItem = ComboBox28.Items.Item(38) Then
-            NumericUpDown42.Value = 7
-            NumericUpDown41.Value = 2
+            NumericUpDown42.Value = 175
+            NumericUpDown41.Value = 50
         ElseIf ComboBox28.SelectedItem = ComboBox28.Items.Item(39) Then
-            NumericUpDown42.Value = 7
-            NumericUpDown41.Value = 3
+            NumericUpDown42.Value = 175
+            NumericUpDown41.Value = 75
         ElseIf ComboBox28.SelectedItem = ComboBox28.Items.Item(40) Then
-            NumericUpDown42.Value = 7
-            NumericUpDown41.Value = 4
+            NumericUpDown42.Value = 175
+            NumericUpDown41.Value = 100
         ElseIf ComboBox28.SelectedItem = ComboBox28.Items.Item(41) Then
-            NumericUpDown42.Value = 8
+            NumericUpDown42.Value = 200
             NumericUpDown41.Value = 0
         ElseIf ComboBox28.SelectedItem = ComboBox28.Items.Item(42) Then
-            NumericUpDown42.Value = 8
-            NumericUpDown41.Value = 1
+            NumericUpDown42.Value = 200
+            NumericUpDown41.Value = 25
         ElseIf ComboBox28.SelectedItem = ComboBox28.Items.Item(43) Then
-            NumericUpDown42.Value = 8
-            NumericUpDown41.Value = 2
+            NumericUpDown42.Value = 200
+            NumericUpDown41.Value = 50
         ElseIf ComboBox28.SelectedItem = ComboBox28.Items.Item(44) Then
-            NumericUpDown42.Value = 8
-            NumericUpDown41.Value = 3
+            NumericUpDown42.Value = 200
+            NumericUpDown41.Value = 75
         ElseIf ComboBox28.SelectedItem = ComboBox28.Items.Item(45) Then
-            NumericUpDown42.Value = 8
-            NumericUpDown41.Value = 4
+            NumericUpDown42.Value = 200
+            NumericUpDown41.Value = 100
         End If
     End Sub
 
@@ -4252,136 +4424,136 @@
             NumericUpDown38.Value = 0
         ElseIf ComboBox26.SelectedItem = ComboBox26.Items.Item(2) Then
             NumericUpDown39.Value = 0
-            NumericUpDown38.Value = 1
+            NumericUpDown38.Value = 25
         ElseIf ComboBox26.SelectedItem = ComboBox26.Items.Item(3) Then
             NumericUpDown39.Value = 0
-            NumericUpDown38.Value = 2
+            NumericUpDown38.Value = 50
         ElseIf ComboBox26.SelectedItem = ComboBox26.Items.Item(4) Then
             NumericUpDown39.Value = 0
-            NumericUpDown38.Value = 3
+            NumericUpDown38.Value = 75
         ElseIf ComboBox26.SelectedItem = ComboBox26.Items.Item(5) Then
             NumericUpDown39.Value = 0
-            NumericUpDown38.Value = 4
+            NumericUpDown38.Value = 100
         ElseIf ComboBox26.SelectedItem = ComboBox26.Items.Item(6) Then
-            NumericUpDown39.Value = 1
+            NumericUpDown39.Value = 25
             NumericUpDown38.Value = 0
         ElseIf ComboBox26.SelectedItem = ComboBox26.Items.Item(7) Then
-            NumericUpDown39.Value = 1
-            NumericUpDown38.Value = 1
+            NumericUpDown39.Value = 25
+            NumericUpDown38.Value = 25
         ElseIf ComboBox26.SelectedItem = ComboBox26.Items.Item(8) Then
-            NumericUpDown39.Value = 1
-            NumericUpDown38.Value = 2
+            NumericUpDown39.Value = 25
+            NumericUpDown38.Value = 50
         ElseIf ComboBox26.SelectedItem = ComboBox26.Items.Item(9) Then
-            NumericUpDown39.Value = 1
-            NumericUpDown38.Value = 3
+            NumericUpDown39.Value = 25
+            NumericUpDown38.Value = 75
         ElseIf ComboBox26.SelectedItem = ComboBox26.Items.Item(10) Then
-            NumericUpDown39.Value = 1
-            NumericUpDown38.Value = 4
+            NumericUpDown39.Value = 25
+            NumericUpDown38.Value = 100
         ElseIf ComboBox26.SelectedItem = ComboBox26.Items.Item(11) Then
-            NumericUpDown39.Value = 2
+            NumericUpDown39.Value = 50
             NumericUpDown38.Value = 0
         ElseIf ComboBox26.SelectedItem = ComboBox26.Items.Item(12) Then
-            NumericUpDown39.Value = 2
-            NumericUpDown38.Value = 1
+            NumericUpDown39.Value = 50
+            NumericUpDown38.Value = 25
         ElseIf ComboBox26.SelectedItem = ComboBox26.Items.Item(13) Then
-            NumericUpDown39.Value = 2
-            NumericUpDown38.Value = 2
+            NumericUpDown39.Value = 50
+            NumericUpDown38.Value = 50
         ElseIf ComboBox26.SelectedItem = ComboBox26.Items.Item(14) Then
-            NumericUpDown39.Value = 2
-            NumericUpDown38.Value = 3
+            NumericUpDown39.Value = 50
+            NumericUpDown38.Value = 75
         ElseIf ComboBox26.SelectedItem = ComboBox26.Items.Item(15) Then
-            NumericUpDown39.Value = 2
-            NumericUpDown38.Value = 4
+            NumericUpDown39.Value = 50
+            NumericUpDown38.Value = 100
         ElseIf ComboBox26.SelectedItem = ComboBox26.Items.Item(16) Then
-            NumericUpDown39.Value = 3
+            NumericUpDown39.Value = 75
             NumericUpDown38.Value = 0
         ElseIf ComboBox26.SelectedItem = ComboBox26.Items.Item(17) Then
-            NumericUpDown39.Value = 3
-            NumericUpDown38.Value = 1
+            NumericUpDown39.Value = 75
+            NumericUpDown38.Value = 25
         ElseIf ComboBox26.SelectedItem = ComboBox26.Items.Item(18) Then
-            NumericUpDown39.Value = 3
-            NumericUpDown38.Value = 2
+            NumericUpDown39.Value = 75
+            NumericUpDown38.Value = 50
         ElseIf ComboBox26.SelectedItem = ComboBox26.Items.Item(19) Then
-            NumericUpDown39.Value = 3
-            NumericUpDown38.Value = 3
+            NumericUpDown39.Value = 75
+            NumericUpDown38.Value = 75
         ElseIf ComboBox26.SelectedItem = ComboBox26.Items.Item(20) Then
-            NumericUpDown39.Value = 3
-            NumericUpDown38.Value = 4
+            NumericUpDown39.Value = 75
+            NumericUpDown38.Value = 100
         ElseIf ComboBox26.SelectedItem = ComboBox26.Items.Item(21) Then
-            NumericUpDown39.Value = 4
+            NumericUpDown39.Value = 100
             NumericUpDown38.Value = 0
         ElseIf ComboBox26.SelectedItem = ComboBox26.Items.Item(22) Then
-            NumericUpDown39.Value = 4
-            NumericUpDown38.Value = 1
+            NumericUpDown39.Value = 100
+            NumericUpDown38.Value = 25
         ElseIf ComboBox26.SelectedItem = ComboBox26.Items.Item(23) Then
-            NumericUpDown39.Value = 4
-            NumericUpDown38.Value = 2
+            NumericUpDown39.Value = 100
+            NumericUpDown38.Value = 50
         ElseIf ComboBox26.SelectedItem = ComboBox26.Items.Item(24) Then
-            NumericUpDown39.Value = 4
-            NumericUpDown38.Value = 3
+            NumericUpDown39.Value = 100
+            NumericUpDown38.Value = 75
         ElseIf ComboBox26.SelectedItem = ComboBox26.Items.Item(25) Then
-            NumericUpDown39.Value = 4
-            NumericUpDown38.Value = 4
+            NumericUpDown39.Value = 100
+            NumericUpDown38.Value = 100
         ElseIf ComboBox26.SelectedItem = ComboBox26.Items.Item(26) Then
-            NumericUpDown39.Value = 5
+            NumericUpDown39.Value = 125
             NumericUpDown38.Value = 0
         ElseIf ComboBox26.SelectedItem = ComboBox26.Items.Item(27) Then
-            NumericUpDown39.Value = 5
-            NumericUpDown38.Value = 1
+            NumericUpDown39.Value = 125
+            NumericUpDown38.Value = 25
         ElseIf ComboBox26.SelectedItem = ComboBox26.Items.Item(28) Then
-            NumericUpDown39.Value = 5
-            NumericUpDown38.Value = 2
+            NumericUpDown39.Value = 125
+            NumericUpDown38.Value = 50
         ElseIf ComboBox26.SelectedItem = ComboBox26.Items.Item(29) Then
-            NumericUpDown39.Value = 5
-            NumericUpDown38.Value = 3
+            NumericUpDown39.Value = 125
+            NumericUpDown38.Value = 75
         ElseIf ComboBox26.SelectedItem = ComboBox26.Items.Item(30) Then
-            NumericUpDown39.Value = 5
-            NumericUpDown38.Value = 4
+            NumericUpDown39.Value = 125
+            NumericUpDown38.Value = 100
         ElseIf ComboBox26.SelectedItem = ComboBox26.Items.Item(31) Then
-            NumericUpDown39.Value = 6
+            NumericUpDown39.Value = 150
             NumericUpDown38.Value = 0
         ElseIf ComboBox26.SelectedItem = ComboBox26.Items.Item(32) Then
-            NumericUpDown39.Value = 6
-            NumericUpDown38.Value = 1
+            NumericUpDown39.Value = 150
+            NumericUpDown38.Value = 25
         ElseIf ComboBox26.SelectedItem = ComboBox26.Items.Item(33) Then
-            NumericUpDown39.Value = 6
-            NumericUpDown38.Value = 2
+            NumericUpDown39.Value = 150
+            NumericUpDown38.Value = 50
         ElseIf ComboBox26.SelectedItem = ComboBox26.Items.Item(34) Then
-            NumericUpDown39.Value = 6
-            NumericUpDown38.Value = 3
+            NumericUpDown39.Value = 150
+            NumericUpDown38.Value = 75
         ElseIf ComboBox26.SelectedItem = ComboBox26.Items.Item(35) Then
-            NumericUpDown39.Value = 6
-            NumericUpDown38.Value = 4
+            NumericUpDown39.Value = 150
+            NumericUpDown38.Value = 100
         ElseIf ComboBox26.SelectedItem = ComboBox26.Items.Item(36) Then
-            NumericUpDown39.Value = 7
+            NumericUpDown39.Value = 175
             NumericUpDown38.Value = 0
         ElseIf ComboBox26.SelectedItem = ComboBox26.Items.Item(37) Then
-            NumericUpDown39.Value = 7
-            NumericUpDown38.Value = 1
+            NumericUpDown39.Value = 175
+            NumericUpDown38.Value = 25
         ElseIf ComboBox26.SelectedItem = ComboBox26.Items.Item(38) Then
-            NumericUpDown39.Value = 7
-            NumericUpDown38.Value = 2
+            NumericUpDown39.Value = 175
+            NumericUpDown38.Value = 50
         ElseIf ComboBox26.SelectedItem = ComboBox26.Items.Item(39) Then
-            NumericUpDown39.Value = 7
-            NumericUpDown38.Value = 3
+            NumericUpDown39.Value = 175
+            NumericUpDown38.Value = 75
         ElseIf ComboBox26.SelectedItem = ComboBox26.Items.Item(40) Then
-            NumericUpDown39.Value = 7
-            NumericUpDown38.Value = 4
+            NumericUpDown39.Value = 175
+            NumericUpDown38.Value = 100
         ElseIf ComboBox26.SelectedItem = ComboBox26.Items.Item(41) Then
-            NumericUpDown39.Value = 8
+            NumericUpDown39.Value = 200
             NumericUpDown38.Value = 0
         ElseIf ComboBox26.SelectedItem = ComboBox26.Items.Item(42) Then
-            NumericUpDown39.Value = 8
-            NumericUpDown38.Value = 1
+            NumericUpDown39.Value = 200
+            NumericUpDown38.Value = 25
         ElseIf ComboBox26.SelectedItem = ComboBox26.Items.Item(43) Then
-            NumericUpDown39.Value = 8
-            NumericUpDown38.Value = 2
+            NumericUpDown39.Value = 200
+            NumericUpDown38.Value = 50
         ElseIf ComboBox26.SelectedItem = ComboBox26.Items.Item(44) Then
-            NumericUpDown39.Value = 8
-            NumericUpDown38.Value = 3
+            NumericUpDown39.Value = 200
+            NumericUpDown38.Value = 75
         ElseIf ComboBox26.SelectedItem = ComboBox26.Items.Item(45) Then
-            NumericUpDown39.Value = 8
-            NumericUpDown38.Value = 4
+            NumericUpDown39.Value = 200
+            NumericUpDown38.Value = 100
         End If
     End Sub
 
@@ -4394,136 +4566,136 @@
             NumericUpDown35.Value = 0
         ElseIf ComboBox24.SelectedItem = ComboBox24.Items.Item(2) Then
             NumericUpDown36.Value = 0
-            NumericUpDown35.Value = 1
+            NumericUpDown35.Value = 25
         ElseIf ComboBox24.SelectedItem = ComboBox24.Items.Item(3) Then
             NumericUpDown36.Value = 0
-            NumericUpDown35.Value = 2
+            NumericUpDown35.Value = 50
         ElseIf ComboBox24.SelectedItem = ComboBox24.Items.Item(4) Then
             NumericUpDown36.Value = 0
-            NumericUpDown35.Value = 3
+            NumericUpDown35.Value = 75
         ElseIf ComboBox24.SelectedItem = ComboBox24.Items.Item(5) Then
             NumericUpDown36.Value = 0
-            NumericUpDown35.Value = 4
+            NumericUpDown35.Value = 100
         ElseIf ComboBox24.SelectedItem = ComboBox24.Items.Item(6) Then
-            NumericUpDown36.Value = 1
+            NumericUpDown36.Value = 25
             NumericUpDown35.Value = 0
         ElseIf ComboBox24.SelectedItem = ComboBox24.Items.Item(7) Then
-            NumericUpDown36.Value = 1
-            NumericUpDown35.Value = 1
+            NumericUpDown36.Value = 25
+            NumericUpDown35.Value = 25
         ElseIf ComboBox24.SelectedItem = ComboBox24.Items.Item(8) Then
-            NumericUpDown36.Value = 1
-            NumericUpDown35.Value = 2
+            NumericUpDown36.Value = 25
+            NumericUpDown35.Value = 50
         ElseIf ComboBox24.SelectedItem = ComboBox24.Items.Item(9) Then
-            NumericUpDown36.Value = 1
-            NumericUpDown35.Value = 3
+            NumericUpDown36.Value = 25
+            NumericUpDown35.Value = 75
         ElseIf ComboBox24.SelectedItem = ComboBox24.Items.Item(10) Then
-            NumericUpDown36.Value = 1
-            NumericUpDown35.Value = 4
+            NumericUpDown36.Value = 25
+            NumericUpDown35.Value = 100
         ElseIf ComboBox24.SelectedItem = ComboBox24.Items.Item(11) Then
-            NumericUpDown36.Value = 2
+            NumericUpDown36.Value = 50
             NumericUpDown35.Value = 0
         ElseIf ComboBox24.SelectedItem = ComboBox24.Items.Item(12) Then
-            NumericUpDown36.Value = 2
-            NumericUpDown35.Value = 1
+            NumericUpDown36.Value = 50
+            NumericUpDown35.Value = 25
         ElseIf ComboBox24.SelectedItem = ComboBox24.Items.Item(13) Then
-            NumericUpDown36.Value = 2
-            NumericUpDown35.Value = 2
+            NumericUpDown36.Value = 50
+            NumericUpDown35.Value = 50
         ElseIf ComboBox24.SelectedItem = ComboBox24.Items.Item(14) Then
-            NumericUpDown36.Value = 2
-            NumericUpDown35.Value = 3
+            NumericUpDown36.Value = 50
+            NumericUpDown35.Value = 75
         ElseIf ComboBox24.SelectedItem = ComboBox24.Items.Item(15) Then
-            NumericUpDown36.Value = 2
-            NumericUpDown35.Value = 4
+            NumericUpDown36.Value = 50
+            NumericUpDown35.Value = 100
         ElseIf ComboBox24.SelectedItem = ComboBox24.Items.Item(16) Then
-            NumericUpDown36.Value = 3
+            NumericUpDown36.Value = 75
             NumericUpDown35.Value = 0
         ElseIf ComboBox24.SelectedItem = ComboBox24.Items.Item(17) Then
-            NumericUpDown36.Value = 3
-            NumericUpDown35.Value = 1
+            NumericUpDown36.Value = 75
+            NumericUpDown35.Value = 25
         ElseIf ComboBox24.SelectedItem = ComboBox24.Items.Item(18) Then
-            NumericUpDown36.Value = 3
-            NumericUpDown35.Value = 2
+            NumericUpDown36.Value = 75
+            NumericUpDown35.Value = 50
         ElseIf ComboBox24.SelectedItem = ComboBox24.Items.Item(19) Then
-            NumericUpDown36.Value = 3
-            NumericUpDown35.Value = 3
+            NumericUpDown36.Value = 75
+            NumericUpDown35.Value = 75
         ElseIf ComboBox24.SelectedItem = ComboBox24.Items.Item(20) Then
-            NumericUpDown36.Value = 3
-            NumericUpDown35.Value = 4
+            NumericUpDown36.Value = 75
+            NumericUpDown35.Value = 100
         ElseIf ComboBox24.SelectedItem = ComboBox24.Items.Item(21) Then
-            NumericUpDown36.Value = 4
+            NumericUpDown36.Value = 100
             NumericUpDown35.Value = 0
         ElseIf ComboBox24.SelectedItem = ComboBox24.Items.Item(22) Then
-            NumericUpDown36.Value = 4
-            NumericUpDown35.Value = 1
+            NumericUpDown36.Value = 100
+            NumericUpDown35.Value = 25
         ElseIf ComboBox24.SelectedItem = ComboBox24.Items.Item(23) Then
-            NumericUpDown36.Value = 4
-            NumericUpDown35.Value = 2
+            NumericUpDown36.Value = 100
+            NumericUpDown35.Value = 50
         ElseIf ComboBox24.SelectedItem = ComboBox24.Items.Item(24) Then
-            NumericUpDown36.Value = 4
-            NumericUpDown35.Value = 3
+            NumericUpDown36.Value = 100
+            NumericUpDown35.Value = 75
         ElseIf ComboBox24.SelectedItem = ComboBox24.Items.Item(25) Then
-            NumericUpDown36.Value = 4
-            NumericUpDown35.Value = 4
+            NumericUpDown36.Value = 100
+            NumericUpDown35.Value = 100
         ElseIf ComboBox24.SelectedItem = ComboBox24.Items.Item(26) Then
-            NumericUpDown36.Value = 5
+            NumericUpDown36.Value = 125
             NumericUpDown35.Value = 0
         ElseIf ComboBox24.SelectedItem = ComboBox24.Items.Item(27) Then
-            NumericUpDown36.Value = 5
-            NumericUpDown35.Value = 1
+            NumericUpDown36.Value = 125
+            NumericUpDown35.Value = 25
         ElseIf ComboBox24.SelectedItem = ComboBox24.Items.Item(28) Then
-            NumericUpDown36.Value = 5
-            NumericUpDown35.Value = 2
+            NumericUpDown36.Value = 125
+            NumericUpDown35.Value = 50
         ElseIf ComboBox24.SelectedItem = ComboBox24.Items.Item(29) Then
-            NumericUpDown36.Value = 5
-            NumericUpDown35.Value = 3
+            NumericUpDown36.Value = 125
+            NumericUpDown35.Value = 75
         ElseIf ComboBox24.SelectedItem = ComboBox24.Items.Item(30) Then
-            NumericUpDown36.Value = 5
-            NumericUpDown35.Value = 4
+            NumericUpDown36.Value = 125
+            NumericUpDown35.Value = 100
         ElseIf ComboBox24.SelectedItem = ComboBox24.Items.Item(31) Then
-            NumericUpDown36.Value = 6
+            NumericUpDown36.Value = 150
             NumericUpDown35.Value = 0
         ElseIf ComboBox24.SelectedItem = ComboBox24.Items.Item(32) Then
-            NumericUpDown36.Value = 6
-            NumericUpDown35.Value = 1
+            NumericUpDown36.Value = 150
+            NumericUpDown35.Value = 25
         ElseIf ComboBox24.SelectedItem = ComboBox24.Items.Item(33) Then
-            NumericUpDown36.Value = 6
-            NumericUpDown35.Value = 2
+            NumericUpDown36.Value = 150
+            NumericUpDown35.Value = 50
         ElseIf ComboBox24.SelectedItem = ComboBox24.Items.Item(34) Then
-            NumericUpDown36.Value = 6
-            NumericUpDown35.Value = 3
+            NumericUpDown36.Value = 150
+            NumericUpDown35.Value = 75
         ElseIf ComboBox24.SelectedItem = ComboBox24.Items.Item(35) Then
-            NumericUpDown36.Value = 6
-            NumericUpDown35.Value = 4
+            NumericUpDown36.Value = 150
+            NumericUpDown35.Value = 100
         ElseIf ComboBox24.SelectedItem = ComboBox24.Items.Item(36) Then
-            NumericUpDown36.Value = 7
+            NumericUpDown36.Value = 175
             NumericUpDown35.Value = 0
         ElseIf ComboBox24.SelectedItem = ComboBox24.Items.Item(37) Then
-            NumericUpDown36.Value = 7
-            NumericUpDown35.Value = 1
+            NumericUpDown36.Value = 175
+            NumericUpDown35.Value = 25
         ElseIf ComboBox24.SelectedItem = ComboBox24.Items.Item(38) Then
-            NumericUpDown36.Value = 7
-            NumericUpDown35.Value = 2
+            NumericUpDown36.Value = 175
+            NumericUpDown35.Value = 50
         ElseIf ComboBox24.SelectedItem = ComboBox24.Items.Item(39) Then
-            NumericUpDown36.Value = 7
-            NumericUpDown35.Value = 3
+            NumericUpDown36.Value = 175
+            NumericUpDown35.Value = 75
         ElseIf ComboBox24.SelectedItem = ComboBox24.Items.Item(40) Then
-            NumericUpDown36.Value = 7
-            NumericUpDown35.Value = 4
+            NumericUpDown36.Value = 175
+            NumericUpDown35.Value = 100
         ElseIf ComboBox24.SelectedItem = ComboBox24.Items.Item(41) Then
-            NumericUpDown36.Value = 8
+            NumericUpDown36.Value = 200
             NumericUpDown35.Value = 0
         ElseIf ComboBox24.SelectedItem = ComboBox24.Items.Item(42) Then
-            NumericUpDown36.Value = 8
-            NumericUpDown35.Value = 1
+            NumericUpDown36.Value = 200
+            NumericUpDown35.Value = 25
         ElseIf ComboBox24.SelectedItem = ComboBox24.Items.Item(43) Then
-            NumericUpDown36.Value = 8
-            NumericUpDown35.Value = 2
+            NumericUpDown36.Value = 200
+            NumericUpDown35.Value = 50
         ElseIf ComboBox24.SelectedItem = ComboBox24.Items.Item(44) Then
-            NumericUpDown36.Value = 8
-            NumericUpDown35.Value = 3
+            NumericUpDown36.Value = 200
+            NumericUpDown35.Value = 75
         ElseIf ComboBox24.SelectedItem = ComboBox24.Items.Item(45) Then
-            NumericUpDown36.Value = 8
-            NumericUpDown35.Value = 4
+            NumericUpDown36.Value = 200
+            NumericUpDown35.Value = 100
         End If
     End Sub
 
@@ -4536,136 +4708,136 @@
             NumericUpDown32.Value = 0
         ElseIf ComboBox22.SelectedItem = ComboBox22.Items.Item(2) Then
             NumericUpDown33.Value = 0
-            NumericUpDown32.Value = 1
+            NumericUpDown32.Value = 25
         ElseIf ComboBox22.SelectedItem = ComboBox22.Items.Item(3) Then
             NumericUpDown33.Value = 0
-            NumericUpDown32.Value = 2
+            NumericUpDown32.Value = 50
         ElseIf ComboBox22.SelectedItem = ComboBox22.Items.Item(4) Then
             NumericUpDown33.Value = 0
-            NumericUpDown32.Value = 3
+            NumericUpDown32.Value = 75
         ElseIf ComboBox22.SelectedItem = ComboBox22.Items.Item(5) Then
             NumericUpDown33.Value = 0
-            NumericUpDown32.Value = 4
+            NumericUpDown32.Value = 100
         ElseIf ComboBox22.SelectedItem = ComboBox22.Items.Item(6) Then
-            NumericUpDown33.Value = 1
+            NumericUpDown33.Value = 25
             NumericUpDown32.Value = 0
         ElseIf ComboBox22.SelectedItem = ComboBox22.Items.Item(7) Then
-            NumericUpDown33.Value = 1
-            NumericUpDown32.Value = 1
+            NumericUpDown33.Value = 25
+            NumericUpDown32.Value = 25
         ElseIf ComboBox22.SelectedItem = ComboBox22.Items.Item(8) Then
-            NumericUpDown33.Value = 1
-            NumericUpDown32.Value = 2
+            NumericUpDown33.Value = 25
+            NumericUpDown32.Value = 50
         ElseIf ComboBox22.SelectedItem = ComboBox22.Items.Item(9) Then
-            NumericUpDown33.Value = 1
-            NumericUpDown32.Value = 3
+            NumericUpDown33.Value = 25
+            NumericUpDown32.Value = 75
         ElseIf ComboBox22.SelectedItem = ComboBox22.Items.Item(10) Then
-            NumericUpDown33.Value = 1
-            NumericUpDown32.Value = 4
+            NumericUpDown33.Value = 25
+            NumericUpDown32.Value = 100
         ElseIf ComboBox22.SelectedItem = ComboBox22.Items.Item(11) Then
-            NumericUpDown33.Value = 2
+            NumericUpDown33.Value = 50
             NumericUpDown32.Value = 0
         ElseIf ComboBox22.SelectedItem = ComboBox22.Items.Item(12) Then
-            NumericUpDown33.Value = 2
-            NumericUpDown32.Value = 1
+            NumericUpDown33.Value = 50
+            NumericUpDown32.Value = 25
         ElseIf ComboBox22.SelectedItem = ComboBox22.Items.Item(13) Then
-            NumericUpDown33.Value = 2
-            NumericUpDown32.Value = 2
+            NumericUpDown33.Value = 50
+            NumericUpDown32.Value = 50
         ElseIf ComboBox22.SelectedItem = ComboBox22.Items.Item(14) Then
-            NumericUpDown33.Value = 2
-            NumericUpDown32.Value = 3
+            NumericUpDown33.Value = 50
+            NumericUpDown32.Value = 75
         ElseIf ComboBox22.SelectedItem = ComboBox22.Items.Item(15) Then
-            NumericUpDown33.Value = 2
-            NumericUpDown32.Value = 4
+            NumericUpDown33.Value = 50
+            NumericUpDown32.Value = 100
         ElseIf ComboBox22.SelectedItem = ComboBox22.Items.Item(16) Then
-            NumericUpDown33.Value = 3
+            NumericUpDown33.Value = 75
             NumericUpDown32.Value = 0
         ElseIf ComboBox22.SelectedItem = ComboBox22.Items.Item(17) Then
-            NumericUpDown33.Value = 3
-            NumericUpDown32.Value = 1
+            NumericUpDown33.Value = 75
+            NumericUpDown32.Value = 25
         ElseIf ComboBox22.SelectedItem = ComboBox22.Items.Item(18) Then
-            NumericUpDown33.Value = 3
-            NumericUpDown32.Value = 2
+            NumericUpDown33.Value = 75
+            NumericUpDown32.Value = 50
         ElseIf ComboBox22.SelectedItem = ComboBox22.Items.Item(19) Then
-            NumericUpDown33.Value = 3
-            NumericUpDown32.Value = 3
+            NumericUpDown33.Value = 75
+            NumericUpDown32.Value = 75
         ElseIf ComboBox22.SelectedItem = ComboBox22.Items.Item(20) Then
-            NumericUpDown33.Value = 3
-            NumericUpDown32.Value = 4
+            NumericUpDown33.Value = 75
+            NumericUpDown32.Value = 100
         ElseIf ComboBox22.SelectedItem = ComboBox22.Items.Item(21) Then
-            NumericUpDown33.Value = 4
+            NumericUpDown33.Value = 100
             NumericUpDown32.Value = 0
         ElseIf ComboBox22.SelectedItem = ComboBox22.Items.Item(22) Then
-            NumericUpDown33.Value = 4
-            NumericUpDown32.Value = 1
+            NumericUpDown33.Value = 100
+            NumericUpDown32.Value = 25
         ElseIf ComboBox22.SelectedItem = ComboBox22.Items.Item(23) Then
-            NumericUpDown33.Value = 4
-            NumericUpDown32.Value = 2
+            NumericUpDown33.Value = 100
+            NumericUpDown32.Value = 50
         ElseIf ComboBox22.SelectedItem = ComboBox22.Items.Item(24) Then
-            NumericUpDown33.Value = 4
-            NumericUpDown32.Value = 3
+            NumericUpDown33.Value = 100
+            NumericUpDown32.Value = 75
         ElseIf ComboBox22.SelectedItem = ComboBox22.Items.Item(25) Then
-            NumericUpDown33.Value = 4
-            NumericUpDown32.Value = 4
+            NumericUpDown33.Value = 100
+            NumericUpDown32.Value = 100
         ElseIf ComboBox22.SelectedItem = ComboBox22.Items.Item(26) Then
-            NumericUpDown33.Value = 5
+            NumericUpDown33.Value = 125
             NumericUpDown32.Value = 0
         ElseIf ComboBox22.SelectedItem = ComboBox22.Items.Item(27) Then
-            NumericUpDown33.Value = 5
-            NumericUpDown32.Value = 1
+            NumericUpDown33.Value = 125
+            NumericUpDown32.Value = 25
         ElseIf ComboBox22.SelectedItem = ComboBox22.Items.Item(28) Then
-            NumericUpDown33.Value = 5
-            NumericUpDown32.Value = 2
+            NumericUpDown33.Value = 125
+            NumericUpDown32.Value = 50
         ElseIf ComboBox22.SelectedItem = ComboBox22.Items.Item(29) Then
-            NumericUpDown33.Value = 5
-            NumericUpDown32.Value = 3
+            NumericUpDown33.Value = 125
+            NumericUpDown32.Value = 75
         ElseIf ComboBox22.SelectedItem = ComboBox22.Items.Item(30) Then
-            NumericUpDown33.Value = 5
-            NumericUpDown32.Value = 4
+            NumericUpDown33.Value = 125
+            NumericUpDown32.Value = 100
         ElseIf ComboBox22.SelectedItem = ComboBox22.Items.Item(31) Then
-            NumericUpDown33.Value = 6
+            NumericUpDown33.Value = 150
             NumericUpDown32.Value = 0
         ElseIf ComboBox22.SelectedItem = ComboBox22.Items.Item(32) Then
-            NumericUpDown33.Value = 6
-            NumericUpDown32.Value = 1
+            NumericUpDown33.Value = 150
+            NumericUpDown32.Value = 25
         ElseIf ComboBox22.SelectedItem = ComboBox22.Items.Item(33) Then
-            NumericUpDown33.Value = 6
-            NumericUpDown32.Value = 2
+            NumericUpDown33.Value = 150
+            NumericUpDown32.Value = 50
         ElseIf ComboBox22.SelectedItem = ComboBox22.Items.Item(34) Then
-            NumericUpDown33.Value = 6
-            NumericUpDown32.Value = 3
+            NumericUpDown33.Value = 150
+            NumericUpDown32.Value = 75
         ElseIf ComboBox22.SelectedItem = ComboBox22.Items.Item(35) Then
-            NumericUpDown33.Value = 6
-            NumericUpDown32.Value = 4
+            NumericUpDown33.Value = 150
+            NumericUpDown32.Value = 100
         ElseIf ComboBox22.SelectedItem = ComboBox22.Items.Item(36) Then
-            NumericUpDown33.Value = 7
+            NumericUpDown33.Value = 175
             NumericUpDown32.Value = 0
         ElseIf ComboBox22.SelectedItem = ComboBox22.Items.Item(37) Then
-            NumericUpDown33.Value = 7
-            NumericUpDown32.Value = 1
+            NumericUpDown33.Value = 175
+            NumericUpDown32.Value = 25
         ElseIf ComboBox22.SelectedItem = ComboBox22.Items.Item(38) Then
-            NumericUpDown33.Value = 7
-            NumericUpDown32.Value = 2
+            NumericUpDown33.Value = 175
+            NumericUpDown32.Value = 50
         ElseIf ComboBox22.SelectedItem = ComboBox22.Items.Item(39) Then
-            NumericUpDown33.Value = 7
-            NumericUpDown32.Value = 3
+            NumericUpDown33.Value = 175
+            NumericUpDown32.Value = 75
         ElseIf ComboBox22.SelectedItem = ComboBox22.Items.Item(40) Then
-            NumericUpDown33.Value = 7
-            NumericUpDown32.Value = 4
+            NumericUpDown33.Value = 175
+            NumericUpDown32.Value = 100
         ElseIf ComboBox22.SelectedItem = ComboBox22.Items.Item(41) Then
-            NumericUpDown33.Value = 8
+            NumericUpDown33.Value = 200
             NumericUpDown32.Value = 0
         ElseIf ComboBox22.SelectedItem = ComboBox22.Items.Item(42) Then
-            NumericUpDown33.Value = 8
-            NumericUpDown32.Value = 1
+            NumericUpDown33.Value = 200
+            NumericUpDown32.Value = 25
         ElseIf ComboBox22.SelectedItem = ComboBox22.Items.Item(43) Then
-            NumericUpDown33.Value = 8
-            NumericUpDown32.Value = 2
+            NumericUpDown33.Value = 200
+            NumericUpDown32.Value = 50
         ElseIf ComboBox22.SelectedItem = ComboBox22.Items.Item(44) Then
-            NumericUpDown33.Value = 8
-            NumericUpDown32.Value = 3
+            NumericUpDown33.Value = 200
+            NumericUpDown32.Value = 75
         ElseIf ComboBox22.SelectedItem = ComboBox22.Items.Item(45) Then
-            NumericUpDown33.Value = 8
-            NumericUpDown32.Value = 4
+            NumericUpDown33.Value = 200
+            NumericUpDown32.Value = 100
         End If
     End Sub
 
@@ -9766,7 +9938,9 @@
     End Sub
 
     Private Sub NumericUpDown7_ValueChanged(sender As Object, e As EventArgs) Handles NumericUpDown7.ValueChanged
+        PictureBox4.Visible = True
         If NumericUpDown7.Value = 0 Then
+            PictureBox4.Visible = False
             ComboBox7.SelectedItem = ComboBox7.Items.Item(0)
         ElseIf NumericUpDown7.Value = 15 Then
             PictureBox20.BackgroundImage = My.Resources._0F
@@ -10349,7 +10523,9 @@
     End Sub
 
     Private Sub NumericUpDown13_ValueChanged(sender As Object, e As EventArgs) Handles NumericUpDown13.ValueChanged
+        PictureBox5.Visible = True
         If NumericUpDown13.Value = 0 Then
+            PictureBox5.Visible = False
             ComboBox11.SelectedItem = ComboBox11.Items.Item(0)
         ElseIf NumericUpDown13.Value = 15 Then
             PictureBox22.BackgroundImage = My.Resources._0F
@@ -10902,7 +11078,9 @@
     End Sub
 
     Private Sub NumericUpDown28_ValueChanged(sender As Object, e As EventArgs) Handles NumericUpDown28.ValueChanged
+        PictureBox6.Visible = True
         If NumericUpDown28.Value = 0 Then
+            PictureBox6.Visible = False
             ComboBox21.SelectedItem = ComboBox21.Items.Item(0)
         ElseIf NumericUpDown28.Value = 15 Then
             PictureBox27.BackgroundImage = My.Resources._0F
@@ -11455,7 +11633,9 @@
     End Sub
 
     Private Sub NumericUpDown25_ValueChanged(sender As Object, e As EventArgs) Handles NumericUpDown25.ValueChanged
+        PictureBox7.Visible = True
         If NumericUpDown25.Value = 0 Then
+            PictureBox7.Visible = False
             ComboBox19.SelectedItem = ComboBox19.Items.Item(0)
         ElseIf NumericUpDown25.Value = 15 Then
             PictureBox26.BackgroundImage = My.Resources._0F
@@ -12008,7 +12188,9 @@
     End Sub
 
     Private Sub NumericUpDown22_ValueChanged(sender As Object, e As EventArgs) Handles NumericUpDown22.ValueChanged
+        PictureBox8.Visible = True
         If NumericUpDown22.Value = 0 Then
+            PictureBox8.Visible = False
             ComboBox17.SelectedItem = ComboBox17.Items.Item(0)
         ElseIf NumericUpDown22.Value = 15 Then
             PictureBox25.BackgroundImage = My.Resources._0F
@@ -12561,7 +12743,9 @@
     End Sub
 
     Private Sub NumericUpDown19_ValueChanged(sender As Object, e As EventArgs) Handles NumericUpDown19.ValueChanged
+        PictureBox9.Visible = True
         If NumericUpDown19.Value = 0 Then
+            PictureBox9.Visible = False
             ComboBox15.SelectedItem = ComboBox15.Items.Item(0)
         ElseIf NumericUpDown19.Value = 15 Then
             PictureBox24.BackgroundImage = My.Resources._0F
@@ -13114,7 +13298,9 @@
     End Sub
 
     Private Sub NumericUpDown16_ValueChanged(sender As Object, e As EventArgs) Handles NumericUpDown16.ValueChanged
+        PictureBox10.Visible = True
         If NumericUpDown16.Value = 0 Then
+            PictureBox10.Visible = False
             ComboBox13.SelectedItem = ComboBox13.Items.Item(0)
         ElseIf NumericUpDown16.Value = 15 Then
             PictureBox23.BackgroundImage = My.Resources._0F
@@ -13667,7 +13853,9 @@
     End Sub
 
     Private Sub NumericUpDown43_ValueChanged(sender As Object, e As EventArgs) Handles NumericUpDown43.ValueChanged
+        PictureBox11.Visible = True
         If NumericUpDown43.Value = 0 Then
+            PictureBox11.Visible = False
             ComboBox31.SelectedItem = ComboBox31.Items.Item(0)
         ElseIf NumericUpDown43.Value = 15 Then
             PictureBox32.BackgroundImage = My.Resources._0F
@@ -14220,7 +14408,9 @@
     End Sub
 
     Private Sub NumericUpDown40_ValueChanged(sender As Object, e As EventArgs) Handles NumericUpDown40.ValueChanged
+        PictureBox12.Visible = True
         If NumericUpDown40.Value = 0 Then
+            PictureBox12.Visible = False
             ComboBox29.SelectedItem = ComboBox29.Items.Item(0)
         ElseIf NumericUpDown40.Value = 15 Then
             PictureBox31.BackgroundImage = My.Resources._0F
@@ -14773,7 +14963,9 @@
     End Sub
 
     Private Sub NumericUpDown37_ValueChanged(sender As Object, e As EventArgs) Handles NumericUpDown37.ValueChanged
+        PictureBox13.Visible = True
         If NumericUpDown37.Value = 0 Then
+            PictureBox13.Visible = False
             ComboBox27.SelectedItem = ComboBox27.Items.Item(0)
         ElseIf NumericUpDown37.Value = 15 Then
             PictureBox30.BackgroundImage = My.Resources._0F
@@ -15326,7 +15518,9 @@
     End Sub
 
     Private Sub NumericUpDown34_ValueChanged(sender As Object, e As EventArgs) Handles NumericUpDown34.ValueChanged
+        PictureBox14.Visible = True
         If NumericUpDown34.Value = 0 Then
+            PictureBox14.Visible = False
             ComboBox25.SelectedItem = ComboBox25.Items.Item(0)
         ElseIf NumericUpDown34.Value = 15 Then
             PictureBox29.BackgroundImage = My.Resources._0F
@@ -15879,7 +16073,9 @@
     End Sub
 
     Private Sub NumericUpDown31_ValueChanged(sender As Object, e As EventArgs) Handles NumericUpDown31.ValueChanged
+        PictureBox15.Visible = True
         If NumericUpDown31.Value = 0 Then
+            PictureBox15.Visible = False
             ComboBox23.SelectedItem = ComboBox23.Items.Item(0)
         ElseIf NumericUpDown31.Value = 15 Then
             PictureBox28.BackgroundImage = My.Resources._0F
@@ -16429,5 +16625,1874 @@
             PictureBox28.Visible = True
         End If
         PictureBox15.Image = PictureBox28.BackgroundImage
+    End Sub
+
+    Private Sub NumericUpDown12_ValueChanged(sender As Object, e As EventArgs) Handles NumericUpDown12.ValueChanged, NumericUpDown11.ValueChanged
+        If NumericUpDown12.Value = 0 And NumericUpDown11.Value = 0 Then
+            PictureBox3.Location = New Point(88, 158)
+            ComboBox8.SelectedItem = ComboBox8.Items.Item(1)
+        ElseIf NumericUpDown12.Value = 0 And NumericUpDown11.Value = 25 Then
+            PictureBox3.Location = New Point(88, 182)
+            ComboBox8.SelectedItem = ComboBox8.Items.Item(2)
+        ElseIf NumericUpDown12.Value = 0 And NumericUpDown11.Value = 50 Then
+            PictureBox3.Location = New Point(88, 206)
+            ComboBox8.SelectedItem = ComboBox8.Items.Item(3)
+        ElseIf NumericUpDown12.Value = 0 And NumericUpDown11.Value = 75 Then
+            PictureBox3.Location = New Point(88, 230)
+            ComboBox8.SelectedItem = ComboBox8.Items.Item(4)
+        ElseIf NumericUpDown12.Value = 0 And NumericUpDown11.Value = 100 Then
+            PictureBox3.Location = New Point(88, 254)
+            ComboBox8.SelectedItem = ComboBox8.Items.Item(5)
+        ElseIf NumericUpDown12.Value = 25 And NumericUpDown11.Value = 0 Then
+            PictureBox3.Location = New Point(112, 158)
+            ComboBox8.SelectedItem = ComboBox8.Items.Item(6)
+        ElseIf NumericUpDown12.Value = 25 And NumericUpDown11.Value = 25 Then
+            PictureBox3.Location = New Point(112, 182)
+            ComboBox8.SelectedItem = ComboBox8.Items.Item(7)
+        ElseIf NumericUpDown12.Value = 25 And NumericUpDown11.Value = 50 Then
+            PictureBox3.Location = New Point(112, 206)
+            ComboBox8.SelectedItem = ComboBox8.Items.Item(8)
+        ElseIf NumericUpDown12.Value = 25 And NumericUpDown11.Value = 75 Then
+            PictureBox3.Location = New Point(112, 230)
+            ComboBox8.SelectedItem = ComboBox8.Items.Item(9)
+        ElseIf NumericUpDown12.Value = 25 And NumericUpDown11.Value = 100 Then
+            PictureBox3.Location = New Point(112, 254)
+            ComboBox8.SelectedItem = ComboBox8.Items.Item(10)
+        ElseIf NumericUpDown12.Value = 50 And NumericUpDown11.Value = 0 Then
+            PictureBox3.Location = New Point(136, 158)
+            ComboBox8.SelectedItem = ComboBox8.Items.Item(11)
+        ElseIf NumericUpDown12.Value = 50 And NumericUpDown11.Value = 25 Then
+            PictureBox3.Location = New Point(136, 182)
+            ComboBox8.SelectedItem = ComboBox8.Items.Item(12)
+        ElseIf NumericUpDown12.Value = 50 And NumericUpDown11.Value = 50 Then
+            PictureBox3.Location = New Point(136, 206)
+            ComboBox8.SelectedItem = ComboBox8.Items.Item(13)
+        ElseIf NumericUpDown12.Value = 50 And NumericUpDown11.Value = 75 Then
+            PictureBox3.Location = New Point(136, 230)
+            ComboBox8.SelectedItem = ComboBox8.Items.Item(14)
+        ElseIf NumericUpDown12.Value = 50 And NumericUpDown11.Value = 100 Then
+            PictureBox3.Location = New Point(136, 254)
+            ComboBox8.SelectedItem = ComboBox8.Items.Item(15)
+        ElseIf NumericUpDown12.Value = 75 And NumericUpDown11.Value = 0 Then
+            PictureBox3.Location = New Point(160, 158)
+            ComboBox8.SelectedItem = ComboBox8.Items.Item(16)
+        ElseIf NumericUpDown12.Value = 75 And NumericUpDown11.Value = 25 Then
+            PictureBox3.Location = New Point(160, 182)
+            ComboBox8.SelectedItem = ComboBox8.Items.Item(17)
+        ElseIf NumericUpDown12.Value = 75 And NumericUpDown11.Value = 50 Then
+            PictureBox3.Location = New Point(160, 206)
+            ComboBox8.SelectedItem = ComboBox8.Items.Item(18)
+        ElseIf NumericUpDown12.Value = 75 And NumericUpDown11.Value = 75 Then
+            PictureBox3.Location = New Point(160, 230)
+            ComboBox8.SelectedItem = ComboBox8.Items.Item(19)
+        ElseIf NumericUpDown12.Value = 75 And NumericUpDown11.Value = 100 Then
+            PictureBox3.Location = New Point(160, 254)
+            ComboBox8.SelectedItem = ComboBox8.Items.Item(20)
+        ElseIf NumericUpDown12.Value = 4 And NumericUpDown11.Value = 0 Then
+            PictureBox3.Location = New Point(184, 158)
+            ComboBox8.SelectedItem = ComboBox8.Items.Item(21)
+        ElseIf NumericUpDown12.Value = 4 And NumericUpDown11.Value = 25 Then
+            PictureBox3.Location = New Point(184, 182)
+            ComboBox8.SelectedItem = ComboBox8.Items.Item(22)
+        ElseIf NumericUpDown12.Value = 4 And NumericUpDown11.Value = 50 Then
+            PictureBox3.Location = New Point(184, 206)
+            ComboBox8.SelectedItem = ComboBox8.Items.Item(23)
+        ElseIf NumericUpDown12.Value = 4 And NumericUpDown11.Value = 75 Then
+            PictureBox3.Location = New Point(184, 230)
+            ComboBox8.SelectedItem = ComboBox8.Items.Item(24)
+        ElseIf NumericUpDown12.Value = 4 And NumericUpDown11.Value = 100 Then
+            PictureBox3.Location = New Point(184, 254)
+            ComboBox8.SelectedItem = ComboBox8.Items.Item(25)
+        ElseIf NumericUpDown12.Value = 125 And NumericUpDown11.Value = 0 Then
+            PictureBox3.Location = New Point(208, 158)
+            ComboBox8.SelectedItem = ComboBox8.Items.Item(26)
+        ElseIf NumericUpDown12.Value = 125 And NumericUpDown11.Value = 25 Then
+            PictureBox3.Location = New Point(208, 182)
+            ComboBox8.SelectedItem = ComboBox8.Items.Item(27)
+        ElseIf NumericUpDown12.Value = 125 And NumericUpDown11.Value = 50 Then
+            PictureBox3.Location = New Point(208, 206)
+            ComboBox8.SelectedItem = ComboBox8.Items.Item(28)
+        ElseIf NumericUpDown12.Value = 125 And NumericUpDown11.Value = 75 Then
+            PictureBox3.Location = New Point(208, 230)
+            ComboBox8.SelectedItem = ComboBox8.Items.Item(29)
+        ElseIf NumericUpDown12.Value = 125 And NumericUpDown11.Value = 100 Then
+            PictureBox3.Location = New Point(208, 254)
+            ComboBox8.SelectedItem = ComboBox8.Items.Item(30)
+        ElseIf NumericUpDown12.Value = 150 And NumericUpDown11.Value = 0 Then
+            PictureBox3.Location = New Point(232, 158)
+            ComboBox8.SelectedItem = ComboBox8.Items.Item(31)
+        ElseIf NumericUpDown12.Value = 150 And NumericUpDown11.Value = 25 Then
+            PictureBox3.Location = New Point(232, 182)
+            ComboBox8.SelectedItem = ComboBox8.Items.Item(32)
+        ElseIf NumericUpDown12.Value = 150 And NumericUpDown11.Value = 50 Then
+            PictureBox3.Location = New Point(232, 206)
+            ComboBox8.SelectedItem = ComboBox8.Items.Item(33)
+        ElseIf NumericUpDown12.Value = 150 And NumericUpDown11.Value = 75 Then
+            PictureBox3.Location = New Point(232, 230)
+            ComboBox8.SelectedItem = ComboBox8.Items.Item(34)
+        ElseIf NumericUpDown12.Value = 150 And NumericUpDown11.Value = 100 Then
+            PictureBox3.Location = New Point(232, 254)
+            ComboBox8.SelectedItem = ComboBox8.Items.Item(35)
+        ElseIf NumericUpDown12.Value = 175 And NumericUpDown11.Value = 0 Then
+            PictureBox3.Location = New Point(256, 158)
+            ComboBox8.SelectedItem = ComboBox8.Items.Item(36)
+        ElseIf NumericUpDown12.Value = 175 And NumericUpDown11.Value = 25 Then
+            PictureBox3.Location = New Point(256, 182)
+            ComboBox8.SelectedItem = ComboBox8.Items.Item(37)
+        ElseIf NumericUpDown12.Value = 175 And NumericUpDown11.Value = 50 Then
+            PictureBox3.Location = New Point(256, 206)
+            ComboBox8.SelectedItem = ComboBox8.Items.Item(38)
+        ElseIf NumericUpDown12.Value = 175 And NumericUpDown11.Value = 75 Then
+            PictureBox3.Location = New Point(256, 230)
+            ComboBox8.SelectedItem = ComboBox8.Items.Item(39)
+        ElseIf NumericUpDown12.Value = 175 And NumericUpDown11.Value = 100 Then
+            PictureBox3.Location = New Point(256, 254)
+            ComboBox8.SelectedItem = ComboBox8.Items.Item(40)
+        ElseIf NumericUpDown12.Value = 200 And NumericUpDown11.Value = 0 Then
+            PictureBox3.Location = New Point(280, 158)
+            ComboBox8.SelectedItem = ComboBox8.Items.Item(41)
+        ElseIf NumericUpDown12.Value = 200 And NumericUpDown11.Value = 25 Then
+            PictureBox3.Location = New Point(280, 182)
+            ComboBox8.SelectedItem = ComboBox8.Items.Item(42)
+        ElseIf NumericUpDown12.Value = 200 And NumericUpDown11.Value = 50 Then
+            PictureBox3.Location = New Point(280, 206)
+            ComboBox8.SelectedItem = ComboBox8.Items.Item(43)
+        ElseIf NumericUpDown12.Value = 200 And NumericUpDown11.Value = 75 Then
+            PictureBox3.Location = New Point(280, 230)
+            ComboBox8.SelectedItem = ComboBox8.Items.Item(44)
+        ElseIf NumericUpDown12.Value = 200 And NumericUpDown11.Value = 100 Then
+            PictureBox3.Location = New Point(280, 254)
+            ComboBox8.SelectedItem = ComboBox8.Items.Item(45)
+        End If
+    End Sub
+
+    Private Sub NumericUpDown9_ValueChanged(sender As Object, e As EventArgs) Handles NumericUpDown9.ValueChanged, NumericUpDown8.ValueChanged
+        If NumericUpDown9.Value = 0 And NumericUpDown8.Value = 0 Then
+            PictureBox4.Location = New Point(88, 158)
+            ComboBox6.SelectedItem = ComboBox6.Items.Item(1)
+        ElseIf NumericUpDown9.Value = 0 And NumericUpDown8.Value = 25 Then
+            PictureBox4.Location = New Point(88, 182)
+            ComboBox6.SelectedItem = ComboBox6.Items.Item(2)
+        ElseIf NumericUpDown9.Value = 0 And NumericUpDown8.Value = 50 Then
+            PictureBox4.Location = New Point(88, 206)
+            ComboBox6.SelectedItem = ComboBox6.Items.Item(3)
+        ElseIf NumericUpDown9.Value = 0 And NumericUpDown8.Value = 75 Then
+            PictureBox4.Location = New Point(88, 230)
+            ComboBox6.SelectedItem = ComboBox6.Items.Item(4)
+        ElseIf NumericUpDown9.Value = 0 And NumericUpDown8.Value = 100 Then
+            PictureBox4.Location = New Point(88, 254)
+            ComboBox6.SelectedItem = ComboBox6.Items.Item(5)
+        ElseIf NumericUpDown9.Value = 25 And NumericUpDown8.Value = 0 Then
+            PictureBox4.Location = New Point(112, 158)
+            ComboBox6.SelectedItem = ComboBox6.Items.Item(6)
+        ElseIf NumericUpDown9.Value = 25 And NumericUpDown8.Value = 25 Then
+            PictureBox4.Location = New Point(112, 182)
+            ComboBox6.SelectedItem = ComboBox6.Items.Item(7)
+        ElseIf NumericUpDown9.Value = 25 And NumericUpDown8.Value = 50 Then
+            PictureBox4.Location = New Point(112, 206)
+            ComboBox6.SelectedItem = ComboBox6.Items.Item(8)
+        ElseIf NumericUpDown9.Value = 25 And NumericUpDown8.Value = 75 Then
+            PictureBox4.Location = New Point(112, 230)
+            ComboBox6.SelectedItem = ComboBox6.Items.Item(9)
+        ElseIf NumericUpDown9.Value = 25 And NumericUpDown8.Value = 100 Then
+            PictureBox4.Location = New Point(112, 254)
+            ComboBox6.SelectedItem = ComboBox6.Items.Item(10)
+        ElseIf NumericUpDown9.Value = 50 And NumericUpDown8.Value = 0 Then
+            PictureBox4.Location = New Point(136, 158)
+            ComboBox6.SelectedItem = ComboBox6.Items.Item(11)
+        ElseIf NumericUpDown9.Value = 50 And NumericUpDown8.Value = 25 Then
+            PictureBox4.Location = New Point(136, 182)
+            ComboBox6.SelectedItem = ComboBox6.Items.Item(12)
+        ElseIf NumericUpDown9.Value = 50 And NumericUpDown8.Value = 50 Then
+            PictureBox4.Location = New Point(136, 206)
+            ComboBox6.SelectedItem = ComboBox6.Items.Item(13)
+        ElseIf NumericUpDown9.Value = 50 And NumericUpDown8.Value = 75 Then
+            PictureBox4.Location = New Point(136, 230)
+            ComboBox6.SelectedItem = ComboBox6.Items.Item(14)
+        ElseIf NumericUpDown9.Value = 50 And NumericUpDown8.Value = 100 Then
+            PictureBox4.Location = New Point(136, 254)
+            ComboBox6.SelectedItem = ComboBox6.Items.Item(15)
+        ElseIf NumericUpDown9.Value = 75 And NumericUpDown8.Value = 0 Then
+            PictureBox4.Location = New Point(160, 158)
+            ComboBox6.SelectedItem = ComboBox6.Items.Item(16)
+        ElseIf NumericUpDown9.Value = 75 And NumericUpDown8.Value = 25 Then
+            PictureBox4.Location = New Point(160, 182)
+            ComboBox6.SelectedItem = ComboBox6.Items.Item(17)
+        ElseIf NumericUpDown9.Value = 75 And NumericUpDown8.Value = 50 Then
+            PictureBox4.Location = New Point(160, 206)
+            ComboBox6.SelectedItem = ComboBox6.Items.Item(18)
+        ElseIf NumericUpDown9.Value = 75 And NumericUpDown8.Value = 75 Then
+            PictureBox4.Location = New Point(160, 230)
+            ComboBox6.SelectedItem = ComboBox6.Items.Item(19)
+        ElseIf NumericUpDown9.Value = 75 And NumericUpDown8.Value = 100 Then
+            PictureBox4.Location = New Point(160, 254)
+            ComboBox6.SelectedItem = ComboBox6.Items.Item(20)
+        ElseIf NumericUpDown9.Value = 4 And NumericUpDown8.Value = 0 Then
+            PictureBox4.Location = New Point(184, 158)
+            ComboBox6.SelectedItem = ComboBox6.Items.Item(21)
+        ElseIf NumericUpDown9.Value = 4 And NumericUpDown8.Value = 25 Then
+            PictureBox4.Location = New Point(184, 182)
+            ComboBox6.SelectedItem = ComboBox6.Items.Item(22)
+        ElseIf NumericUpDown9.Value = 4 And NumericUpDown8.Value = 50 Then
+            PictureBox4.Location = New Point(184, 206)
+            ComboBox6.SelectedItem = ComboBox6.Items.Item(23)
+        ElseIf NumericUpDown9.Value = 4 And NumericUpDown8.Value = 75 Then
+            PictureBox4.Location = New Point(184, 230)
+            ComboBox6.SelectedItem = ComboBox6.Items.Item(24)
+        ElseIf NumericUpDown9.Value = 4 And NumericUpDown8.Value = 100 Then
+            PictureBox4.Location = New Point(184, 254)
+            ComboBox6.SelectedItem = ComboBox6.Items.Item(25)
+        ElseIf NumericUpDown9.Value = 125 And NumericUpDown8.Value = 0 Then
+            PictureBox4.Location = New Point(208, 158)
+            ComboBox6.SelectedItem = ComboBox6.Items.Item(26)
+        ElseIf NumericUpDown9.Value = 125 And NumericUpDown8.Value = 25 Then
+            PictureBox4.Location = New Point(208, 182)
+            ComboBox6.SelectedItem = ComboBox6.Items.Item(27)
+        ElseIf NumericUpDown9.Value = 125 And NumericUpDown8.Value = 50 Then
+            PictureBox4.Location = New Point(208, 206)
+            ComboBox6.SelectedItem = ComboBox6.Items.Item(28)
+        ElseIf NumericUpDown9.Value = 125 And NumericUpDown8.Value = 75 Then
+            PictureBox4.Location = New Point(208, 230)
+            ComboBox6.SelectedItem = ComboBox6.Items.Item(29)
+        ElseIf NumericUpDown9.Value = 125 And NumericUpDown8.Value = 100 Then
+            PictureBox4.Location = New Point(208, 254)
+            ComboBox6.SelectedItem = ComboBox6.Items.Item(30)
+        ElseIf NumericUpDown9.Value = 150 And NumericUpDown8.Value = 0 Then
+            PictureBox4.Location = New Point(232, 158)
+            ComboBox6.SelectedItem = ComboBox6.Items.Item(31)
+        ElseIf NumericUpDown9.Value = 150 And NumericUpDown8.Value = 25 Then
+            PictureBox4.Location = New Point(232, 182)
+            ComboBox6.SelectedItem = ComboBox6.Items.Item(32)
+        ElseIf NumericUpDown9.Value = 150 And NumericUpDown8.Value = 50 Then
+            PictureBox4.Location = New Point(232, 206)
+            ComboBox6.SelectedItem = ComboBox6.Items.Item(33)
+        ElseIf NumericUpDown9.Value = 150 And NumericUpDown8.Value = 75 Then
+            PictureBox4.Location = New Point(232, 230)
+            ComboBox6.SelectedItem = ComboBox6.Items.Item(34)
+        ElseIf NumericUpDown9.Value = 150 And NumericUpDown8.Value = 100 Then
+            PictureBox4.Location = New Point(232, 254)
+            ComboBox6.SelectedItem = ComboBox6.Items.Item(35)
+        ElseIf NumericUpDown9.Value = 175 And NumericUpDown8.Value = 0 Then
+            PictureBox4.Location = New Point(256, 158)
+            ComboBox6.SelectedItem = ComboBox6.Items.Item(36)
+        ElseIf NumericUpDown9.Value = 175 And NumericUpDown8.Value = 25 Then
+            PictureBox4.Location = New Point(256, 182)
+            ComboBox6.SelectedItem = ComboBox6.Items.Item(37)
+        ElseIf NumericUpDown9.Value = 175 And NumericUpDown8.Value = 50 Then
+            PictureBox4.Location = New Point(256, 206)
+            ComboBox6.SelectedItem = ComboBox6.Items.Item(38)
+        ElseIf NumericUpDown9.Value = 175 And NumericUpDown8.Value = 75 Then
+            PictureBox4.Location = New Point(256, 230)
+            ComboBox6.SelectedItem = ComboBox6.Items.Item(39)
+        ElseIf NumericUpDown9.Value = 175 And NumericUpDown8.Value = 100 Then
+            PictureBox4.Location = New Point(256, 254)
+            ComboBox6.SelectedItem = ComboBox6.Items.Item(40)
+        ElseIf NumericUpDown9.Value = 200 And NumericUpDown8.Value = 0 Then
+            PictureBox4.Location = New Point(280, 158)
+            ComboBox6.SelectedItem = ComboBox6.Items.Item(41)
+        ElseIf NumericUpDown9.Value = 200 And NumericUpDown8.Value = 25 Then
+            PictureBox4.Location = New Point(280, 182)
+            ComboBox6.SelectedItem = ComboBox6.Items.Item(42)
+        ElseIf NumericUpDown9.Value = 200 And NumericUpDown8.Value = 50 Then
+            PictureBox4.Location = New Point(280, 206)
+            ComboBox6.SelectedItem = ComboBox6.Items.Item(43)
+        ElseIf NumericUpDown9.Value = 200 And NumericUpDown8.Value = 75 Then
+            PictureBox4.Location = New Point(280, 230)
+            ComboBox6.SelectedItem = ComboBox6.Items.Item(44)
+        ElseIf NumericUpDown9.Value = 200 And NumericUpDown8.Value = 100 Then
+            PictureBox4.Location = New Point(280, 254)
+            ComboBox6.SelectedItem = ComboBox6.Items.Item(45)
+        End If
+    End Sub
+
+    Private Sub NumericUpDown15_ValueChanged(sender As Object, e As EventArgs) Handles NumericUpDown15.ValueChanged, NumericUpDown14.ValueChanged
+        If NumericUpDown15.Value = 0 And NumericUpDown14.Value = 0 Then
+            PictureBox5.Location = New Point(88, 158)
+            ComboBox10.SelectedItem = ComboBox10.Items.Item(1)
+        ElseIf NumericUpDown15.Value = 0 And NumericUpDown14.Value = 25 Then
+            PictureBox5.Location = New Point(88, 182)
+            ComboBox10.SelectedItem = ComboBox10.Items.Item(2)
+        ElseIf NumericUpDown15.Value = 0 And NumericUpDown14.Value = 50 Then
+            PictureBox5.Location = New Point(88, 206)
+            ComboBox10.SelectedItem = ComboBox10.Items.Item(3)
+        ElseIf NumericUpDown15.Value = 0 And NumericUpDown14.Value = 75 Then
+            PictureBox5.Location = New Point(88, 230)
+            ComboBox10.SelectedItem = ComboBox10.Items.Item(4)
+        ElseIf NumericUpDown15.Value = 0 And NumericUpDown14.Value = 100 Then
+            PictureBox5.Location = New Point(88, 254)
+            ComboBox10.SelectedItem = ComboBox10.Items.Item(5)
+        ElseIf NumericUpDown15.Value = 25 And NumericUpDown14.Value = 0 Then
+            PictureBox5.Location = New Point(112, 158)
+            ComboBox10.SelectedItem = ComboBox10.Items.Item(6)
+        ElseIf NumericUpDown15.Value = 25 And NumericUpDown14.Value = 25 Then
+            PictureBox5.Location = New Point(112, 182)
+            ComboBox10.SelectedItem = ComboBox10.Items.Item(7)
+        ElseIf NumericUpDown15.Value = 25 And NumericUpDown14.Value = 50 Then
+            PictureBox5.Location = New Point(112, 206)
+            ComboBox10.SelectedItem = ComboBox10.Items.Item(8)
+        ElseIf NumericUpDown15.Value = 25 And NumericUpDown14.Value = 75 Then
+            PictureBox5.Location = New Point(112, 230)
+            ComboBox10.SelectedItem = ComboBox10.Items.Item(9)
+        ElseIf NumericUpDown15.Value = 25 And NumericUpDown14.Value = 100 Then
+            PictureBox5.Location = New Point(112, 254)
+            ComboBox10.SelectedItem = ComboBox10.Items.Item(10)
+        ElseIf NumericUpDown15.Value = 50 And NumericUpDown14.Value = 0 Then
+            PictureBox5.Location = New Point(136, 158)
+            ComboBox10.SelectedItem = ComboBox10.Items.Item(11)
+        ElseIf NumericUpDown15.Value = 50 And NumericUpDown14.Value = 25 Then
+            PictureBox5.Location = New Point(136, 182)
+            ComboBox10.SelectedItem = ComboBox10.Items.Item(12)
+        ElseIf NumericUpDown15.Value = 50 And NumericUpDown14.Value = 50 Then
+            PictureBox5.Location = New Point(136, 206)
+            ComboBox10.SelectedItem = ComboBox10.Items.Item(13)
+        ElseIf NumericUpDown15.Value = 50 And NumericUpDown14.Value = 75 Then
+            PictureBox5.Location = New Point(136, 230)
+            ComboBox10.SelectedItem = ComboBox10.Items.Item(14)
+        ElseIf NumericUpDown15.Value = 50 And NumericUpDown14.Value = 100 Then
+            PictureBox5.Location = New Point(136, 254)
+            ComboBox10.SelectedItem = ComboBox10.Items.Item(15)
+        ElseIf NumericUpDown15.Value = 75 And NumericUpDown14.Value = 0 Then
+            PictureBox5.Location = New Point(160, 158)
+            ComboBox10.SelectedItem = ComboBox10.Items.Item(16)
+        ElseIf NumericUpDown15.Value = 75 And NumericUpDown14.Value = 25 Then
+            PictureBox5.Location = New Point(160, 182)
+            ComboBox10.SelectedItem = ComboBox10.Items.Item(17)
+        ElseIf NumericUpDown15.Value = 75 And NumericUpDown14.Value = 50 Then
+            PictureBox5.Location = New Point(160, 206)
+            ComboBox10.SelectedItem = ComboBox10.Items.Item(18)
+        ElseIf NumericUpDown15.Value = 75 And NumericUpDown14.Value = 75 Then
+            PictureBox5.Location = New Point(160, 230)
+            ComboBox10.SelectedItem = ComboBox10.Items.Item(19)
+        ElseIf NumericUpDown15.Value = 75 And NumericUpDown14.Value = 100 Then
+            PictureBox5.Location = New Point(160, 254)
+            ComboBox10.SelectedItem = ComboBox10.Items.Item(20)
+        ElseIf NumericUpDown15.Value = 100 And NumericUpDown14.Value = 0 Then
+            PictureBox5.Location = New Point(184, 158)
+            ComboBox10.SelectedItem = ComboBox10.Items.Item(21)
+        ElseIf NumericUpDown15.Value = 100 And NumericUpDown14.Value = 25 Then
+            PictureBox5.Location = New Point(184, 182)
+            ComboBox10.SelectedItem = ComboBox10.Items.Item(22)
+        ElseIf NumericUpDown15.Value = 100 And NumericUpDown14.Value = 50 Then
+            PictureBox5.Location = New Point(184, 206)
+            ComboBox10.SelectedItem = ComboBox10.Items.Item(23)
+        ElseIf NumericUpDown15.Value = 100 And NumericUpDown14.Value = 75 Then
+            PictureBox5.Location = New Point(184, 230)
+            ComboBox10.SelectedItem = ComboBox10.Items.Item(24)
+        ElseIf NumericUpDown15.Value = 100 And NumericUpDown14.Value = 100 Then
+            PictureBox5.Location = New Point(184, 254)
+            ComboBox10.SelectedItem = ComboBox10.Items.Item(25)
+        ElseIf NumericUpDown15.Value = 125 And NumericUpDown14.Value = 0 Then
+            PictureBox5.Location = New Point(208, 158)
+            ComboBox10.SelectedItem = ComboBox10.Items.Item(26)
+        ElseIf NumericUpDown15.Value = 125 And NumericUpDown14.Value = 25 Then
+            PictureBox5.Location = New Point(208, 182)
+            ComboBox10.SelectedItem = ComboBox10.Items.Item(27)
+        ElseIf NumericUpDown15.Value = 125 And NumericUpDown14.Value = 50 Then
+            PictureBox5.Location = New Point(208, 206)
+            ComboBox10.SelectedItem = ComboBox10.Items.Item(28)
+        ElseIf NumericUpDown15.Value = 125 And NumericUpDown14.Value = 75 Then
+            PictureBox5.Location = New Point(208, 230)
+            ComboBox10.SelectedItem = ComboBox10.Items.Item(29)
+        ElseIf NumericUpDown15.Value = 125 And NumericUpDown14.Value = 100 Then
+            PictureBox5.Location = New Point(208, 254)
+            ComboBox10.SelectedItem = ComboBox10.Items.Item(30)
+        ElseIf NumericUpDown15.Value = 150 And NumericUpDown14.Value = 0 Then
+            PictureBox5.Location = New Point(232, 158)
+            ComboBox10.SelectedItem = ComboBox10.Items.Item(31)
+        ElseIf NumericUpDown15.Value = 150 And NumericUpDown14.Value = 25 Then
+            PictureBox5.Location = New Point(232, 182)
+            ComboBox10.SelectedItem = ComboBox10.Items.Item(32)
+        ElseIf NumericUpDown15.Value = 150 And NumericUpDown14.Value = 50 Then
+            PictureBox5.Location = New Point(232, 206)
+            ComboBox10.SelectedItem = ComboBox10.Items.Item(33)
+        ElseIf NumericUpDown15.Value = 150 And NumericUpDown14.Value = 75 Then
+            PictureBox5.Location = New Point(232, 230)
+            ComboBox10.SelectedItem = ComboBox10.Items.Item(34)
+        ElseIf NumericUpDown15.Value = 150 And NumericUpDown14.Value = 100 Then
+            PictureBox5.Location = New Point(232, 254)
+            ComboBox10.SelectedItem = ComboBox10.Items.Item(35)
+        ElseIf NumericUpDown15.Value = 175 And NumericUpDown14.Value = 0 Then
+            PictureBox5.Location = New Point(256, 158)
+            ComboBox10.SelectedItem = ComboBox10.Items.Item(36)
+        ElseIf NumericUpDown15.Value = 175 And NumericUpDown14.Value = 25 Then
+            PictureBox5.Location = New Point(256, 182)
+            ComboBox10.SelectedItem = ComboBox10.Items.Item(37)
+        ElseIf NumericUpDown15.Value = 175 And NumericUpDown14.Value = 50 Then
+            PictureBox5.Location = New Point(256, 206)
+            ComboBox10.SelectedItem = ComboBox10.Items.Item(38)
+        ElseIf NumericUpDown15.Value = 175 And NumericUpDown14.Value = 75 Then
+            PictureBox5.Location = New Point(256, 230)
+            ComboBox10.SelectedItem = ComboBox10.Items.Item(39)
+        ElseIf NumericUpDown15.Value = 175 And NumericUpDown14.Value = 100 Then
+            PictureBox5.Location = New Point(256, 254)
+            ComboBox10.SelectedItem = ComboBox10.Items.Item(40)
+        ElseIf NumericUpDown15.Value = 200 And NumericUpDown14.Value = 0 Then
+            PictureBox5.Location = New Point(280, 158)
+            ComboBox10.SelectedItem = ComboBox10.Items.Item(41)
+        ElseIf NumericUpDown15.Value = 200 And NumericUpDown14.Value = 25 Then
+            PictureBox5.Location = New Point(280, 182)
+            ComboBox10.SelectedItem = ComboBox10.Items.Item(42)
+        ElseIf NumericUpDown15.Value = 200 And NumericUpDown14.Value = 50 Then
+            PictureBox5.Location = New Point(280, 206)
+            ComboBox10.SelectedItem = ComboBox10.Items.Item(43)
+        ElseIf NumericUpDown15.Value = 200 And NumericUpDown14.Value = 75 Then
+            PictureBox5.Location = New Point(280, 230)
+            ComboBox10.SelectedItem = ComboBox10.Items.Item(44)
+        ElseIf NumericUpDown15.Value = 200 And NumericUpDown14.Value = 100 Then
+            PictureBox5.Location = New Point(280, 254)
+            ComboBox10.SelectedItem = ComboBox10.Items.Item(45)
+        End If
+    End Sub
+
+    Private Sub NumericUpDown30_ValueChanged(sender As Object, e As EventArgs) Handles NumericUpDown30.ValueChanged, NumericUpDown29.ValueChanged
+        If NumericUpDown30.Value = 0 And NumericUpDown29.Value = 0 Then
+            PictureBox6.Location = New Point(88, 158)
+            ComboBox20.SelectedItem = ComboBox20.Items.Item(1)
+        ElseIf NumericUpDown30.Value = 0 And NumericUpDown29.Value = 25 Then
+            PictureBox6.Location = New Point(88, 182)
+            ComboBox20.SelectedItem = ComboBox20.Items.Item(2)
+        ElseIf NumericUpDown30.Value = 0 And NumericUpDown29.Value = 50 Then
+            PictureBox6.Location = New Point(88, 206)
+            ComboBox20.SelectedItem = ComboBox20.Items.Item(3)
+        ElseIf NumericUpDown30.Value = 0 And NumericUpDown29.Value = 75 Then
+            PictureBox6.Location = New Point(88, 230)
+            ComboBox20.SelectedItem = ComboBox20.Items.Item(4)
+        ElseIf NumericUpDown30.Value = 0 And NumericUpDown29.Value = 100 Then
+            PictureBox6.Location = New Point(88, 254)
+            ComboBox20.SelectedItem = ComboBox20.Items.Item(5)
+        ElseIf NumericUpDown30.Value = 25 And NumericUpDown29.Value = 0 Then
+            PictureBox6.Location = New Point(112, 158)
+            ComboBox20.SelectedItem = ComboBox20.Items.Item(6)
+        ElseIf NumericUpDown30.Value = 25 And NumericUpDown29.Value = 25 Then
+            PictureBox6.Location = New Point(112, 182)
+            ComboBox20.SelectedItem = ComboBox20.Items.Item(7)
+        ElseIf NumericUpDown30.Value = 25 And NumericUpDown29.Value = 50 Then
+            PictureBox6.Location = New Point(112, 206)
+            ComboBox20.SelectedItem = ComboBox20.Items.Item(8)
+        ElseIf NumericUpDown30.Value = 25 And NumericUpDown29.Value = 75 Then
+            PictureBox6.Location = New Point(112, 230)
+            ComboBox20.SelectedItem = ComboBox20.Items.Item(9)
+        ElseIf NumericUpDown30.Value = 25 And NumericUpDown29.Value = 100 Then
+            PictureBox6.Location = New Point(112, 254)
+            ComboBox20.SelectedItem = ComboBox20.Items.Item(10)
+        ElseIf NumericUpDown30.Value = 50 And NumericUpDown29.Value = 0 Then
+            PictureBox6.Location = New Point(136, 158)
+            ComboBox20.SelectedItem = ComboBox20.Items.Item(11)
+        ElseIf NumericUpDown30.Value = 50 And NumericUpDown29.Value = 25 Then
+            PictureBox6.Location = New Point(136, 182)
+            ComboBox20.SelectedItem = ComboBox20.Items.Item(12)
+        ElseIf NumericUpDown30.Value = 50 And NumericUpDown29.Value = 50 Then
+            PictureBox6.Location = New Point(136, 206)
+            ComboBox20.SelectedItem = ComboBox20.Items.Item(13)
+        ElseIf NumericUpDown30.Value = 50 And NumericUpDown29.Value = 75 Then
+            PictureBox6.Location = New Point(136, 230)
+            ComboBox20.SelectedItem = ComboBox20.Items.Item(14)
+        ElseIf NumericUpDown30.Value = 50 And NumericUpDown29.Value = 100 Then
+            PictureBox6.Location = New Point(136, 254)
+            ComboBox20.SelectedItem = ComboBox20.Items.Item(15)
+        ElseIf NumericUpDown30.Value = 75 And NumericUpDown29.Value = 0 Then
+            PictureBox6.Location = New Point(160, 158)
+            ComboBox20.SelectedItem = ComboBox20.Items.Item(16)
+        ElseIf NumericUpDown30.Value = 75 And NumericUpDown29.Value = 25 Then
+            PictureBox6.Location = New Point(160, 182)
+            ComboBox20.SelectedItem = ComboBox20.Items.Item(17)
+        ElseIf NumericUpDown30.Value = 75 And NumericUpDown29.Value = 50 Then
+            PictureBox6.Location = New Point(160, 206)
+            ComboBox20.SelectedItem = ComboBox20.Items.Item(18)
+        ElseIf NumericUpDown30.Value = 75 And NumericUpDown29.Value = 75 Then
+            PictureBox6.Location = New Point(160, 230)
+            ComboBox20.SelectedItem = ComboBox20.Items.Item(19)
+        ElseIf NumericUpDown30.Value = 75 And NumericUpDown29.Value = 100 Then
+            PictureBox6.Location = New Point(160, 254)
+            ComboBox20.SelectedItem = ComboBox20.Items.Item(20)
+        ElseIf NumericUpDown30.Value = 100 And NumericUpDown29.Value = 0 Then
+            PictureBox6.Location = New Point(184, 158)
+            ComboBox20.SelectedItem = ComboBox20.Items.Item(21)
+        ElseIf NumericUpDown30.Value = 100 And NumericUpDown29.Value = 25 Then
+            PictureBox6.Location = New Point(184, 182)
+            ComboBox20.SelectedItem = ComboBox20.Items.Item(22)
+        ElseIf NumericUpDown30.Value = 100 And NumericUpDown29.Value = 50 Then
+            PictureBox6.Location = New Point(184, 206)
+            ComboBox20.SelectedItem = ComboBox20.Items.Item(23)
+        ElseIf NumericUpDown30.Value = 100 And NumericUpDown29.Value = 75 Then
+            PictureBox6.Location = New Point(184, 230)
+            ComboBox20.SelectedItem = ComboBox20.Items.Item(24)
+        ElseIf NumericUpDown30.Value = 100 And NumericUpDown29.Value = 100 Then
+            PictureBox6.Location = New Point(184, 254)
+            ComboBox20.SelectedItem = ComboBox20.Items.Item(25)
+        ElseIf NumericUpDown30.Value = 125 And NumericUpDown29.Value = 0 Then
+            PictureBox6.Location = New Point(208, 158)
+            ComboBox20.SelectedItem = ComboBox20.Items.Item(26)
+        ElseIf NumericUpDown30.Value = 125 And NumericUpDown29.Value = 25 Then
+            PictureBox6.Location = New Point(208, 182)
+            ComboBox20.SelectedItem = ComboBox20.Items.Item(27)
+        ElseIf NumericUpDown30.Value = 125 And NumericUpDown29.Value = 50 Then
+            PictureBox6.Location = New Point(208, 206)
+            ComboBox20.SelectedItem = ComboBox20.Items.Item(28)
+        ElseIf NumericUpDown30.Value = 125 And NumericUpDown29.Value = 75 Then
+            PictureBox6.Location = New Point(208, 230)
+            ComboBox20.SelectedItem = ComboBox20.Items.Item(29)
+        ElseIf NumericUpDown30.Value = 125 And NumericUpDown29.Value = 100 Then
+            PictureBox6.Location = New Point(208, 254)
+            ComboBox20.SelectedItem = ComboBox20.Items.Item(30)
+        ElseIf NumericUpDown30.Value = 150 And NumericUpDown29.Value = 0 Then
+            PictureBox6.Location = New Point(232, 158)
+            ComboBox20.SelectedItem = ComboBox20.Items.Item(31)
+        ElseIf NumericUpDown30.Value = 150 And NumericUpDown29.Value = 25 Then
+            PictureBox6.Location = New Point(232, 182)
+            ComboBox20.SelectedItem = ComboBox20.Items.Item(32)
+        ElseIf NumericUpDown30.Value = 150 And NumericUpDown29.Value = 50 Then
+            PictureBox6.Location = New Point(232, 206)
+            ComboBox20.SelectedItem = ComboBox20.Items.Item(33)
+        ElseIf NumericUpDown30.Value = 150 And NumericUpDown29.Value = 75 Then
+            PictureBox6.Location = New Point(232, 230)
+            ComboBox20.SelectedItem = ComboBox20.Items.Item(34)
+        ElseIf NumericUpDown30.Value = 150 And NumericUpDown29.Value = 100 Then
+            PictureBox6.Location = New Point(232, 254)
+            ComboBox20.SelectedItem = ComboBox20.Items.Item(35)
+        ElseIf NumericUpDown30.Value = 175 And NumericUpDown29.Value = 0 Then
+            PictureBox6.Location = New Point(256, 158)
+            ComboBox20.SelectedItem = ComboBox20.Items.Item(36)
+        ElseIf NumericUpDown30.Value = 175 And NumericUpDown29.Value = 25 Then
+            PictureBox6.Location = New Point(256, 182)
+            ComboBox20.SelectedItem = ComboBox20.Items.Item(37)
+        ElseIf NumericUpDown30.Value = 175 And NumericUpDown29.Value = 50 Then
+            PictureBox6.Location = New Point(256, 206)
+            ComboBox20.SelectedItem = ComboBox20.Items.Item(38)
+        ElseIf NumericUpDown30.Value = 175 And NumericUpDown29.Value = 75 Then
+            PictureBox6.Location = New Point(256, 230)
+            ComboBox20.SelectedItem = ComboBox20.Items.Item(39)
+        ElseIf NumericUpDown30.Value = 175 And NumericUpDown29.Value = 100 Then
+            PictureBox6.Location = New Point(256, 254)
+            ComboBox20.SelectedItem = ComboBox20.Items.Item(40)
+        ElseIf NumericUpDown30.Value = 200 And NumericUpDown29.Value = 0 Then
+            PictureBox6.Location = New Point(280, 158)
+            ComboBox20.SelectedItem = ComboBox20.Items.Item(41)
+        ElseIf NumericUpDown30.Value = 200 And NumericUpDown29.Value = 25 Then
+            PictureBox6.Location = New Point(280, 182)
+            ComboBox20.SelectedItem = ComboBox20.Items.Item(42)
+        ElseIf NumericUpDown30.Value = 200 And NumericUpDown29.Value = 50 Then
+            PictureBox6.Location = New Point(280, 206)
+            ComboBox20.SelectedItem = ComboBox20.Items.Item(43)
+        ElseIf NumericUpDown30.Value = 200 And NumericUpDown29.Value = 75 Then
+            PictureBox6.Location = New Point(280, 230)
+            ComboBox20.SelectedItem = ComboBox20.Items.Item(44)
+        ElseIf NumericUpDown30.Value = 200 And NumericUpDown29.Value = 100 Then
+            PictureBox6.Location = New Point(280, 254)
+            ComboBox20.SelectedItem = ComboBox20.Items.Item(45)
+        End If
+
+    End Sub
+
+    Private Sub NumericUpDown27_ValueChanged(sender As Object, e As EventArgs) Handles NumericUpDown27.ValueChanged, NumericUpDown26.ValueChanged
+        If NumericUpDown27.Value = 0 And NumericUpDown26.Value = 0 Then
+            PictureBox7.Location = New Point(88, 158)
+            ComboBox18.SelectedItem = ComboBox18.Items.Item(1)
+        ElseIf NumericUpDown27.Value = 0 And NumericUpDown26.Value = 25 Then
+            PictureBox7.Location = New Point(88, 182)
+            ComboBox18.SelectedItem = ComboBox18.Items.Item(2)
+        ElseIf NumericUpDown27.Value = 0 And NumericUpDown26.Value = 50 Then
+            PictureBox7.Location = New Point(88, 206)
+            ComboBox18.SelectedItem = ComboBox18.Items.Item(3)
+        ElseIf NumericUpDown27.Value = 0 And NumericUpDown26.Value = 75 Then
+            PictureBox7.Location = New Point(88, 230)
+            ComboBox18.SelectedItem = ComboBox18.Items.Item(4)
+        ElseIf NumericUpDown27.Value = 0 And NumericUpDown26.Value = 100 Then
+            PictureBox7.Location = New Point(88, 254)
+            ComboBox18.SelectedItem = ComboBox18.Items.Item(5)
+        ElseIf NumericUpDown27.Value = 25 And NumericUpDown26.Value = 0 Then
+            PictureBox7.Location = New Point(112, 158)
+            ComboBox18.SelectedItem = ComboBox18.Items.Item(6)
+        ElseIf NumericUpDown27.Value = 25 And NumericUpDown26.Value = 25 Then
+            PictureBox7.Location = New Point(112, 182)
+            ComboBox18.SelectedItem = ComboBox18.Items.Item(7)
+        ElseIf NumericUpDown27.Value = 25 And NumericUpDown26.Value = 50 Then
+            PictureBox7.Location = New Point(112, 206)
+            ComboBox18.SelectedItem = ComboBox18.Items.Item(8)
+        ElseIf NumericUpDown27.Value = 25 And NumericUpDown26.Value = 75 Then
+            PictureBox7.Location = New Point(112, 230)
+            ComboBox18.SelectedItem = ComboBox18.Items.Item(9)
+        ElseIf NumericUpDown27.Value = 25 And NumericUpDown26.Value = 100 Then
+            PictureBox7.Location = New Point(112, 254)
+            ComboBox18.SelectedItem = ComboBox18.Items.Item(10)
+        ElseIf NumericUpDown27.Value = 50 And NumericUpDown26.Value = 0 Then
+            PictureBox7.Location = New Point(136, 158)
+            ComboBox18.SelectedItem = ComboBox18.Items.Item(11)
+        ElseIf NumericUpDown27.Value = 50 And NumericUpDown26.Value = 25 Then
+            PictureBox7.Location = New Point(136, 182)
+            ComboBox18.SelectedItem = ComboBox18.Items.Item(12)
+        ElseIf NumericUpDown27.Value = 50 And NumericUpDown26.Value = 50 Then
+            PictureBox7.Location = New Point(136, 206)
+            ComboBox18.SelectedItem = ComboBox18.Items.Item(13)
+        ElseIf NumericUpDown27.Value = 50 And NumericUpDown26.Value = 75 Then
+            PictureBox7.Location = New Point(136, 230)
+            ComboBox18.SelectedItem = ComboBox18.Items.Item(14)
+        ElseIf NumericUpDown27.Value = 50 And NumericUpDown26.Value = 100 Then
+            PictureBox7.Location = New Point(136, 254)
+            ComboBox18.SelectedItem = ComboBox18.Items.Item(15)
+        ElseIf NumericUpDown27.Value = 75 And NumericUpDown26.Value = 0 Then
+            PictureBox7.Location = New Point(160, 158)
+            ComboBox18.SelectedItem = ComboBox18.Items.Item(16)
+        ElseIf NumericUpDown27.Value = 75 And NumericUpDown26.Value = 25 Then
+            PictureBox7.Location = New Point(160, 182)
+            ComboBox18.SelectedItem = ComboBox18.Items.Item(17)
+        ElseIf NumericUpDown27.Value = 75 And NumericUpDown26.Value = 50 Then
+            PictureBox7.Location = New Point(160, 206)
+            ComboBox18.SelectedItem = ComboBox18.Items.Item(18)
+        ElseIf NumericUpDown27.Value = 75 And NumericUpDown26.Value = 75 Then
+            PictureBox7.Location = New Point(160, 230)
+            ComboBox18.SelectedItem = ComboBox18.Items.Item(19)
+        ElseIf NumericUpDown27.Value = 75 And NumericUpDown26.Value = 100 Then
+            PictureBox7.Location = New Point(160, 254)
+            ComboBox18.SelectedItem = ComboBox18.Items.Item(20)
+        ElseIf NumericUpDown27.Value = 100 And NumericUpDown26.Value = 0 Then
+            PictureBox7.Location = New Point(184, 158)
+            ComboBox18.SelectedItem = ComboBox18.Items.Item(21)
+        ElseIf NumericUpDown27.Value = 100 And NumericUpDown26.Value = 25 Then
+            PictureBox7.Location = New Point(184, 182)
+            ComboBox18.SelectedItem = ComboBox18.Items.Item(22)
+        ElseIf NumericUpDown27.Value = 100 And NumericUpDown26.Value = 50 Then
+            PictureBox7.Location = New Point(184, 206)
+            ComboBox18.SelectedItem = ComboBox18.Items.Item(23)
+        ElseIf NumericUpDown27.Value = 100 And NumericUpDown26.Value = 75 Then
+            PictureBox7.Location = New Point(184, 230)
+            ComboBox18.SelectedItem = ComboBox18.Items.Item(24)
+        ElseIf NumericUpDown27.Value = 100 And NumericUpDown26.Value = 100 Then
+            PictureBox7.Location = New Point(184, 254)
+            ComboBox18.SelectedItem = ComboBox18.Items.Item(25)
+        ElseIf NumericUpDown27.Value = 125 And NumericUpDown26.Value = 0 Then
+            PictureBox7.Location = New Point(208, 158)
+            ComboBox18.SelectedItem = ComboBox18.Items.Item(26)
+        ElseIf NumericUpDown27.Value = 125 And NumericUpDown26.Value = 25 Then
+            PictureBox7.Location = New Point(208, 182)
+            ComboBox18.SelectedItem = ComboBox18.Items.Item(27)
+        ElseIf NumericUpDown27.Value = 125 And NumericUpDown26.Value = 50 Then
+            PictureBox7.Location = New Point(208, 206)
+            ComboBox18.SelectedItem = ComboBox18.Items.Item(28)
+        ElseIf NumericUpDown27.Value = 125 And NumericUpDown26.Value = 75 Then
+            PictureBox7.Location = New Point(208, 230)
+            ComboBox18.SelectedItem = ComboBox18.Items.Item(29)
+        ElseIf NumericUpDown27.Value = 125 And NumericUpDown26.Value = 100 Then
+            PictureBox7.Location = New Point(208, 254)
+            ComboBox18.SelectedItem = ComboBox18.Items.Item(30)
+        ElseIf NumericUpDown27.Value = 150 And NumericUpDown26.Value = 0 Then
+            PictureBox7.Location = New Point(232, 158)
+            ComboBox18.SelectedItem = ComboBox18.Items.Item(31)
+        ElseIf NumericUpDown27.Value = 150 And NumericUpDown26.Value = 25 Then
+            PictureBox7.Location = New Point(232, 182)
+            ComboBox18.SelectedItem = ComboBox18.Items.Item(32)
+        ElseIf NumericUpDown27.Value = 150 And NumericUpDown26.Value = 50 Then
+            PictureBox7.Location = New Point(232, 206)
+            ComboBox18.SelectedItem = ComboBox18.Items.Item(33)
+        ElseIf NumericUpDown27.Value = 150 And NumericUpDown26.Value = 75 Then
+            PictureBox7.Location = New Point(232, 230)
+            ComboBox18.SelectedItem = ComboBox18.Items.Item(34)
+        ElseIf NumericUpDown27.Value = 150 And NumericUpDown26.Value = 100 Then
+            PictureBox7.Location = New Point(232, 254)
+            ComboBox18.SelectedItem = ComboBox18.Items.Item(35)
+        ElseIf NumericUpDown27.Value = 175 And NumericUpDown26.Value = 0 Then
+            PictureBox7.Location = New Point(256, 158)
+            ComboBox18.SelectedItem = ComboBox18.Items.Item(36)
+        ElseIf NumericUpDown27.Value = 175 And NumericUpDown26.Value = 25 Then
+            PictureBox7.Location = New Point(256, 182)
+            ComboBox18.SelectedItem = ComboBox18.Items.Item(37)
+        ElseIf NumericUpDown27.Value = 175 And NumericUpDown26.Value = 50 Then
+            PictureBox7.Location = New Point(256, 206)
+            ComboBox18.SelectedItem = ComboBox18.Items.Item(38)
+        ElseIf NumericUpDown27.Value = 175 And NumericUpDown26.Value = 75 Then
+            PictureBox7.Location = New Point(256, 230)
+            ComboBox18.SelectedItem = ComboBox18.Items.Item(39)
+        ElseIf NumericUpDown27.Value = 175 And NumericUpDown26.Value = 100 Then
+            PictureBox7.Location = New Point(256, 254)
+            ComboBox18.SelectedItem = ComboBox18.Items.Item(40)
+        ElseIf NumericUpDown27.Value = 200 And NumericUpDown26.Value = 0 Then
+            PictureBox7.Location = New Point(280, 158)
+            ComboBox18.SelectedItem = ComboBox18.Items.Item(41)
+        ElseIf NumericUpDown27.Value = 200 And NumericUpDown26.Value = 25 Then
+            PictureBox7.Location = New Point(280, 182)
+            ComboBox18.SelectedItem = ComboBox18.Items.Item(42)
+        ElseIf NumericUpDown27.Value = 200 And NumericUpDown26.Value = 50 Then
+            PictureBox7.Location = New Point(280, 206)
+            ComboBox18.SelectedItem = ComboBox18.Items.Item(43)
+        ElseIf NumericUpDown27.Value = 200 And NumericUpDown26.Value = 75 Then
+            PictureBox7.Location = New Point(280, 230)
+            ComboBox18.SelectedItem = ComboBox18.Items.Item(44)
+        ElseIf NumericUpDown27.Value = 200 And NumericUpDown26.Value = 100 Then
+            PictureBox7.Location = New Point(280, 254)
+            ComboBox18.SelectedItem = ComboBox18.Items.Item(45)
+        End If
+
+    End Sub
+
+    Private Sub NumericUpDown24_ValueChanged(sender As Object, e As EventArgs) Handles NumericUpDown24.ValueChanged, NumericUpDown23.ValueChanged
+        If NumericUpDown24.Value = 0 And NumericUpDown23.Value = 0 Then
+            PictureBox8.Location = New Point(88, 158)
+            ComboBox16.SelectedItem = ComboBox16.Items.Item(1)
+        ElseIf NumericUpDown24.Value = 0 And NumericUpDown23.Value = 25 Then
+            PictureBox8.Location = New Point(88, 182)
+            ComboBox16.SelectedItem = ComboBox16.Items.Item(2)
+        ElseIf NumericUpDown24.Value = 0 And NumericUpDown23.Value = 50 Then
+            PictureBox8.Location = New Point(88, 206)
+            ComboBox16.SelectedItem = ComboBox16.Items.Item(3)
+        ElseIf NumericUpDown24.Value = 0 And NumericUpDown23.Value = 75 Then
+            PictureBox8.Location = New Point(88, 230)
+            ComboBox16.SelectedItem = ComboBox16.Items.Item(4)
+        ElseIf NumericUpDown24.Value = 0 And NumericUpDown23.Value = 100 Then
+            PictureBox8.Location = New Point(88, 254)
+            ComboBox16.SelectedItem = ComboBox16.Items.Item(5)
+        ElseIf NumericUpDown24.Value = 25 And NumericUpDown23.Value = 0 Then
+            PictureBox8.Location = New Point(112, 158)
+            ComboBox16.SelectedItem = ComboBox16.Items.Item(6)
+        ElseIf NumericUpDown24.Value = 25 And NumericUpDown23.Value = 25 Then
+            PictureBox8.Location = New Point(112, 182)
+            ComboBox16.SelectedItem = ComboBox16.Items.Item(7)
+        ElseIf NumericUpDown24.Value = 25 And NumericUpDown23.Value = 50 Then
+            PictureBox8.Location = New Point(112, 206)
+            ComboBox16.SelectedItem = ComboBox16.Items.Item(8)
+        ElseIf NumericUpDown24.Value = 25 And NumericUpDown23.Value = 75 Then
+            PictureBox8.Location = New Point(112, 230)
+            ComboBox16.SelectedItem = ComboBox16.Items.Item(9)
+        ElseIf NumericUpDown24.Value = 25 And NumericUpDown23.Value = 100 Then
+            PictureBox8.Location = New Point(112, 254)
+            ComboBox16.SelectedItem = ComboBox16.Items.Item(10)
+        ElseIf NumericUpDown24.Value = 50 And NumericUpDown23.Value = 0 Then
+            PictureBox8.Location = New Point(136, 158)
+            ComboBox16.SelectedItem = ComboBox16.Items.Item(11)
+        ElseIf NumericUpDown24.Value = 50 And NumericUpDown23.Value = 25 Then
+            PictureBox8.Location = New Point(136, 182)
+            ComboBox16.SelectedItem = ComboBox16.Items.Item(12)
+        ElseIf NumericUpDown24.Value = 50 And NumericUpDown23.Value = 50 Then
+            PictureBox8.Location = New Point(136, 206)
+            ComboBox16.SelectedItem = ComboBox16.Items.Item(13)
+        ElseIf NumericUpDown24.Value = 50 And NumericUpDown23.Value = 75 Then
+            PictureBox8.Location = New Point(136, 230)
+            ComboBox16.SelectedItem = ComboBox16.Items.Item(14)
+        ElseIf NumericUpDown24.Value = 50 And NumericUpDown23.Value = 100 Then
+            PictureBox8.Location = New Point(136, 254)
+            ComboBox16.SelectedItem = ComboBox16.Items.Item(15)
+        ElseIf NumericUpDown24.Value = 75 And NumericUpDown23.Value = 0 Then
+            PictureBox8.Location = New Point(160, 158)
+            ComboBox16.SelectedItem = ComboBox16.Items.Item(16)
+        ElseIf NumericUpDown24.Value = 75 And NumericUpDown23.Value = 25 Then
+            PictureBox8.Location = New Point(160, 182)
+            ComboBox16.SelectedItem = ComboBox16.Items.Item(17)
+        ElseIf NumericUpDown24.Value = 75 And NumericUpDown23.Value = 50 Then
+            PictureBox8.Location = New Point(160, 206)
+            ComboBox16.SelectedItem = ComboBox16.Items.Item(18)
+        ElseIf NumericUpDown24.Value = 75 And NumericUpDown23.Value = 75 Then
+            PictureBox8.Location = New Point(160, 230)
+            ComboBox16.SelectedItem = ComboBox16.Items.Item(19)
+        ElseIf NumericUpDown24.Value = 75 And NumericUpDown23.Value = 100 Then
+            PictureBox8.Location = New Point(160, 254)
+            ComboBox16.SelectedItem = ComboBox16.Items.Item(20)
+        ElseIf NumericUpDown24.Value = 100 And NumericUpDown23.Value = 0 Then
+            PictureBox8.Location = New Point(184, 158)
+            ComboBox16.SelectedItem = ComboBox16.Items.Item(21)
+        ElseIf NumericUpDown24.Value = 100 And NumericUpDown23.Value = 25 Then
+            PictureBox8.Location = New Point(184, 182)
+            ComboBox16.SelectedItem = ComboBox16.Items.Item(22)
+        ElseIf NumericUpDown24.Value = 100 And NumericUpDown23.Value = 50 Then
+            PictureBox8.Location = New Point(184, 206)
+            ComboBox16.SelectedItem = ComboBox16.Items.Item(23)
+        ElseIf NumericUpDown24.Value = 100 And NumericUpDown23.Value = 75 Then
+            PictureBox8.Location = New Point(184, 230)
+            ComboBox16.SelectedItem = ComboBox16.Items.Item(24)
+        ElseIf NumericUpDown24.Value = 100 And NumericUpDown23.Value = 100 Then
+            PictureBox8.Location = New Point(184, 254)
+            ComboBox16.SelectedItem = ComboBox16.Items.Item(25)
+        ElseIf NumericUpDown24.Value = 125 And NumericUpDown23.Value = 0 Then
+            PictureBox8.Location = New Point(208, 158)
+            ComboBox16.SelectedItem = ComboBox16.Items.Item(26)
+        ElseIf NumericUpDown24.Value = 125 And NumericUpDown23.Value = 25 Then
+            PictureBox8.Location = New Point(208, 182)
+            ComboBox16.SelectedItem = ComboBox16.Items.Item(27)
+        ElseIf NumericUpDown24.Value = 125 And NumericUpDown23.Value = 50 Then
+            PictureBox8.Location = New Point(208, 206)
+            ComboBox16.SelectedItem = ComboBox16.Items.Item(28)
+        ElseIf NumericUpDown24.Value = 125 And NumericUpDown23.Value = 75 Then
+            PictureBox8.Location = New Point(208, 230)
+            ComboBox16.SelectedItem = ComboBox16.Items.Item(29)
+        ElseIf NumericUpDown24.Value = 125 And NumericUpDown23.Value = 100 Then
+            PictureBox8.Location = New Point(208, 254)
+            ComboBox16.SelectedItem = ComboBox16.Items.Item(30)
+        ElseIf NumericUpDown24.Value = 150 And NumericUpDown23.Value = 0 Then
+            PictureBox8.Location = New Point(232, 158)
+            ComboBox16.SelectedItem = ComboBox16.Items.Item(31)
+        ElseIf NumericUpDown24.Value = 150 And NumericUpDown23.Value = 25 Then
+            PictureBox8.Location = New Point(232, 182)
+            ComboBox16.SelectedItem = ComboBox16.Items.Item(32)
+        ElseIf NumericUpDown24.Value = 150 And NumericUpDown23.Value = 50 Then
+            PictureBox8.Location = New Point(232, 206)
+            ComboBox16.SelectedItem = ComboBox16.Items.Item(33)
+        ElseIf NumericUpDown24.Value = 150 And NumericUpDown23.Value = 75 Then
+            PictureBox8.Location = New Point(232, 230)
+            ComboBox16.SelectedItem = ComboBox16.Items.Item(34)
+        ElseIf NumericUpDown24.Value = 150 And NumericUpDown23.Value = 100 Then
+            PictureBox8.Location = New Point(232, 254)
+            ComboBox16.SelectedItem = ComboBox16.Items.Item(35)
+        ElseIf NumericUpDown24.Value = 175 And NumericUpDown23.Value = 0 Then
+            PictureBox8.Location = New Point(256, 158)
+            ComboBox16.SelectedItem = ComboBox16.Items.Item(36)
+        ElseIf NumericUpDown24.Value = 175 And NumericUpDown23.Value = 25 Then
+            PictureBox8.Location = New Point(256, 182)
+            ComboBox16.SelectedItem = ComboBox16.Items.Item(37)
+        ElseIf NumericUpDown24.Value = 175 And NumericUpDown23.Value = 50 Then
+            PictureBox8.Location = New Point(256, 206)
+            ComboBox16.SelectedItem = ComboBox16.Items.Item(38)
+        ElseIf NumericUpDown24.Value = 175 And NumericUpDown23.Value = 75 Then
+            PictureBox8.Location = New Point(256, 230)
+            ComboBox16.SelectedItem = ComboBox16.Items.Item(39)
+        ElseIf NumericUpDown24.Value = 175 And NumericUpDown23.Value = 100 Then
+            PictureBox8.Location = New Point(256, 254)
+            ComboBox16.SelectedItem = ComboBox16.Items.Item(40)
+        ElseIf NumericUpDown24.Value = 200 And NumericUpDown23.Value = 0 Then
+            PictureBox8.Location = New Point(280, 158)
+            ComboBox16.SelectedItem = ComboBox16.Items.Item(41)
+        ElseIf NumericUpDown24.Value = 200 And NumericUpDown23.Value = 25 Then
+            PictureBox8.Location = New Point(280, 182)
+            ComboBox16.SelectedItem = ComboBox16.Items.Item(42)
+        ElseIf NumericUpDown24.Value = 200 And NumericUpDown23.Value = 50 Then
+            PictureBox8.Location = New Point(280, 206)
+            ComboBox16.SelectedItem = ComboBox16.Items.Item(43)
+        ElseIf NumericUpDown24.Value = 200 And NumericUpDown23.Value = 75 Then
+            PictureBox8.Location = New Point(280, 230)
+            ComboBox16.SelectedItem = ComboBox16.Items.Item(44)
+        ElseIf NumericUpDown24.Value = 200 And NumericUpDown23.Value = 100 Then
+            PictureBox8.Location = New Point(280, 254)
+            ComboBox16.SelectedItem = ComboBox16.Items.Item(45)
+        End If
+    End Sub
+
+    Private Sub NumericUpDown21_ValueChanged(sender As Object, e As EventArgs) Handles NumericUpDown21.ValueChanged, NumericUpDown20.ValueChanged
+        If NumericUpDown21.Value = 0 And NumericUpDown20.Value = 0 Then
+            PictureBox9.Location = New Point(88, 158)
+            ComboBox14.SelectedItem = ComboBox14.Items.Item(1)
+        ElseIf NumericUpDown21.Value = 0 And NumericUpDown20.Value = 25 Then
+            PictureBox9.Location = New Point(88, 182)
+            ComboBox14.SelectedItem = ComboBox14.Items.Item(2)
+        ElseIf NumericUpDown21.Value = 0 And NumericUpDown20.Value = 50 Then
+            PictureBox9.Location = New Point(88, 206)
+            ComboBox14.SelectedItem = ComboBox14.Items.Item(3)
+        ElseIf NumericUpDown21.Value = 0 And NumericUpDown20.Value = 75 Then
+            PictureBox9.Location = New Point(88, 230)
+            ComboBox14.SelectedItem = ComboBox14.Items.Item(4)
+        ElseIf NumericUpDown21.Value = 0 And NumericUpDown20.Value = 100 Then
+            PictureBox9.Location = New Point(88, 254)
+            ComboBox14.SelectedItem = ComboBox14.Items.Item(5)
+        ElseIf NumericUpDown21.Value = 25 And NumericUpDown20.Value = 0 Then
+            PictureBox9.Location = New Point(112, 158)
+            ComboBox14.SelectedItem = ComboBox14.Items.Item(6)
+        ElseIf NumericUpDown21.Value = 25 And NumericUpDown20.Value = 25 Then
+            PictureBox9.Location = New Point(112, 182)
+            ComboBox14.SelectedItem = ComboBox14.Items.Item(7)
+        ElseIf NumericUpDown21.Value = 25 And NumericUpDown20.Value = 50 Then
+            PictureBox9.Location = New Point(112, 206)
+            ComboBox14.SelectedItem = ComboBox14.Items.Item(8)
+        ElseIf NumericUpDown21.Value = 25 And NumericUpDown20.Value = 75 Then
+            PictureBox9.Location = New Point(112, 230)
+            ComboBox14.SelectedItem = ComboBox14.Items.Item(9)
+        ElseIf NumericUpDown21.Value = 25 And NumericUpDown20.Value = 100 Then
+            PictureBox9.Location = New Point(112, 254)
+            ComboBox14.SelectedItem = ComboBox14.Items.Item(10)
+        ElseIf NumericUpDown21.Value = 50 And NumericUpDown20.Value = 0 Then
+            PictureBox9.Location = New Point(136, 158)
+            ComboBox14.SelectedItem = ComboBox14.Items.Item(11)
+        ElseIf NumericUpDown21.Value = 50 And NumericUpDown20.Value = 25 Then
+            PictureBox9.Location = New Point(136, 182)
+            ComboBox14.SelectedItem = ComboBox14.Items.Item(12)
+        ElseIf NumericUpDown21.Value = 50 And NumericUpDown20.Value = 50 Then
+            PictureBox9.Location = New Point(136, 206)
+            ComboBox14.SelectedItem = ComboBox14.Items.Item(13)
+        ElseIf NumericUpDown21.Value = 50 And NumericUpDown20.Value = 75 Then
+            PictureBox9.Location = New Point(136, 230)
+            ComboBox14.SelectedItem = ComboBox14.Items.Item(14)
+        ElseIf NumericUpDown21.Value = 50 And NumericUpDown20.Value = 100 Then
+            PictureBox9.Location = New Point(136, 254)
+            ComboBox14.SelectedItem = ComboBox14.Items.Item(15)
+        ElseIf NumericUpDown21.Value = 75 And NumericUpDown20.Value = 0 Then
+            PictureBox9.Location = New Point(160, 158)
+            ComboBox14.SelectedItem = ComboBox14.Items.Item(16)
+        ElseIf NumericUpDown21.Value = 75 And NumericUpDown20.Value = 25 Then
+            PictureBox9.Location = New Point(160, 182)
+            ComboBox14.SelectedItem = ComboBox14.Items.Item(17)
+        ElseIf NumericUpDown21.Value = 75 And NumericUpDown20.Value = 50 Then
+            PictureBox9.Location = New Point(160, 206)
+            ComboBox14.SelectedItem = ComboBox14.Items.Item(18)
+        ElseIf NumericUpDown21.Value = 75 And NumericUpDown20.Value = 75 Then
+            PictureBox9.Location = New Point(160, 230)
+            ComboBox14.SelectedItem = ComboBox14.Items.Item(19)
+        ElseIf NumericUpDown21.Value = 75 And NumericUpDown20.Value = 100 Then
+            PictureBox9.Location = New Point(160, 254)
+            ComboBox14.SelectedItem = ComboBox14.Items.Item(20)
+        ElseIf NumericUpDown21.Value = 100 And NumericUpDown20.Value = 0 Then
+            PictureBox9.Location = New Point(184, 158)
+            ComboBox14.SelectedItem = ComboBox14.Items.Item(21)
+        ElseIf NumericUpDown21.Value = 100 And NumericUpDown20.Value = 25 Then
+            PictureBox9.Location = New Point(184, 182)
+            ComboBox14.SelectedItem = ComboBox14.Items.Item(22)
+        ElseIf NumericUpDown21.Value = 100 And NumericUpDown20.Value = 50 Then
+            PictureBox9.Location = New Point(184, 206)
+            ComboBox14.SelectedItem = ComboBox14.Items.Item(23)
+        ElseIf NumericUpDown21.Value = 100 And NumericUpDown20.Value = 75 Then
+            PictureBox9.Location = New Point(184, 230)
+            ComboBox14.SelectedItem = ComboBox14.Items.Item(24)
+        ElseIf NumericUpDown21.Value = 100 And NumericUpDown20.Value = 100 Then
+            PictureBox9.Location = New Point(184, 254)
+            ComboBox14.SelectedItem = ComboBox14.Items.Item(25)
+        ElseIf NumericUpDown21.Value = 125 And NumericUpDown20.Value = 0 Then
+            PictureBox9.Location = New Point(208, 158)
+            ComboBox14.SelectedItem = ComboBox14.Items.Item(26)
+        ElseIf NumericUpDown21.Value = 125 And NumericUpDown20.Value = 25 Then
+            PictureBox9.Location = New Point(208, 182)
+            ComboBox14.SelectedItem = ComboBox14.Items.Item(27)
+        ElseIf NumericUpDown21.Value = 125 And NumericUpDown20.Value = 50 Then
+            PictureBox9.Location = New Point(208, 206)
+            ComboBox14.SelectedItem = ComboBox14.Items.Item(28)
+        ElseIf NumericUpDown21.Value = 125 And NumericUpDown20.Value = 75 Then
+            PictureBox9.Location = New Point(208, 230)
+            ComboBox14.SelectedItem = ComboBox14.Items.Item(29)
+        ElseIf NumericUpDown21.Value = 125 And NumericUpDown20.Value = 100 Then
+            PictureBox9.Location = New Point(208, 254)
+            ComboBox14.SelectedItem = ComboBox14.Items.Item(30)
+        ElseIf NumericUpDown21.Value = 150 And NumericUpDown20.Value = 0 Then
+            PictureBox9.Location = New Point(232, 158)
+            ComboBox14.SelectedItem = ComboBox14.Items.Item(31)
+        ElseIf NumericUpDown21.Value = 150 And NumericUpDown20.Value = 25 Then
+            PictureBox9.Location = New Point(232, 182)
+            ComboBox14.SelectedItem = ComboBox14.Items.Item(32)
+        ElseIf NumericUpDown21.Value = 150 And NumericUpDown20.Value = 50 Then
+            PictureBox9.Location = New Point(232, 206)
+            ComboBox14.SelectedItem = ComboBox14.Items.Item(33)
+        ElseIf NumericUpDown21.Value = 150 And NumericUpDown20.Value = 75 Then
+            PictureBox9.Location = New Point(232, 230)
+            ComboBox14.SelectedItem = ComboBox14.Items.Item(34)
+        ElseIf NumericUpDown21.Value = 150 And NumericUpDown20.Value = 100 Then
+            PictureBox9.Location = New Point(232, 254)
+            ComboBox14.SelectedItem = ComboBox14.Items.Item(35)
+        ElseIf NumericUpDown21.Value = 175 And NumericUpDown20.Value = 0 Then
+            PictureBox9.Location = New Point(256, 158)
+            ComboBox14.SelectedItem = ComboBox14.Items.Item(36)
+        ElseIf NumericUpDown21.Value = 175 And NumericUpDown20.Value = 25 Then
+            PictureBox9.Location = New Point(256, 182)
+            ComboBox14.SelectedItem = ComboBox14.Items.Item(37)
+        ElseIf NumericUpDown21.Value = 175 And NumericUpDown20.Value = 50 Then
+            PictureBox9.Location = New Point(256, 206)
+            ComboBox14.SelectedItem = ComboBox14.Items.Item(38)
+        ElseIf NumericUpDown21.Value = 175 And NumericUpDown20.Value = 75 Then
+            PictureBox9.Location = New Point(256, 230)
+            ComboBox14.SelectedItem = ComboBox14.Items.Item(39)
+        ElseIf NumericUpDown21.Value = 175 And NumericUpDown20.Value = 100 Then
+            PictureBox9.Location = New Point(256, 254)
+            ComboBox14.SelectedItem = ComboBox14.Items.Item(40)
+        ElseIf NumericUpDown21.Value = 200 And NumericUpDown20.Value = 0 Then
+            PictureBox9.Location = New Point(280, 158)
+            ComboBox14.SelectedItem = ComboBox14.Items.Item(41)
+        ElseIf NumericUpDown21.Value = 200 And NumericUpDown20.Value = 25 Then
+            PictureBox9.Location = New Point(280, 182)
+            ComboBox14.SelectedItem = ComboBox14.Items.Item(42)
+        ElseIf NumericUpDown21.Value = 200 And NumericUpDown20.Value = 50 Then
+            PictureBox9.Location = New Point(280, 206)
+            ComboBox14.SelectedItem = ComboBox14.Items.Item(43)
+        ElseIf NumericUpDown21.Value = 200 And NumericUpDown20.Value = 75 Then
+            PictureBox9.Location = New Point(280, 230)
+            ComboBox14.SelectedItem = ComboBox14.Items.Item(44)
+        ElseIf NumericUpDown21.Value = 200 And NumericUpDown20.Value = 100 Then
+            PictureBox9.Location = New Point(280, 254)
+            ComboBox14.SelectedItem = ComboBox14.Items.Item(45)
+        End If
+    End Sub
+
+    Private Sub NumericUpDown18_ValueChanged(sender As Object, e As EventArgs) Handles NumericUpDown18.ValueChanged, NumericUpDown17.ValueChanged
+        If NumericUpDown18.Value = 0 And NumericUpDown17.Value = 0 Then
+            PictureBox10.Location = New Point(88, 158)
+            ComboBox12.SelectedItem = ComboBox12.Items.Item(1)
+        ElseIf NumericUpDown18.Value = 0 And NumericUpDown17.Value = 25 Then
+            PictureBox10.Location = New Point(88, 182)
+            ComboBox12.SelectedItem = ComboBox12.Items.Item(2)
+        ElseIf NumericUpDown18.Value = 0 And NumericUpDown17.Value = 50 Then
+            PictureBox10.Location = New Point(88, 206)
+            ComboBox12.SelectedItem = ComboBox12.Items.Item(3)
+        ElseIf NumericUpDown18.Value = 0 And NumericUpDown17.Value = 75 Then
+            PictureBox10.Location = New Point(88, 230)
+            ComboBox12.SelectedItem = ComboBox12.Items.Item(4)
+        ElseIf NumericUpDown18.Value = 0 And NumericUpDown17.Value = 100 Then
+            PictureBox10.Location = New Point(88, 254)
+            ComboBox12.SelectedItem = ComboBox12.Items.Item(5)
+        ElseIf NumericUpDown18.Value = 25 And NumericUpDown17.Value = 0 Then
+            PictureBox10.Location = New Point(112, 158)
+            ComboBox12.SelectedItem = ComboBox12.Items.Item(6)
+        ElseIf NumericUpDown18.Value = 25 And NumericUpDown17.Value = 25 Then
+            PictureBox10.Location = New Point(112, 182)
+            ComboBox12.SelectedItem = ComboBox12.Items.Item(7)
+        ElseIf NumericUpDown18.Value = 25 And NumericUpDown17.Value = 50 Then
+            PictureBox10.Location = New Point(112, 206)
+            ComboBox12.SelectedItem = ComboBox12.Items.Item(8)
+        ElseIf NumericUpDown18.Value = 25 And NumericUpDown17.Value = 75 Then
+            PictureBox10.Location = New Point(112, 230)
+            ComboBox12.SelectedItem = ComboBox12.Items.Item(9)
+        ElseIf NumericUpDown18.Value = 25 And NumericUpDown17.Value = 100 Then
+            PictureBox10.Location = New Point(112, 254)
+            ComboBox12.SelectedItem = ComboBox12.Items.Item(10)
+        ElseIf NumericUpDown18.Value = 50 And NumericUpDown17.Value = 0 Then
+            PictureBox10.Location = New Point(136, 158)
+            ComboBox12.SelectedItem = ComboBox12.Items.Item(11)
+        ElseIf NumericUpDown18.Value = 50 And NumericUpDown17.Value = 25 Then
+            PictureBox10.Location = New Point(136, 182)
+            ComboBox12.SelectedItem = ComboBox12.Items.Item(12)
+        ElseIf NumericUpDown18.Value = 50 And NumericUpDown17.Value = 50 Then
+            PictureBox10.Location = New Point(136, 206)
+            ComboBox12.SelectedItem = ComboBox12.Items.Item(13)
+        ElseIf NumericUpDown18.Value = 50 And NumericUpDown17.Value = 75 Then
+            PictureBox10.Location = New Point(136, 230)
+            ComboBox12.SelectedItem = ComboBox12.Items.Item(14)
+        ElseIf NumericUpDown18.Value = 50 And NumericUpDown17.Value = 100 Then
+            PictureBox10.Location = New Point(136, 254)
+            ComboBox12.SelectedItem = ComboBox12.Items.Item(15)
+        ElseIf NumericUpDown18.Value = 75 And NumericUpDown17.Value = 0 Then
+            PictureBox10.Location = New Point(160, 158)
+            ComboBox12.SelectedItem = ComboBox12.Items.Item(16)
+        ElseIf NumericUpDown18.Value = 75 And NumericUpDown17.Value = 25 Then
+            PictureBox10.Location = New Point(160, 182)
+            ComboBox12.SelectedItem = ComboBox12.Items.Item(17)
+        ElseIf NumericUpDown18.Value = 75 And NumericUpDown17.Value = 50 Then
+            PictureBox10.Location = New Point(160, 206)
+            ComboBox12.SelectedItem = ComboBox12.Items.Item(18)
+        ElseIf NumericUpDown18.Value = 75 And NumericUpDown17.Value = 75 Then
+            PictureBox10.Location = New Point(160, 230)
+            ComboBox12.SelectedItem = ComboBox12.Items.Item(19)
+        ElseIf NumericUpDown18.Value = 75 And NumericUpDown17.Value = 100 Then
+            PictureBox10.Location = New Point(160, 254)
+            ComboBox12.SelectedItem = ComboBox12.Items.Item(20)
+        ElseIf NumericUpDown18.Value = 100 And NumericUpDown17.Value = 0 Then
+            PictureBox10.Location = New Point(184, 158)
+            ComboBox12.SelectedItem = ComboBox12.Items.Item(21)
+        ElseIf NumericUpDown18.Value = 100 And NumericUpDown17.Value = 25 Then
+            PictureBox10.Location = New Point(184, 182)
+            ComboBox12.SelectedItem = ComboBox12.Items.Item(22)
+        ElseIf NumericUpDown18.Value = 100 And NumericUpDown17.Value = 50 Then
+            PictureBox10.Location = New Point(184, 206)
+            ComboBox12.SelectedItem = ComboBox12.Items.Item(23)
+        ElseIf NumericUpDown18.Value = 100 And NumericUpDown17.Value = 75 Then
+            PictureBox10.Location = New Point(184, 230)
+            ComboBox12.SelectedItem = ComboBox12.Items.Item(24)
+        ElseIf NumericUpDown18.Value = 100 And NumericUpDown17.Value = 100 Then
+            PictureBox10.Location = New Point(184, 254)
+            ComboBox12.SelectedItem = ComboBox12.Items.Item(25)
+        ElseIf NumericUpDown18.Value = 125 And NumericUpDown17.Value = 0 Then
+            PictureBox10.Location = New Point(208, 158)
+            ComboBox12.SelectedItem = ComboBox12.Items.Item(26)
+        ElseIf NumericUpDown18.Value = 125 And NumericUpDown17.Value = 25 Then
+            PictureBox10.Location = New Point(208, 182)
+            ComboBox12.SelectedItem = ComboBox12.Items.Item(27)
+        ElseIf NumericUpDown18.Value = 125 And NumericUpDown17.Value = 50 Then
+            PictureBox10.Location = New Point(208, 206)
+            ComboBox12.SelectedItem = ComboBox12.Items.Item(28)
+        ElseIf NumericUpDown18.Value = 125 And NumericUpDown17.Value = 75 Then
+            PictureBox10.Location = New Point(208, 230)
+            ComboBox12.SelectedItem = ComboBox12.Items.Item(29)
+        ElseIf NumericUpDown18.Value = 125 And NumericUpDown17.Value = 100 Then
+            PictureBox10.Location = New Point(208, 254)
+            ComboBox12.SelectedItem = ComboBox12.Items.Item(30)
+        ElseIf NumericUpDown18.Value = 150 And NumericUpDown17.Value = 0 Then
+            PictureBox10.Location = New Point(232, 158)
+            ComboBox12.SelectedItem = ComboBox12.Items.Item(31)
+        ElseIf NumericUpDown18.Value = 150 And NumericUpDown17.Value = 25 Then
+            PictureBox10.Location = New Point(232, 182)
+            ComboBox12.SelectedItem = ComboBox12.Items.Item(32)
+        ElseIf NumericUpDown18.Value = 150 And NumericUpDown17.Value = 50 Then
+            PictureBox10.Location = New Point(232, 206)
+            ComboBox12.SelectedItem = ComboBox12.Items.Item(33)
+        ElseIf NumericUpDown18.Value = 150 And NumericUpDown17.Value = 75 Then
+            PictureBox10.Location = New Point(232, 230)
+            ComboBox12.SelectedItem = ComboBox12.Items.Item(34)
+        ElseIf NumericUpDown18.Value = 150 And NumericUpDown17.Value = 100 Then
+            PictureBox10.Location = New Point(232, 254)
+            ComboBox12.SelectedItem = ComboBox12.Items.Item(35)
+        ElseIf NumericUpDown18.Value = 175 And NumericUpDown17.Value = 0 Then
+            PictureBox10.Location = New Point(256, 158)
+            ComboBox12.SelectedItem = ComboBox12.Items.Item(36)
+        ElseIf NumericUpDown18.Value = 175 And NumericUpDown17.Value = 25 Then
+            PictureBox10.Location = New Point(256, 182)
+            ComboBox12.SelectedItem = ComboBox12.Items.Item(37)
+        ElseIf NumericUpDown18.Value = 175 And NumericUpDown17.Value = 50 Then
+            PictureBox10.Location = New Point(256, 206)
+            ComboBox12.SelectedItem = ComboBox12.Items.Item(38)
+        ElseIf NumericUpDown18.Value = 175 And NumericUpDown17.Value = 75 Then
+            PictureBox10.Location = New Point(256, 230)
+            ComboBox12.SelectedItem = ComboBox12.Items.Item(39)
+        ElseIf NumericUpDown18.Value = 175 And NumericUpDown17.Value = 100 Then
+            PictureBox10.Location = New Point(256, 254)
+            ComboBox12.SelectedItem = ComboBox12.Items.Item(40)
+        ElseIf NumericUpDown18.Value = 200 And NumericUpDown17.Value = 0 Then
+            PictureBox10.Location = New Point(280, 158)
+            ComboBox12.SelectedItem = ComboBox12.Items.Item(41)
+        ElseIf NumericUpDown18.Value = 200 And NumericUpDown17.Value = 25 Then
+            PictureBox10.Location = New Point(280, 182)
+            ComboBox12.SelectedItem = ComboBox12.Items.Item(42)
+        ElseIf NumericUpDown18.Value = 200 And NumericUpDown17.Value = 50 Then
+            PictureBox10.Location = New Point(280, 206)
+            ComboBox12.SelectedItem = ComboBox12.Items.Item(43)
+        ElseIf NumericUpDown18.Value = 200 And NumericUpDown17.Value = 75 Then
+            PictureBox10.Location = New Point(280, 230)
+            ComboBox12.SelectedItem = ComboBox12.Items.Item(44)
+        ElseIf NumericUpDown18.Value = 200 And NumericUpDown17.Value = 100 Then
+            PictureBox10.Location = New Point(280, 254)
+            ComboBox12.SelectedItem = ComboBox12.Items.Item(45)
+        End If
+    End Sub
+
+    Private Sub NumericUpDown45_ValueChanged(sender As Object, e As EventArgs) Handles NumericUpDown45.ValueChanged, NumericUpDown44.ValueChanged
+        If NumericUpDown45.Value = 0 And NumericUpDown44.Value = 0 Then
+            PictureBox11.Location = New Point(88, 158)
+            ComboBox30.SelectedItem = ComboBox30.Items.Item(1)
+        ElseIf NumericUpDown45.Value = 0 And NumericUpDown44.Value = 25 Then
+            PictureBox11.Location = New Point(88, 182)
+            ComboBox30.SelectedItem = ComboBox30.Items.Item(2)
+        ElseIf NumericUpDown45.Value = 0 And NumericUpDown44.Value = 50 Then
+            PictureBox11.Location = New Point(88, 206)
+            ComboBox30.SelectedItem = ComboBox30.Items.Item(3)
+        ElseIf NumericUpDown45.Value = 0 And NumericUpDown44.Value = 75 Then
+            PictureBox11.Location = New Point(88, 230)
+            ComboBox30.SelectedItem = ComboBox30.Items.Item(4)
+        ElseIf NumericUpDown45.Value = 0 And NumericUpDown44.Value = 100 Then
+            PictureBox11.Location = New Point(88, 254)
+            ComboBox30.SelectedItem = ComboBox30.Items.Item(5)
+        ElseIf NumericUpDown45.Value = 25 And NumericUpDown44.Value = 0 Then
+            PictureBox11.Location = New Point(112, 158)
+            ComboBox30.SelectedItem = ComboBox30.Items.Item(6)
+        ElseIf NumericUpDown45.Value = 25 And NumericUpDown44.Value = 25 Then
+            PictureBox11.Location = New Point(112, 182)
+            ComboBox30.SelectedItem = ComboBox30.Items.Item(7)
+        ElseIf NumericUpDown45.Value = 25 And NumericUpDown44.Value = 50 Then
+            PictureBox11.Location = New Point(112, 206)
+            ComboBox30.SelectedItem = ComboBox30.Items.Item(8)
+        ElseIf NumericUpDown45.Value = 25 And NumericUpDown44.Value = 75 Then
+            PictureBox11.Location = New Point(112, 230)
+            ComboBox30.SelectedItem = ComboBox30.Items.Item(9)
+        ElseIf NumericUpDown45.Value = 25 And NumericUpDown44.Value = 100 Then
+            PictureBox11.Location = New Point(112, 254)
+            ComboBox30.SelectedItem = ComboBox30.Items.Item(10)
+        ElseIf NumericUpDown45.Value = 50 And NumericUpDown44.Value = 0 Then
+            PictureBox11.Location = New Point(136, 158)
+            ComboBox30.SelectedItem = ComboBox30.Items.Item(11)
+        ElseIf NumericUpDown45.Value = 50 And NumericUpDown44.Value = 25 Then
+            PictureBox11.Location = New Point(136, 182)
+            ComboBox30.SelectedItem = ComboBox30.Items.Item(12)
+        ElseIf NumericUpDown45.Value = 50 And NumericUpDown44.Value = 50 Then
+            PictureBox11.Location = New Point(136, 206)
+            ComboBox30.SelectedItem = ComboBox30.Items.Item(13)
+        ElseIf NumericUpDown45.Value = 50 And NumericUpDown44.Value = 75 Then
+            PictureBox11.Location = New Point(136, 230)
+            ComboBox30.SelectedItem = ComboBox30.Items.Item(14)
+        ElseIf NumericUpDown45.Value = 50 And NumericUpDown44.Value = 100 Then
+            PictureBox11.Location = New Point(136, 254)
+            ComboBox30.SelectedItem = ComboBox30.Items.Item(15)
+        ElseIf NumericUpDown45.Value = 75 And NumericUpDown44.Value = 0 Then
+            PictureBox11.Location = New Point(160, 158)
+            ComboBox30.SelectedItem = ComboBox30.Items.Item(16)
+        ElseIf NumericUpDown45.Value = 75 And NumericUpDown44.Value = 25 Then
+            PictureBox11.Location = New Point(160, 182)
+            ComboBox30.SelectedItem = ComboBox30.Items.Item(17)
+        ElseIf NumericUpDown45.Value = 75 And NumericUpDown44.Value = 50 Then
+            PictureBox11.Location = New Point(160, 206)
+            ComboBox30.SelectedItem = ComboBox30.Items.Item(18)
+        ElseIf NumericUpDown45.Value = 75 And NumericUpDown44.Value = 75 Then
+            PictureBox11.Location = New Point(160, 230)
+            ComboBox30.SelectedItem = ComboBox30.Items.Item(19)
+        ElseIf NumericUpDown45.Value = 75 And NumericUpDown44.Value = 100 Then
+            PictureBox11.Location = New Point(160, 254)
+            ComboBox30.SelectedItem = ComboBox30.Items.Item(20)
+        ElseIf NumericUpDown45.Value = 100 And NumericUpDown44.Value = 0 Then
+            PictureBox11.Location = New Point(184, 158)
+            ComboBox30.SelectedItem = ComboBox30.Items.Item(21)
+        ElseIf NumericUpDown45.Value = 100 And NumericUpDown44.Value = 25 Then
+            PictureBox11.Location = New Point(184, 182)
+            ComboBox30.SelectedItem = ComboBox30.Items.Item(22)
+        ElseIf NumericUpDown45.Value = 100 And NumericUpDown44.Value = 50 Then
+            PictureBox11.Location = New Point(184, 206)
+            ComboBox30.SelectedItem = ComboBox30.Items.Item(23)
+        ElseIf NumericUpDown45.Value = 100 And NumericUpDown44.Value = 75 Then
+            PictureBox11.Location = New Point(184, 230)
+            ComboBox30.SelectedItem = ComboBox30.Items.Item(24)
+        ElseIf NumericUpDown45.Value = 100 And NumericUpDown44.Value = 100 Then
+            PictureBox11.Location = New Point(184, 254)
+            ComboBox30.SelectedItem = ComboBox30.Items.Item(25)
+        ElseIf NumericUpDown45.Value = 125 And NumericUpDown44.Value = 0 Then
+            PictureBox11.Location = New Point(208, 158)
+            ComboBox30.SelectedItem = ComboBox30.Items.Item(26)
+        ElseIf NumericUpDown45.Value = 125 And NumericUpDown44.Value = 25 Then
+            PictureBox11.Location = New Point(208, 182)
+            ComboBox30.SelectedItem = ComboBox30.Items.Item(27)
+        ElseIf NumericUpDown45.Value = 125 And NumericUpDown44.Value = 50 Then
+            PictureBox11.Location = New Point(208, 206)
+            ComboBox30.SelectedItem = ComboBox30.Items.Item(28)
+        ElseIf NumericUpDown45.Value = 125 And NumericUpDown44.Value = 75 Then
+            PictureBox11.Location = New Point(208, 230)
+            ComboBox30.SelectedItem = ComboBox30.Items.Item(29)
+        ElseIf NumericUpDown45.Value = 125 And NumericUpDown44.Value = 100 Then
+            PictureBox11.Location = New Point(208, 254)
+            ComboBox30.SelectedItem = ComboBox30.Items.Item(30)
+        ElseIf NumericUpDown45.Value = 150 And NumericUpDown44.Value = 0 Then
+            PictureBox11.Location = New Point(232, 158)
+            ComboBox30.SelectedItem = ComboBox30.Items.Item(31)
+        ElseIf NumericUpDown45.Value = 150 And NumericUpDown44.Value = 25 Then
+            PictureBox11.Location = New Point(232, 182)
+            ComboBox30.SelectedItem = ComboBox30.Items.Item(32)
+        ElseIf NumericUpDown45.Value = 150 And NumericUpDown44.Value = 50 Then
+            PictureBox11.Location = New Point(232, 206)
+            ComboBox30.SelectedItem = ComboBox30.Items.Item(33)
+        ElseIf NumericUpDown45.Value = 150 And NumericUpDown44.Value = 75 Then
+            PictureBox11.Location = New Point(232, 230)
+            ComboBox30.SelectedItem = ComboBox30.Items.Item(34)
+        ElseIf NumericUpDown45.Value = 150 And NumericUpDown44.Value = 100 Then
+            PictureBox11.Location = New Point(232, 254)
+            ComboBox30.SelectedItem = ComboBox30.Items.Item(35)
+        ElseIf NumericUpDown45.Value = 175 And NumericUpDown44.Value = 0 Then
+            PictureBox11.Location = New Point(256, 158)
+            ComboBox30.SelectedItem = ComboBox30.Items.Item(36)
+        ElseIf NumericUpDown45.Value = 175 And NumericUpDown44.Value = 25 Then
+            PictureBox11.Location = New Point(256, 182)
+            ComboBox30.SelectedItem = ComboBox30.Items.Item(37)
+        ElseIf NumericUpDown45.Value = 175 And NumericUpDown44.Value = 50 Then
+            PictureBox11.Location = New Point(256, 206)
+            ComboBox30.SelectedItem = ComboBox30.Items.Item(38)
+        ElseIf NumericUpDown45.Value = 175 And NumericUpDown44.Value = 75 Then
+            PictureBox11.Location = New Point(256, 230)
+            ComboBox30.SelectedItem = ComboBox30.Items.Item(39)
+        ElseIf NumericUpDown45.Value = 175 And NumericUpDown44.Value = 100 Then
+            PictureBox11.Location = New Point(256, 254)
+            ComboBox30.SelectedItem = ComboBox30.Items.Item(40)
+        ElseIf NumericUpDown45.Value = 200 And NumericUpDown44.Value = 0 Then
+            PictureBox11.Location = New Point(280, 158)
+            ComboBox30.SelectedItem = ComboBox30.Items.Item(41)
+        ElseIf NumericUpDown45.Value = 200 And NumericUpDown44.Value = 25 Then
+            PictureBox11.Location = New Point(280, 182)
+            ComboBox30.SelectedItem = ComboBox30.Items.Item(42)
+        ElseIf NumericUpDown45.Value = 200 And NumericUpDown44.Value = 50 Then
+            PictureBox11.Location = New Point(280, 206)
+            ComboBox30.SelectedItem = ComboBox30.Items.Item(43)
+        ElseIf NumericUpDown45.Value = 200 And NumericUpDown44.Value = 75 Then
+            PictureBox11.Location = New Point(280, 230)
+            ComboBox30.SelectedItem = ComboBox30.Items.Item(44)
+        ElseIf NumericUpDown45.Value = 200 And NumericUpDown44.Value = 100 Then
+            PictureBox11.Location = New Point(280, 254)
+            ComboBox30.SelectedItem = ComboBox30.Items.Item(45)
+        End If
+    End Sub
+
+    Private Sub NumericUpDown42_ValueChanged(sender As Object, e As EventArgs) Handles NumericUpDown42.ValueChanged, NumericUpDown41.ValueChanged
+        If NumericUpDown42.Value = 0 And NumericUpDown41.Value = 0 Then
+            PictureBox12.Location = New Point(88, 158)
+            ComboBox28.SelectedItem = ComboBox28.Items.Item(1)
+        ElseIf NumericUpDown42.Value = 0 And NumericUpDown41.Value = 25 Then
+            PictureBox12.Location = New Point(88, 182)
+            ComboBox28.SelectedItem = ComboBox28.Items.Item(2)
+        ElseIf NumericUpDown42.Value = 0 And NumericUpDown41.Value = 50 Then
+            PictureBox12.Location = New Point(88, 206)
+            ComboBox28.SelectedItem = ComboBox28.Items.Item(3)
+        ElseIf NumericUpDown42.Value = 0 And NumericUpDown41.Value = 75 Then
+            PictureBox12.Location = New Point(88, 230)
+            ComboBox28.SelectedItem = ComboBox28.Items.Item(4)
+        ElseIf NumericUpDown42.Value = 0 And NumericUpDown41.Value = 100 Then
+            PictureBox12.Location = New Point(88, 254)
+            ComboBox28.SelectedItem = ComboBox28.Items.Item(5)
+        ElseIf NumericUpDown42.Value = 25 And NumericUpDown41.Value = 0 Then
+            PictureBox12.Location = New Point(112, 158)
+            ComboBox28.SelectedItem = ComboBox28.Items.Item(6)
+        ElseIf NumericUpDown42.Value = 25 And NumericUpDown41.Value = 25 Then
+            PictureBox12.Location = New Point(112, 182)
+            ComboBox28.SelectedItem = ComboBox28.Items.Item(7)
+        ElseIf NumericUpDown42.Value = 25 And NumericUpDown41.Value = 50 Then
+            PictureBox12.Location = New Point(112, 206)
+            ComboBox28.SelectedItem = ComboBox28.Items.Item(8)
+        ElseIf NumericUpDown42.Value = 25 And NumericUpDown41.Value = 75 Then
+            PictureBox12.Location = New Point(112, 230)
+            ComboBox28.SelectedItem = ComboBox28.Items.Item(9)
+        ElseIf NumericUpDown42.Value = 25 And NumericUpDown41.Value = 100 Then
+            PictureBox12.Location = New Point(112, 254)
+            ComboBox28.SelectedItem = ComboBox28.Items.Item(10)
+        ElseIf NumericUpDown42.Value = 50 And NumericUpDown41.Value = 0 Then
+            PictureBox12.Location = New Point(136, 158)
+            ComboBox28.SelectedItem = ComboBox28.Items.Item(11)
+        ElseIf NumericUpDown42.Value = 50 And NumericUpDown41.Value = 25 Then
+            PictureBox12.Location = New Point(136, 182)
+            ComboBox28.SelectedItem = ComboBox28.Items.Item(12)
+        ElseIf NumericUpDown42.Value = 50 And NumericUpDown41.Value = 50 Then
+            PictureBox12.Location = New Point(136, 206)
+            ComboBox28.SelectedItem = ComboBox28.Items.Item(13)
+        ElseIf NumericUpDown42.Value = 50 And NumericUpDown41.Value = 75 Then
+            PictureBox12.Location = New Point(136, 230)
+            ComboBox28.SelectedItem = ComboBox28.Items.Item(14)
+        ElseIf NumericUpDown42.Value = 50 And NumericUpDown41.Value = 100 Then
+            PictureBox12.Location = New Point(136, 254)
+            ComboBox28.SelectedItem = ComboBox28.Items.Item(15)
+        ElseIf NumericUpDown42.Value = 75 And NumericUpDown41.Value = 0 Then
+            PictureBox12.Location = New Point(160, 158)
+            ComboBox28.SelectedItem = ComboBox28.Items.Item(16)
+        ElseIf NumericUpDown42.Value = 75 And NumericUpDown41.Value = 25 Then
+            PictureBox12.Location = New Point(160, 182)
+            ComboBox28.SelectedItem = ComboBox28.Items.Item(17)
+        ElseIf NumericUpDown42.Value = 75 And NumericUpDown41.Value = 50 Then
+            PictureBox12.Location = New Point(160, 206)
+            ComboBox28.SelectedItem = ComboBox28.Items.Item(18)
+        ElseIf NumericUpDown42.Value = 75 And NumericUpDown41.Value = 75 Then
+            PictureBox12.Location = New Point(160, 230)
+            ComboBox28.SelectedItem = ComboBox28.Items.Item(19)
+        ElseIf NumericUpDown42.Value = 75 And NumericUpDown41.Value = 100 Then
+            PictureBox12.Location = New Point(160, 254)
+            ComboBox28.SelectedItem = ComboBox28.Items.Item(20)
+        ElseIf NumericUpDown42.Value = 100 And NumericUpDown41.Value = 0 Then
+            PictureBox12.Location = New Point(184, 158)
+            ComboBox28.SelectedItem = ComboBox28.Items.Item(21)
+        ElseIf NumericUpDown42.Value = 100 And NumericUpDown41.Value = 25 Then
+            PictureBox12.Location = New Point(184, 182)
+            ComboBox28.SelectedItem = ComboBox28.Items.Item(22)
+        ElseIf NumericUpDown42.Value = 100 And NumericUpDown41.Value = 50 Then
+            PictureBox12.Location = New Point(184, 206)
+            ComboBox28.SelectedItem = ComboBox28.Items.Item(23)
+        ElseIf NumericUpDown42.Value = 100 And NumericUpDown41.Value = 75 Then
+            PictureBox12.Location = New Point(184, 230)
+            ComboBox28.SelectedItem = ComboBox28.Items.Item(24)
+        ElseIf NumericUpDown42.Value = 100 And NumericUpDown41.Value = 100 Then
+            PictureBox12.Location = New Point(184, 254)
+            ComboBox28.SelectedItem = ComboBox28.Items.Item(25)
+        ElseIf NumericUpDown42.Value = 125 And NumericUpDown41.Value = 0 Then
+            PictureBox12.Location = New Point(208, 158)
+            ComboBox28.SelectedItem = ComboBox28.Items.Item(26)
+        ElseIf NumericUpDown42.Value = 125 And NumericUpDown41.Value = 25 Then
+            PictureBox12.Location = New Point(208, 182)
+            ComboBox28.SelectedItem = ComboBox28.Items.Item(27)
+        ElseIf NumericUpDown42.Value = 125 And NumericUpDown41.Value = 50 Then
+            PictureBox12.Location = New Point(208, 206)
+            ComboBox28.SelectedItem = ComboBox28.Items.Item(28)
+        ElseIf NumericUpDown42.Value = 125 And NumericUpDown41.Value = 75 Then
+            PictureBox12.Location = New Point(208, 230)
+            ComboBox28.SelectedItem = ComboBox28.Items.Item(29)
+        ElseIf NumericUpDown42.Value = 125 And NumericUpDown41.Value = 100 Then
+            PictureBox12.Location = New Point(208, 254)
+            ComboBox28.SelectedItem = ComboBox28.Items.Item(30)
+        ElseIf NumericUpDown42.Value = 150 And NumericUpDown41.Value = 0 Then
+            PictureBox12.Location = New Point(232, 158)
+            ComboBox28.SelectedItem = ComboBox28.Items.Item(31)
+        ElseIf NumericUpDown42.Value = 150 And NumericUpDown41.Value = 25 Then
+            PictureBox12.Location = New Point(232, 182)
+            ComboBox28.SelectedItem = ComboBox28.Items.Item(32)
+        ElseIf NumericUpDown42.Value = 150 And NumericUpDown41.Value = 50 Then
+            PictureBox12.Location = New Point(232, 206)
+            ComboBox28.SelectedItem = ComboBox28.Items.Item(33)
+        ElseIf NumericUpDown42.Value = 150 And NumericUpDown41.Value = 75 Then
+            PictureBox12.Location = New Point(232, 230)
+            ComboBox28.SelectedItem = ComboBox28.Items.Item(34)
+        ElseIf NumericUpDown42.Value = 150 And NumericUpDown41.Value = 100 Then
+            PictureBox12.Location = New Point(232, 254)
+            ComboBox28.SelectedItem = ComboBox28.Items.Item(35)
+        ElseIf NumericUpDown42.Value = 175 And NumericUpDown41.Value = 0 Then
+            PictureBox12.Location = New Point(256, 158)
+            ComboBox28.SelectedItem = ComboBox28.Items.Item(36)
+        ElseIf NumericUpDown42.Value = 175 And NumericUpDown41.Value = 25 Then
+            PictureBox12.Location = New Point(256, 182)
+            ComboBox28.SelectedItem = ComboBox28.Items.Item(37)
+        ElseIf NumericUpDown42.Value = 175 And NumericUpDown41.Value = 50 Then
+            PictureBox12.Location = New Point(256, 206)
+            ComboBox28.SelectedItem = ComboBox28.Items.Item(38)
+        ElseIf NumericUpDown42.Value = 175 And NumericUpDown41.Value = 75 Then
+            PictureBox12.Location = New Point(256, 230)
+            ComboBox28.SelectedItem = ComboBox28.Items.Item(39)
+        ElseIf NumericUpDown42.Value = 175 And NumericUpDown41.Value = 100 Then
+            PictureBox12.Location = New Point(256, 254)
+            ComboBox28.SelectedItem = ComboBox28.Items.Item(40)
+        ElseIf NumericUpDown42.Value = 200 And NumericUpDown41.Value = 0 Then
+            PictureBox12.Location = New Point(280, 158)
+            ComboBox28.SelectedItem = ComboBox28.Items.Item(41)
+        ElseIf NumericUpDown42.Value = 200 And NumericUpDown41.Value = 25 Then
+            PictureBox12.Location = New Point(280, 182)
+            ComboBox28.SelectedItem = ComboBox28.Items.Item(42)
+        ElseIf NumericUpDown42.Value = 200 And NumericUpDown41.Value = 50 Then
+            PictureBox12.Location = New Point(280, 206)
+            ComboBox28.SelectedItem = ComboBox28.Items.Item(43)
+        ElseIf NumericUpDown42.Value = 200 And NumericUpDown41.Value = 75 Then
+            PictureBox12.Location = New Point(280, 230)
+            ComboBox28.SelectedItem = ComboBox28.Items.Item(44)
+        ElseIf NumericUpDown42.Value = 200 And NumericUpDown41.Value = 100 Then
+            PictureBox12.Location = New Point(280, 254)
+            ComboBox28.SelectedItem = ComboBox28.Items.Item(45)
+        End If
+    End Sub
+
+    Private Sub NumericUpDown39_ValueChanged(sender As Object, e As EventArgs) Handles NumericUpDown39.ValueChanged, NumericUpDown38.ValueChanged
+        If NumericUpDown39.Value = 0 And NumericUpDown38.Value = 0 Then
+            PictureBox13.Location = New Point(88, 158)
+            ComboBox26.SelectedItem = ComboBox26.Items.Item(1)
+        ElseIf NumericUpDown39.Value = 0 And NumericUpDown38.Value = 25 Then
+            PictureBox13.Location = New Point(88, 182)
+            ComboBox26.SelectedItem = ComboBox26.Items.Item(2)
+        ElseIf NumericUpDown39.Value = 0 And NumericUpDown38.Value = 50 Then
+            PictureBox13.Location = New Point(88, 206)
+            ComboBox26.SelectedItem = ComboBox26.Items.Item(3)
+        ElseIf NumericUpDown39.Value = 0 And NumericUpDown38.Value = 75 Then
+            PictureBox13.Location = New Point(88, 230)
+            ComboBox26.SelectedItem = ComboBox26.Items.Item(4)
+        ElseIf NumericUpDown39.Value = 0 And NumericUpDown38.Value = 100 Then
+            PictureBox13.Location = New Point(88, 254)
+            ComboBox26.SelectedItem = ComboBox26.Items.Item(5)
+        ElseIf NumericUpDown39.Value = 25 And NumericUpDown38.Value = 0 Then
+            PictureBox13.Location = New Point(112, 158)
+            ComboBox26.SelectedItem = ComboBox26.Items.Item(6)
+        ElseIf NumericUpDown39.Value = 25 And NumericUpDown38.Value = 25 Then
+            PictureBox13.Location = New Point(112, 182)
+            ComboBox26.SelectedItem = ComboBox26.Items.Item(7)
+        ElseIf NumericUpDown39.Value = 25 And NumericUpDown38.Value = 50 Then
+            PictureBox13.Location = New Point(112, 206)
+            ComboBox26.SelectedItem = ComboBox26.Items.Item(8)
+        ElseIf NumericUpDown39.Value = 25 And NumericUpDown38.Value = 75 Then
+            PictureBox13.Location = New Point(112, 230)
+            ComboBox26.SelectedItem = ComboBox26.Items.Item(9)
+        ElseIf NumericUpDown39.Value = 25 And NumericUpDown38.Value = 100 Then
+            PictureBox13.Location = New Point(112, 254)
+            ComboBox26.SelectedItem = ComboBox26.Items.Item(10)
+        ElseIf NumericUpDown39.Value = 50 And NumericUpDown38.Value = 0 Then
+            PictureBox13.Location = New Point(136, 158)
+            ComboBox26.SelectedItem = ComboBox26.Items.Item(11)
+        ElseIf NumericUpDown39.Value = 50 And NumericUpDown38.Value = 25 Then
+            PictureBox13.Location = New Point(136, 182)
+            ComboBox26.SelectedItem = ComboBox26.Items.Item(12)
+        ElseIf NumericUpDown39.Value = 50 And NumericUpDown38.Value = 50 Then
+            PictureBox13.Location = New Point(136, 206)
+            ComboBox26.SelectedItem = ComboBox26.Items.Item(13)
+        ElseIf NumericUpDown39.Value = 50 And NumericUpDown38.Value = 75 Then
+            PictureBox13.Location = New Point(136, 230)
+            ComboBox26.SelectedItem = ComboBox26.Items.Item(14)
+        ElseIf NumericUpDown39.Value = 50 And NumericUpDown38.Value = 100 Then
+            PictureBox13.Location = New Point(136, 254)
+            ComboBox26.SelectedItem = ComboBox26.Items.Item(15)
+        ElseIf NumericUpDown39.Value = 75 And NumericUpDown38.Value = 0 Then
+            PictureBox13.Location = New Point(160, 158)
+            ComboBox26.SelectedItem = ComboBox26.Items.Item(16)
+        ElseIf NumericUpDown39.Value = 75 And NumericUpDown38.Value = 25 Then
+            PictureBox13.Location = New Point(160, 182)
+            ComboBox26.SelectedItem = ComboBox26.Items.Item(17)
+        ElseIf NumericUpDown39.Value = 75 And NumericUpDown38.Value = 50 Then
+            PictureBox13.Location = New Point(160, 206)
+            ComboBox26.SelectedItem = ComboBox26.Items.Item(18)
+        ElseIf NumericUpDown39.Value = 75 And NumericUpDown38.Value = 75 Then
+            PictureBox13.Location = New Point(160, 230)
+            ComboBox26.SelectedItem = ComboBox26.Items.Item(19)
+        ElseIf NumericUpDown39.Value = 75 And NumericUpDown38.Value = 100 Then
+            PictureBox13.Location = New Point(160, 254)
+            ComboBox26.SelectedItem = ComboBox26.Items.Item(20)
+        ElseIf NumericUpDown39.Value = 100 And NumericUpDown38.Value = 0 Then
+            PictureBox13.Location = New Point(184, 158)
+            ComboBox26.SelectedItem = ComboBox26.Items.Item(21)
+        ElseIf NumericUpDown39.Value = 100 And NumericUpDown38.Value = 25 Then
+            PictureBox13.Location = New Point(184, 182)
+            ComboBox26.SelectedItem = ComboBox26.Items.Item(22)
+        ElseIf NumericUpDown39.Value = 100 And NumericUpDown38.Value = 50 Then
+            PictureBox13.Location = New Point(184, 206)
+            ComboBox26.SelectedItem = ComboBox26.Items.Item(23)
+        ElseIf NumericUpDown39.Value = 100 And NumericUpDown38.Value = 75 Then
+            PictureBox13.Location = New Point(184, 230)
+            ComboBox26.SelectedItem = ComboBox26.Items.Item(24)
+        ElseIf NumericUpDown39.Value = 100 And NumericUpDown38.Value = 100 Then
+            PictureBox13.Location = New Point(184, 254)
+            ComboBox26.SelectedItem = ComboBox26.Items.Item(25)
+        ElseIf NumericUpDown39.Value = 125 And NumericUpDown38.Value = 0 Then
+            PictureBox13.Location = New Point(208, 158)
+            ComboBox26.SelectedItem = ComboBox26.Items.Item(26)
+        ElseIf NumericUpDown39.Value = 125 And NumericUpDown38.Value = 25 Then
+            PictureBox13.Location = New Point(208, 182)
+            ComboBox26.SelectedItem = ComboBox26.Items.Item(27)
+        ElseIf NumericUpDown39.Value = 125 And NumericUpDown38.Value = 50 Then
+            PictureBox13.Location = New Point(208, 206)
+            ComboBox26.SelectedItem = ComboBox26.Items.Item(28)
+        ElseIf NumericUpDown39.Value = 125 And NumericUpDown38.Value = 75 Then
+            PictureBox13.Location = New Point(208, 230)
+            ComboBox26.SelectedItem = ComboBox26.Items.Item(29)
+        ElseIf NumericUpDown39.Value = 125 And NumericUpDown38.Value = 100 Then
+            PictureBox13.Location = New Point(208, 254)
+            ComboBox26.SelectedItem = ComboBox26.Items.Item(30)
+        ElseIf NumericUpDown39.Value = 150 And NumericUpDown38.Value = 0 Then
+            PictureBox13.Location = New Point(232, 158)
+            ComboBox26.SelectedItem = ComboBox26.Items.Item(31)
+        ElseIf NumericUpDown39.Value = 150 And NumericUpDown38.Value = 25 Then
+            PictureBox13.Location = New Point(232, 182)
+            ComboBox26.SelectedItem = ComboBox26.Items.Item(32)
+        ElseIf NumericUpDown39.Value = 150 And NumericUpDown38.Value = 50 Then
+            PictureBox13.Location = New Point(232, 206)
+            ComboBox26.SelectedItem = ComboBox26.Items.Item(33)
+        ElseIf NumericUpDown39.Value = 150 And NumericUpDown38.Value = 75 Then
+            PictureBox13.Location = New Point(232, 230)
+            ComboBox26.SelectedItem = ComboBox26.Items.Item(34)
+        ElseIf NumericUpDown39.Value = 150 And NumericUpDown38.Value = 100 Then
+            PictureBox13.Location = New Point(232, 254)
+            ComboBox26.SelectedItem = ComboBox26.Items.Item(35)
+        ElseIf NumericUpDown39.Value = 175 And NumericUpDown38.Value = 0 Then
+            PictureBox13.Location = New Point(256, 158)
+            ComboBox26.SelectedItem = ComboBox26.Items.Item(36)
+        ElseIf NumericUpDown39.Value = 175 And NumericUpDown38.Value = 25 Then
+            PictureBox13.Location = New Point(256, 182)
+            ComboBox26.SelectedItem = ComboBox26.Items.Item(37)
+        ElseIf NumericUpDown39.Value = 175 And NumericUpDown38.Value = 50 Then
+            PictureBox13.Location = New Point(256, 206)
+            ComboBox26.SelectedItem = ComboBox26.Items.Item(38)
+        ElseIf NumericUpDown39.Value = 175 And NumericUpDown38.Value = 75 Then
+            PictureBox13.Location = New Point(256, 230)
+            ComboBox26.SelectedItem = ComboBox26.Items.Item(39)
+        ElseIf NumericUpDown39.Value = 175 And NumericUpDown38.Value = 100 Then
+            PictureBox13.Location = New Point(256, 254)
+            ComboBox26.SelectedItem = ComboBox26.Items.Item(40)
+        ElseIf NumericUpDown39.Value = 200 And NumericUpDown38.Value = 0 Then
+            PictureBox13.Location = New Point(280, 158)
+            ComboBox26.SelectedItem = ComboBox26.Items.Item(41)
+        ElseIf NumericUpDown39.Value = 200 And NumericUpDown38.Value = 25 Then
+            PictureBox13.Location = New Point(280, 182)
+            ComboBox26.SelectedItem = ComboBox26.Items.Item(42)
+        ElseIf NumericUpDown39.Value = 200 And NumericUpDown38.Value = 50 Then
+            PictureBox13.Location = New Point(280, 206)
+            ComboBox26.SelectedItem = ComboBox26.Items.Item(43)
+        ElseIf NumericUpDown39.Value = 200 And NumericUpDown38.Value = 75 Then
+            PictureBox13.Location = New Point(280, 230)
+            ComboBox26.SelectedItem = ComboBox26.Items.Item(44)
+        ElseIf NumericUpDown39.Value = 200 And NumericUpDown38.Value = 100 Then
+            PictureBox13.Location = New Point(280, 254)
+            ComboBox26.SelectedItem = ComboBox26.Items.Item(45)
+        End If
+    End Sub
+
+    Private Sub NumericUpDown36_ValueChanged(sender As Object, e As EventArgs) Handles NumericUpDown36.ValueChanged, NumericUpDown35.ValueChanged
+        If NumericUpDown36.Value = 0 And NumericUpDown35.Value = 0 Then
+            PictureBox14.Location = New Point(88, 158)
+            ComboBox24.SelectedItem = ComboBox24.Items.Item(1)
+        ElseIf NumericUpDown36.Value = 0 And NumericUpDown35.Value = 25 Then
+            PictureBox14.Location = New Point(88, 182)
+            ComboBox24.SelectedItem = ComboBox24.Items.Item(2)
+        ElseIf NumericUpDown36.Value = 0 And NumericUpDown35.Value = 50 Then
+            PictureBox14.Location = New Point(88, 206)
+            ComboBox24.SelectedItem = ComboBox24.Items.Item(3)
+        ElseIf NumericUpDown36.Value = 0 And NumericUpDown35.Value = 75 Then
+            PictureBox14.Location = New Point(88, 230)
+            ComboBox24.SelectedItem = ComboBox24.Items.Item(4)
+        ElseIf NumericUpDown36.Value = 0 And NumericUpDown35.Value = 100 Then
+            PictureBox14.Location = New Point(88, 254)
+            ComboBox24.SelectedItem = ComboBox24.Items.Item(5)
+        ElseIf NumericUpDown36.Value = 25 And NumericUpDown35.Value = 0 Then
+            PictureBox14.Location = New Point(112, 158)
+            ComboBox24.SelectedItem = ComboBox24.Items.Item(6)
+        ElseIf NumericUpDown36.Value = 25 And NumericUpDown35.Value = 25 Then
+            PictureBox14.Location = New Point(112, 182)
+            ComboBox24.SelectedItem = ComboBox24.Items.Item(7)
+        ElseIf NumericUpDown36.Value = 25 And NumericUpDown35.Value = 50 Then
+            PictureBox14.Location = New Point(112, 206)
+            ComboBox24.SelectedItem = ComboBox24.Items.Item(8)
+        ElseIf NumericUpDown36.Value = 25 And NumericUpDown35.Value = 75 Then
+            PictureBox14.Location = New Point(112, 230)
+            ComboBox24.SelectedItem = ComboBox24.Items.Item(9)
+        ElseIf NumericUpDown36.Value = 25 And NumericUpDown35.Value = 100 Then
+            PictureBox14.Location = New Point(112, 254)
+            ComboBox24.SelectedItem = ComboBox24.Items.Item(10)
+        ElseIf NumericUpDown36.Value = 50 And NumericUpDown35.Value = 0 Then
+            PictureBox14.Location = New Point(136, 158)
+            ComboBox24.SelectedItem = ComboBox24.Items.Item(11)
+        ElseIf NumericUpDown36.Value = 50 And NumericUpDown35.Value = 25 Then
+            PictureBox14.Location = New Point(136, 182)
+            ComboBox24.SelectedItem = ComboBox24.Items.Item(12)
+        ElseIf NumericUpDown36.Value = 50 And NumericUpDown35.Value = 50 Then
+            PictureBox14.Location = New Point(136, 206)
+            ComboBox24.SelectedItem = ComboBox24.Items.Item(13)
+        ElseIf NumericUpDown36.Value = 50 And NumericUpDown35.Value = 75 Then
+            PictureBox14.Location = New Point(136, 230)
+            ComboBox24.SelectedItem = ComboBox24.Items.Item(14)
+        ElseIf NumericUpDown36.Value = 50 And NumericUpDown35.Value = 100 Then
+            PictureBox14.Location = New Point(136, 254)
+            ComboBox24.SelectedItem = ComboBox24.Items.Item(15)
+        ElseIf NumericUpDown36.Value = 75 And NumericUpDown35.Value = 0 Then
+            PictureBox14.Location = New Point(160, 158)
+            ComboBox24.SelectedItem = ComboBox24.Items.Item(16)
+        ElseIf NumericUpDown36.Value = 75 And NumericUpDown35.Value = 25 Then
+            PictureBox14.Location = New Point(160, 182)
+            ComboBox24.SelectedItem = ComboBox24.Items.Item(17)
+        ElseIf NumericUpDown36.Value = 75 And NumericUpDown35.Value = 50 Then
+            PictureBox14.Location = New Point(160, 206)
+            ComboBox24.SelectedItem = ComboBox24.Items.Item(18)
+        ElseIf NumericUpDown36.Value = 75 And NumericUpDown35.Value = 75 Then
+            PictureBox14.Location = New Point(160, 230)
+            ComboBox24.SelectedItem = ComboBox24.Items.Item(19)
+        ElseIf NumericUpDown36.Value = 75 And NumericUpDown35.Value = 100 Then
+            PictureBox14.Location = New Point(160, 254)
+            ComboBox24.SelectedItem = ComboBox24.Items.Item(20)
+        ElseIf NumericUpDown36.Value = 100 And NumericUpDown35.Value = 0 Then
+            PictureBox14.Location = New Point(184, 158)
+            ComboBox24.SelectedItem = ComboBox24.Items.Item(21)
+        ElseIf NumericUpDown36.Value = 100 And NumericUpDown35.Value = 25 Then
+            PictureBox14.Location = New Point(184, 182)
+            ComboBox24.SelectedItem = ComboBox24.Items.Item(22)
+        ElseIf NumericUpDown36.Value = 100 And NumericUpDown35.Value = 50 Then
+            PictureBox14.Location = New Point(184, 206)
+            ComboBox24.SelectedItem = ComboBox24.Items.Item(23)
+        ElseIf NumericUpDown36.Value = 100 And NumericUpDown35.Value = 75 Then
+            PictureBox14.Location = New Point(184, 230)
+            ComboBox24.SelectedItem = ComboBox24.Items.Item(24)
+        ElseIf NumericUpDown36.Value = 100 And NumericUpDown35.Value = 100 Then
+            PictureBox14.Location = New Point(184, 254)
+            ComboBox24.SelectedItem = ComboBox24.Items.Item(25)
+        ElseIf NumericUpDown36.Value = 125 And NumericUpDown35.Value = 0 Then
+            PictureBox14.Location = New Point(208, 158)
+            ComboBox24.SelectedItem = ComboBox24.Items.Item(26)
+        ElseIf NumericUpDown36.Value = 125 And NumericUpDown35.Value = 25 Then
+            PictureBox14.Location = New Point(208, 182)
+            ComboBox24.SelectedItem = ComboBox24.Items.Item(27)
+        ElseIf NumericUpDown36.Value = 125 And NumericUpDown35.Value = 50 Then
+            PictureBox14.Location = New Point(208, 206)
+            ComboBox24.SelectedItem = ComboBox24.Items.Item(28)
+        ElseIf NumericUpDown36.Value = 125 And NumericUpDown35.Value = 75 Then
+            PictureBox14.Location = New Point(208, 230)
+            ComboBox24.SelectedItem = ComboBox24.Items.Item(29)
+        ElseIf NumericUpDown36.Value = 125 And NumericUpDown35.Value = 100 Then
+            PictureBox14.Location = New Point(208, 254)
+            ComboBox24.SelectedItem = ComboBox24.Items.Item(30)
+        ElseIf NumericUpDown36.Value = 150 And NumericUpDown35.Value = 0 Then
+            PictureBox14.Location = New Point(232, 158)
+            ComboBox24.SelectedItem = ComboBox24.Items.Item(31)
+        ElseIf NumericUpDown36.Value = 150 And NumericUpDown35.Value = 25 Then
+            PictureBox14.Location = New Point(232, 182)
+            ComboBox24.SelectedItem = ComboBox24.Items.Item(32)
+        ElseIf NumericUpDown36.Value = 150 And NumericUpDown35.Value = 50 Then
+            PictureBox14.Location = New Point(232, 206)
+            ComboBox24.SelectedItem = ComboBox24.Items.Item(33)
+        ElseIf NumericUpDown36.Value = 150 And NumericUpDown35.Value = 75 Then
+            PictureBox14.Location = New Point(232, 230)
+            ComboBox24.SelectedItem = ComboBox24.Items.Item(34)
+        ElseIf NumericUpDown36.Value = 150 And NumericUpDown35.Value = 100 Then
+            PictureBox14.Location = New Point(232, 254)
+            ComboBox24.SelectedItem = ComboBox24.Items.Item(35)
+        ElseIf NumericUpDown36.Value = 175 And NumericUpDown35.Value = 0 Then
+            PictureBox14.Location = New Point(256, 158)
+            ComboBox24.SelectedItem = ComboBox24.Items.Item(36)
+        ElseIf NumericUpDown36.Value = 175 And NumericUpDown35.Value = 25 Then
+            PictureBox14.Location = New Point(256, 182)
+            ComboBox24.SelectedItem = ComboBox24.Items.Item(37)
+        ElseIf NumericUpDown36.Value = 175 And NumericUpDown35.Value = 50 Then
+            PictureBox14.Location = New Point(256, 206)
+            ComboBox24.SelectedItem = ComboBox24.Items.Item(38)
+        ElseIf NumericUpDown36.Value = 175 And NumericUpDown35.Value = 75 Then
+            PictureBox14.Location = New Point(256, 230)
+            ComboBox24.SelectedItem = ComboBox24.Items.Item(39)
+        ElseIf NumericUpDown36.Value = 175 And NumericUpDown35.Value = 100 Then
+            PictureBox14.Location = New Point(256, 254)
+            ComboBox24.SelectedItem = ComboBox24.Items.Item(40)
+        ElseIf NumericUpDown36.Value = 200 And NumericUpDown35.Value = 0 Then
+            PictureBox14.Location = New Point(280, 158)
+            ComboBox24.SelectedItem = ComboBox24.Items.Item(41)
+        ElseIf NumericUpDown36.Value = 200 And NumericUpDown35.Value = 25 Then
+            PictureBox14.Location = New Point(280, 182)
+            ComboBox24.SelectedItem = ComboBox24.Items.Item(42)
+        ElseIf NumericUpDown36.Value = 200 And NumericUpDown35.Value = 50 Then
+            PictureBox14.Location = New Point(280, 206)
+            ComboBox24.SelectedItem = ComboBox24.Items.Item(43)
+        ElseIf NumericUpDown36.Value = 200 And NumericUpDown35.Value = 75 Then
+            PictureBox14.Location = New Point(280, 230)
+            ComboBox24.SelectedItem = ComboBox24.Items.Item(44)
+        ElseIf NumericUpDown36.Value = 200 And NumericUpDown35.Value = 100 Then
+            PictureBox14.Location = New Point(280, 254)
+            ComboBox24.SelectedItem = ComboBox24.Items.Item(45)
+        End If
+    End Sub
+
+    Private Sub NumericUpDown33_ValueChanged(sender As Object, e As EventArgs) Handles NumericUpDown33.ValueChanged, NumericUpDown32.ValueChanged
+        If NumericUpDown33.Value = 0 And NumericUpDown32.Value = 0 Then
+            PictureBox15.Location = New Point(88, 158)
+            ComboBox22.SelectedItem = ComboBox22.Items.Item(1)
+        ElseIf NumericUpDown33.Value = 0 And NumericUpDown32.Value = 25 Then
+            PictureBox15.Location = New Point(88, 182)
+            ComboBox22.SelectedItem = ComboBox22.Items.Item(2)
+        ElseIf NumericUpDown33.Value = 0 And NumericUpDown32.Value = 50 Then
+            PictureBox15.Location = New Point(88, 206)
+            ComboBox22.SelectedItem = ComboBox22.Items.Item(3)
+        ElseIf NumericUpDown33.Value = 0 And NumericUpDown32.Value = 75 Then
+            PictureBox15.Location = New Point(88, 230)
+            ComboBox22.SelectedItem = ComboBox22.Items.Item(4)
+        ElseIf NumericUpDown33.Value = 0 And NumericUpDown32.Value = 100 Then
+            PictureBox15.Location = New Point(88, 254)
+            ComboBox22.SelectedItem = ComboBox22.Items.Item(5)
+        ElseIf NumericUpDown33.Value = 25 And NumericUpDown32.Value = 0 Then
+            PictureBox15.Location = New Point(112, 158)
+            ComboBox22.SelectedItem = ComboBox22.Items.Item(6)
+        ElseIf NumericUpDown33.Value = 25 And NumericUpDown32.Value = 25 Then
+            PictureBox15.Location = New Point(112, 182)
+            ComboBox22.SelectedItem = ComboBox22.Items.Item(7)
+        ElseIf NumericUpDown33.Value = 25 And NumericUpDown32.Value = 50 Then
+            PictureBox15.Location = New Point(112, 206)
+            ComboBox22.SelectedItem = ComboBox22.Items.Item(8)
+        ElseIf NumericUpDown33.Value = 25 And NumericUpDown32.Value = 75 Then
+            PictureBox15.Location = New Point(112, 230)
+            ComboBox22.SelectedItem = ComboBox22.Items.Item(9)
+        ElseIf NumericUpDown33.Value = 25 And NumericUpDown32.Value = 100 Then
+            PictureBox15.Location = New Point(112, 254)
+            ComboBox22.SelectedItem = ComboBox22.Items.Item(10)
+        ElseIf NumericUpDown33.Value = 50 And NumericUpDown32.Value = 0 Then
+            PictureBox15.Location = New Point(136, 158)
+            ComboBox22.SelectedItem = ComboBox22.Items.Item(11)
+        ElseIf NumericUpDown33.Value = 50 And NumericUpDown32.Value = 25 Then
+            PictureBox15.Location = New Point(136, 182)
+            ComboBox22.SelectedItem = ComboBox22.Items.Item(12)
+        ElseIf NumericUpDown33.Value = 50 And NumericUpDown32.Value = 50 Then
+            PictureBox15.Location = New Point(136, 206)
+            ComboBox22.SelectedItem = ComboBox22.Items.Item(13)
+        ElseIf NumericUpDown33.Value = 50 And NumericUpDown32.Value = 75 Then
+            PictureBox15.Location = New Point(136, 230)
+            ComboBox22.SelectedItem = ComboBox22.Items.Item(14)
+        ElseIf NumericUpDown33.Value = 50 And NumericUpDown32.Value = 100 Then
+            PictureBox15.Location = New Point(136, 254)
+            ComboBox22.SelectedItem = ComboBox22.Items.Item(15)
+        ElseIf NumericUpDown33.Value = 75 And NumericUpDown32.Value = 0 Then
+            PictureBox15.Location = New Point(160, 158)
+            ComboBox22.SelectedItem = ComboBox22.Items.Item(16)
+        ElseIf NumericUpDown33.Value = 75 And NumericUpDown32.Value = 25 Then
+            PictureBox15.Location = New Point(160, 182)
+            ComboBox22.SelectedItem = ComboBox22.Items.Item(17)
+        ElseIf NumericUpDown33.Value = 75 And NumericUpDown32.Value = 50 Then
+            PictureBox15.Location = New Point(160, 206)
+            ComboBox22.SelectedItem = ComboBox22.Items.Item(18)
+        ElseIf NumericUpDown33.Value = 75 And NumericUpDown32.Value = 75 Then
+            PictureBox15.Location = New Point(160, 230)
+            ComboBox22.SelectedItem = ComboBox22.Items.Item(19)
+        ElseIf NumericUpDown33.Value = 75 And NumericUpDown32.Value = 100 Then
+            PictureBox15.Location = New Point(160, 254)
+            ComboBox22.SelectedItem = ComboBox22.Items.Item(20)
+        ElseIf NumericUpDown33.Value = 100 And NumericUpDown32.Value = 0 Then
+            PictureBox15.Location = New Point(184, 158)
+            ComboBox22.SelectedItem = ComboBox22.Items.Item(21)
+        ElseIf NumericUpDown33.Value = 100 And NumericUpDown32.Value = 25 Then
+            PictureBox15.Location = New Point(184, 182)
+            ComboBox22.SelectedItem = ComboBox22.Items.Item(22)
+        ElseIf NumericUpDown33.Value = 100 And NumericUpDown32.Value = 50 Then
+            PictureBox15.Location = New Point(184, 206)
+            ComboBox22.SelectedItem = ComboBox22.Items.Item(23)
+        ElseIf NumericUpDown33.Value = 100 And NumericUpDown32.Value = 75 Then
+            PictureBox15.Location = New Point(184, 230)
+            ComboBox22.SelectedItem = ComboBox22.Items.Item(24)
+        ElseIf NumericUpDown33.Value = 100 And NumericUpDown32.Value = 100 Then
+            PictureBox15.Location = New Point(184, 254)
+            ComboBox22.SelectedItem = ComboBox22.Items.Item(25)
+        ElseIf NumericUpDown33.Value = 125 And NumericUpDown32.Value = 0 Then
+            PictureBox15.Location = New Point(208, 158)
+            ComboBox22.SelectedItem = ComboBox22.Items.Item(26)
+        ElseIf NumericUpDown33.Value = 125 And NumericUpDown32.Value = 25 Then
+            PictureBox15.Location = New Point(208, 182)
+            ComboBox22.SelectedItem = ComboBox22.Items.Item(27)
+        ElseIf NumericUpDown33.Value = 125 And NumericUpDown32.Value = 50 Then
+            PictureBox15.Location = New Point(208, 206)
+            ComboBox22.SelectedItem = ComboBox22.Items.Item(28)
+        ElseIf NumericUpDown33.Value = 125 And NumericUpDown32.Value = 75 Then
+            PictureBox15.Location = New Point(208, 230)
+            ComboBox22.SelectedItem = ComboBox22.Items.Item(29)
+        ElseIf NumericUpDown33.Value = 125 And NumericUpDown32.Value = 100 Then
+            PictureBox15.Location = New Point(208, 254)
+            ComboBox22.SelectedItem = ComboBox22.Items.Item(30)
+        ElseIf NumericUpDown33.Value = 150 And NumericUpDown32.Value = 0 Then
+            PictureBox15.Location = New Point(232, 158)
+            ComboBox22.SelectedItem = ComboBox22.Items.Item(31)
+        ElseIf NumericUpDown33.Value = 150 And NumericUpDown32.Value = 25 Then
+            PictureBox15.Location = New Point(232, 182)
+            ComboBox22.SelectedItem = ComboBox22.Items.Item(32)
+        ElseIf NumericUpDown33.Value = 150 And NumericUpDown32.Value = 50 Then
+            PictureBox15.Location = New Point(232, 206)
+            ComboBox22.SelectedItem = ComboBox22.Items.Item(33)
+        ElseIf NumericUpDown33.Value = 150 And NumericUpDown32.Value = 75 Then
+            PictureBox15.Location = New Point(232, 230)
+            ComboBox22.SelectedItem = ComboBox22.Items.Item(34)
+        ElseIf NumericUpDown33.Value = 150 And NumericUpDown32.Value = 100 Then
+            PictureBox15.Location = New Point(232, 254)
+            ComboBox22.SelectedItem = ComboBox22.Items.Item(35)
+        ElseIf NumericUpDown33.Value = 175 And NumericUpDown32.Value = 0 Then
+            PictureBox15.Location = New Point(256, 158)
+            ComboBox22.SelectedItem = ComboBox22.Items.Item(36)
+        ElseIf NumericUpDown33.Value = 175 And NumericUpDown32.Value = 25 Then
+            PictureBox15.Location = New Point(256, 182)
+            ComboBox22.SelectedItem = ComboBox22.Items.Item(37)
+        ElseIf NumericUpDown33.Value = 175 And NumericUpDown32.Value = 50 Then
+            PictureBox15.Location = New Point(256, 206)
+            ComboBox22.SelectedItem = ComboBox22.Items.Item(38)
+        ElseIf NumericUpDown33.Value = 175 And NumericUpDown32.Value = 75 Then
+            PictureBox15.Location = New Point(256, 230)
+            ComboBox22.SelectedItem = ComboBox22.Items.Item(39)
+        ElseIf NumericUpDown33.Value = 175 And NumericUpDown32.Value = 100 Then
+            PictureBox15.Location = New Point(256, 254)
+            ComboBox22.SelectedItem = ComboBox22.Items.Item(40)
+        ElseIf NumericUpDown33.Value = 200 And NumericUpDown32.Value = 0 Then
+            PictureBox15.Location = New Point(280, 158)
+            ComboBox22.SelectedItem = ComboBox22.Items.Item(41)
+        ElseIf NumericUpDown33.Value = 200 And NumericUpDown32.Value = 25 Then
+            PictureBox15.Location = New Point(280, 182)
+            ComboBox22.SelectedItem = ComboBox22.Items.Item(42)
+        ElseIf NumericUpDown33.Value = 200 And NumericUpDown32.Value = 50 Then
+            PictureBox15.Location = New Point(280, 206)
+            ComboBox22.SelectedItem = ComboBox22.Items.Item(43)
+        ElseIf NumericUpDown33.Value = 200 And NumericUpDown32.Value = 75 Then
+            PictureBox15.Location = New Point(280, 230)
+            ComboBox22.SelectedItem = ComboBox22.Items.Item(44)
+        ElseIf NumericUpDown33.Value = 200 And NumericUpDown32.Value = 100 Then
+            PictureBox15.Location = New Point(280, 254)
+            ComboBox22.SelectedItem = ComboBox22.Items.Item(45)
+        End If
+    End Sub
+
+    Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
+        Panel1.AutoScrollPosition = New Point(0, 0)
+    End Sub
+
+    Private Sub PictureBox2_Click(sender As Object, e As EventArgs) Handles PictureBox2.Click
+        Panel1.AutoScrollPosition = New Point(0, 100)
+    End Sub
+
+    Private Sub PictureBox3_Click(sender As Object, e As EventArgs) Handles PictureBox3.Click
+        Panel1.AutoScrollPosition = New Point(0, 202)
+    End Sub
+
+    Private Sub PictureBox4_Click(sender As Object, e As EventArgs) Handles PictureBox4.Click
+        Panel1.AutoScrollPosition = New Point(0, 304)
+    End Sub
+
+    Private Sub PictureBox5_Click(sender As Object, e As EventArgs) Handles PictureBox5.Click
+        Panel1.AutoScrollPosition = New Point(0, 406)
+    End Sub
+
+    Private Sub PictureBox6_Click(sender As Object, e As EventArgs) Handles PictureBox6.Click
+        Panel1.AutoScrollPosition = New Point(0, 508)
+    End Sub
+
+    Private Sub PictureBox7_Click(sender As Object, e As EventArgs) Handles PictureBox7.Click
+        Panel1.AutoScrollPosition = New Point(0, 610)
+    End Sub
+
+    Private Sub PictureBox8_Click(sender As Object, e As EventArgs) Handles PictureBox8.Click
+        Panel1.AutoScrollPosition = New Point(0, 712)
+    End Sub
+
+    Private Sub PictureBox9_Click(sender As Object, e As EventArgs) Handles PictureBox9.Click
+        Panel1.AutoScrollPosition = New Point(0, 814)
+    End Sub
+
+    Private Sub PictureBox10_Click(sender As Object, e As EventArgs) Handles PictureBox10.Click
+        Panel1.AutoScrollPosition = New Point(0, 916)
+    End Sub
+
+    Private Sub PictureBox11_Click(sender As Object, e As EventArgs) Handles PictureBox11.Click
+        Panel1.AutoScrollPosition = New Point(0, 1018)
+    End Sub
+
+    Private Sub PictureBox12_Click(sender As Object, e As EventArgs) Handles PictureBox12.Click
+        Panel1.AutoScrollPosition = New Point(0, 1120)
+    End Sub
+
+    Private Sub PictureBox13_Click(sender As Object, e As EventArgs) Handles PictureBox13.Click
+        Panel1.AutoScrollPosition = New Point(0, 1222)
+    End Sub
+
+    Private Sub PictureBox14_Click(sender As Object, e As EventArgs) Handles PictureBox14.Click
+        Panel1.AutoScrollPosition = New Point(0, 1324)
+    End Sub
+
+    Private Sub PictureBox15_Click(sender As Object, e As EventArgs) Handles PictureBox15.Click
+        Panel1.AutoScrollPosition = New Point(0, 1426)
     End Sub
 End Class
