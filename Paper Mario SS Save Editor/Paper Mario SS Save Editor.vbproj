@@ -133,6 +133,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="icon.ico" />
+    <None Include="Resources\info.png" />
     <None Include="Resources\time_us.png" />
     <None Include="Resources\time_eu.png" />
     <None Include="Resources\hp_us.png" />
