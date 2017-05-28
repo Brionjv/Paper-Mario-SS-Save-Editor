@@ -11,3 +11,6 @@ c:\users\brion\documents\visual studio 2012\Projects\Paper Mario SS Save Editor\
 c:\users\brion\documents\visual studio 2012\Projects\Paper Mario SS Save Editor\Paper Mario SS Save Editor\obj\Debug\Paper Mario SS Save Editor.exe
 c:\users\brion\documents\visual studio 2012\Projects\Paper Mario SS Save Editor\Paper Mario SS Save Editor\obj\Debug\Paper Mario SS Save Editor.xml
 c:\users\brion\documents\visual studio 2012\Projects\Paper Mario SS Save Editor\Paper Mario SS Save Editor\obj\Debug\Paper Mario SS Save Editor.pdb
+C:\Users\Brion\Documents\Visual Studio 2012\Projects\Paper Mario SS Save Editor\Paper Mario SS Save Editor\obj\Debug\Paper_Mario_SS_Save_Editor.Form3.resources
+C:\Users\Brion\Documents\Visual Studio 2012\Projects\Paper Mario SS Save Editor\Paper Mario SS Save Editor\bin\Debug\Microsoft.VisualBasic.PowerPacks.Vs.dll
+C:\Users\Brion\Documents\Visual Studio 2012\Projects\Paper Mario SS Save Editor\Paper Mario SS Save Editor\bin\Debug\fr\Microsoft.VisualBasic.PowerPacks.Vs.resources.dll
