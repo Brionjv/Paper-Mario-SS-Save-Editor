@@ -1,6 +1,6 @@
 # Paper-Mario-SS-Save-Editor
 
-![PMSS SE main](hhttps://i58.servimg.com/u/f58/19/11/94/79/pmss_s10.png)
+![PMSS SE main](https://i58.servimg.com/u/f58/19/11/94/79/pmss_s10.png)
 
 # How to use : 
 - Extract your save with a homebrew (JK's Save Manager or other)
