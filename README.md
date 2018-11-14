@@ -14,3 +14,6 @@
 
 # Releases :
 https://github.com/Brionjv/Paper-Mario-SS-Save-Editor/releases
+
+# Page :
+https://gbatemp.net/threads/release-paper-mario-ss-save-editor.472281/
